@@ -2,6 +2,7 @@
 	import Breadcrumbs from '$lib/components/Breadcrumbs.svelte';
 	import CtaBanner from '$lib/components/CtaBanner.svelte';
 	import FaqAccordion from '$lib/components/FaqAccordion.svelte';
+	import NichePricing from '$lib/components/NichePricing.svelte';
 	import { CheckCircle2, MessageSquare, MapPin, ArrowRight } from 'lucide-svelte';
 
 	let { data } = $props();
@@ -94,6 +95,14 @@
 			{/each}
 		</div>
 	</div>
+
+	<!-- Retail vs Custom Pricing Section -->
+	<NichePricing
+		retailPackages={niche.retailPackages}
+		customSolution={niche.customSolution}
+		nicheLabel={niche.label}
+		locationName={location.name}
+	/>
 
 	<FaqAccordion initialCategory="Semua" />
 

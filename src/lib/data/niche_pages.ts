@@ -1,3 +1,18 @@
+export interface RetailPackage {
+	name: string;
+	price: string;
+	description?: string;
+	features: string[];
+	demoUrl?: string;
+	isPopular?: boolean;
+}
+
+export interface CustomSolution {
+	title: string;
+	description: string;
+	customFeatures: string[];
+}
+
 export interface NicheInfo {
 	slug: string;
 	label: string;
@@ -10,6 +25,8 @@ export interface NicheInfo {
 	benefits: string[];
 	demoUrl?: string;
 	priceStarting: string;
+	retailPackages: RetailPackage[];
+	customSolution: CustomSolution;
 	relatedNiches: string[];
 	faq: { q: string; a: string }[];
 }
@@ -23,6 +40,45 @@ export const NICHE_PAGES: Record<string, NicheInfo> = {
 		description: 'Solusi pembuatan website pesantren profesional yang dirancang khusus untuk mempermudah pendaftaran santri baru (PSB Online), manajemen informasi akademik, infak/donasi, serta memperluas jangkauan dakwah pesantren secara digital.',
 		iconName: 'GraduationCap',
 		priceStarting: 'Rp 2.500.000',
+		retailPackages: [
+			{
+				name: 'Paket Profile Santri',
+				price: 'Rp 2.500.000',
+				description: 'Paket retail siap pakai untuk profil kelembagaan pesantren & fasilitas informasi publik.',
+				features: [
+					'Website Profil Lembaga (Visi Misi, Sejarah, Fasilitas)',
+					'Formulir Pendaftaran PSB Basic',
+					'Galeri Kegiatan & Publikasi Berita/Kajian',
+					'Gratis Domain (.com/.id) & Hosting 1 Tahun',
+					'Tampilan Responsive & Fast Loading'
+				],
+				demoUrl: 'https://demo.barizaloka.id/pesantren-basic'
+			},
+			{
+				name: 'Paket PSB Online Pro',
+				price: 'Rp 4.500.000',
+				isPopular: true,
+				description: 'Paket retail lengkap dengan portal PSB Online & otomatisasi WA admin.',
+				features: [
+					'Semua Fitur Paket Profile Santri',
+					'Portal PSB Online (Upload Berkas, Cetak Bukti Daftar)',
+					'Notifikasi Otomatis WhatsApp ke Pendaftar & Admin',
+					'Dashboard Kelola Data Pendaftar & Seleksi',
+					'Gratis Domain .ac.id / .ponpes.id & Support 1 Tahun'
+				],
+				demoUrl: 'https://demo.barizaloka.id/pesantren-psb'
+			}
+		],
+		customSolution: {
+			title: 'Butuh SIM Pesantren & Fitur Khusus Custom?',
+			description: 'Kami melayani pengembangan tailor-made untuk sistem keuangan SPP, portal wali santri, pengujian hafalan, hingga integrasi payment gateway.',
+			customFeatures: [
+				'Integrasi Payment Gateway & Virtual Account SPP Santri',
+				'Sistem Informasi Akademik (SIAKAD) & Raport Santri',
+				'Aplikasi Monitoring Tahfidz & WhatsApp Gateway Broadcast',
+				'Portal Alumni & Aplikasi Wali Santri Mobile/Web'
+			]
+		},
 		relatedNiches: ['masjid', 'desa', 'umkm'],
 		features: [
 			{
@@ -71,6 +127,44 @@ export const NICHE_PAGES: Record<string, NicheInfo> = {
 		description: 'Website resmi masjid dan musholla untuk sarana transparansi keuangan DKM, publikasi jadwal sholat & khotib, kajian rutin, serta kemudahan berinfaq via digital QRIS.',
 		iconName: 'Landmark',
 		priceStarting: 'Rp 1.800.000',
+		retailPackages: [
+			{
+				name: 'Paket DKM Standar',
+				price: 'Rp 1.800.000',
+				description: 'Paket retail siap pakai untuk transparansi kas DKM & informasi jadwal kajian.',
+				features: [
+					'Website Resmi Masjid & Profil Pengurus DKM',
+					'Integrasi Jadwal Sholat Otomatis Sesuai Kota/Kab',
+					'Modul Transparansi Laporan Kas & Pengeluaran',
+					'Integrasi QRIS Infaq & Rekening Donasi',
+					'Gratis Domain & Hosting 1 Tahun'
+				],
+				demoUrl: 'https://demo.barizaloka.id/masjid-basic'
+			},
+			{
+				name: 'Paket Digital Masjid + Display TV',
+				price: 'Rp 3.200.000',
+				isPopular: true,
+				description: 'Paket retail DKM plus tampilan Digital Signage / TV Display Masjid.',
+				features: [
+					'Semua Fitur Paket DKM Standar',
+					'Web Display TV Digital Masjid (Countdown Iqomah & Running Text)',
+					'Manajemen Jadwal Khutbah Jumat & Penceramah Kajian',
+					'Galeri Dokumentasi & Video Kegiatan Masjid',
+					'Gratis Domain .id & Support Maintenance 1 Tahun'
+				],
+				demoUrl: 'https://demo.barizaloka.id/masjid-display'
+			}
+		],
+		customSolution: {
+			title: 'Solusi Digitalisasi Masjid & Hub Keumatan Custom',
+			description: 'Dibutuhkan fitur kustom seperti sistem inventori barang masjid, donasi terpusat multi-program, atau aplikasi kajian live streaming?',
+			customFeatures: [
+				'Sistem Donasi & Wakaf Terintegrasi Payment Gateway Auto-Check',
+				'Aplikasi Manajemen Event, Kajian, & Booking Aula Masjid',
+				'Sistem WhatsApp Broadcast Jamaah & Remind Jadwal Kajian'
+			]
+		},
 		relatedNiches: ['pesantren', 'desa'],
 		features: [
 			{
@@ -115,6 +209,44 @@ export const NICHE_PAGES: Record<string, NicheInfo> = {
 		description: 'Platform portal desa terpadu untuk percepatan layanan publik warga desa, publikasi transparansi anggaran APBDes, pameran produk UMKM warga, dan promosi wisata daerah.',
 		iconName: 'Building2',
 		priceStarting: 'Rp 3.000.000',
+		retailPackages: [
+			{
+				name: 'Paket Portal Desa Standar',
+				price: 'Rp 3.000.000',
+				description: 'Paket retail resmi untuk pemenuhan KIP & transparansi APBDes.',
+				features: [
+					'Portal Berita & Kabar Desa Terbaru',
+					'Infografis Transparansi APBDes & Pembangunan',
+					'Profil Pemerintahan, Dusun, & Struktur Organisasi',
+					'Etalase Produk UMKM Warga Desa',
+					'Bantuan Pengurusan Domain Resmi .desa.id'
+				],
+				demoUrl: 'https://demo.barizaloka.id/desa-basic'
+			},
+			{
+				name: 'Paket Desa Cyber + Surat Online',
+				price: 'Rp 5.500.000',
+				isPopular: true,
+				description: 'Paket retail terlengkap dengan fitur pengajuan surat mandiri warga.',
+				features: [
+					'Semua Fitur Paket Portal Desa Standar',
+					'Layanan Surat Mandiri Online Warga (SKTM, Pengantar, dll)',
+					'Notifikasi Pengajuan Surat ke WhatsApp Perangkat Desa',
+					'Peta Wisata & Direktori Potensi Desa',
+					'Garansi Maintenance 1 Tahun Full & Pelatihan Admin'
+				],
+				demoUrl: 'https://demo.barizaloka.id/desa-cyber'
+			}
+		],
+		customSolution: {
+			title: 'Custom Software & Sistem Informasi Desa (SID) Terpadu',
+			description: 'Butuh pengembangan kustom seperti peta pemetaan GIS desa, integrasi server lokal balai desa, atau portal pengaduan warga?',
+			customFeatures: [
+				'Peta GIS Interaktif Potensi, Wilayah, & Batas Desa',
+				'Integrasi Database Kependudukan & Statistik RT/RW',
+				'Sistem Pelaporan Pengaduan Warga & Tracking Status Surat'
+			]
+		},
 		relatedNiches: ['umkm', 'pesantren', 'masjid'],
 		features: [
 			{
@@ -159,6 +291,44 @@ export const NICHE_PAGES: Record<string, NicheInfo> = {
 		description: 'Solusi pembuatan website bisnis dan landing page profesional untuk UMKM, toko lokal, dan pengusaha agar tampil meyakinkan di Google, menarik lebih banyak pembeli, dan otomatisasi pesanan ke WhatsApp.',
 		iconName: 'Store',
 		priceStarting: 'Rp 1.500.000',
+		retailPackages: [
+			{
+				name: 'Paket Landing Page Sales',
+				price: 'Rp 1.500.000',
+				description: 'Paket retail 1 halaman tinggi konversi cocok untuk promosi produk/jasa spesifik.',
+				features: [
+					'Landing Page Professional 1 Halaman High-Conversion',
+					'Form Checkout / Tombol Order Langsung ke WhatsApp',
+					'Desain Modern, Fast Loading & Mobile Optimized',
+					'Integrasi Google Maps & Social Media',
+					'Gratis Domain & Hosting 1 Tahun'
+				],
+				demoUrl: 'https://demo.barizaloka.id/umkm-landing'
+			},
+			{
+				name: 'Paket Katalog Bisnis Pro',
+				price: 'Rp 2.800.000',
+				isPopular: true,
+				description: 'Paket retail katalog produk multi-halaman dengan filter kategori.',
+				features: [
+					'Website Multi-Halaman dengan Katalog Produk Unlimited',
+					'Pencarian & Filter Kategori Produk Interaktif',
+					'Checkout Order WhatsApp Otomatis (Detail Barang & Alamat)',
+					'Optimasi SEO Lokal (Google Business Profile Ready)',
+					'Gratis Domain .com/.id & Support Maintenance 1 Tahun'
+				],
+				demoUrl: 'https://demo.barizaloka.id/umkm-katalog'
+			}
+		],
+		customSolution: {
+			title: 'Custom E-Commerce & Web App Bisnis Tailor-Made',
+			description: 'Membutuhkan toko online full checkout, sistem keanggotaan/reseller, integrasi stok otomatis, atau payment gateway?',
+			customFeatures: [
+				'Toko Online Full Shopping Cart & Multi Payment Gateway',
+				'Sistem Manajemen Stok Automatis & Laporan Penjualan',
+				'Portal Reseller, Dropshipper, & Loyalty Member Point'
+			]
+		},
 		relatedNiches: ['sepeda-listrik', 'desa'],
 		features: [
 			{
@@ -203,6 +373,44 @@ export const NICHE_PAGES: Record<string, NicheInfo> = {
 		description: 'Website showroom interaktif khusus dealer, agen, dan toko sepeda/motor listrik untuk menyajikan spesifikasi kapasitas baterai, jarak tempuh, garansi resmi, serta fitur booking test drive.',
 		iconName: 'Zap',
 		priceStarting: 'Rp 2.000.000',
+		retailPackages: [
+			{
+				name: 'Paket Showroom Basic',
+				price: 'Rp 2.000.000',
+				description: 'Paket retail showroom digital untuk menampilkan katalog tipe sepeda & motor listrik.',
+				features: [
+					'Katalog Unit Sepeda & Motor Listrik',
+					'Detail Spesifikasi (Baterai, Watt, Jarak Tempuh, Garansi)',
+					'Tombol Order & Tanya Sales via WhatsApp',
+					'Integrasi Alamat Showroom & Google Maps',
+					'Gratis Domain & Hosting 1 Tahun'
+				],
+				demoUrl: 'https://demo.barizaloka.id/sepeda-listrik-basic'
+			},
+			{
+				name: 'Paket Dealer Pro & Test Drive',
+				price: 'Rp 3.800.000',
+				isPopular: true,
+				description: 'Paket retail lengkap dengan fitur booking test drive & kalkulator simulasi kredit.',
+				features: [
+					'Semua Fitur Paket Showroom Basic',
+					'Form Pendaftaran Booking Test Drive Online',
+					'Kalkulator Perkiraan Simulasi Cicilan/Kredit',
+					'Direktori Sparepart, Baterai, & Service Center',
+					'Gratis Domain .com & Maintenance 1 Tahun'
+				],
+				demoUrl: 'https://demo.barizaloka.id/sepeda-listrik-dealer'
+			}
+		],
+		customSolution: {
+			title: 'Custom System Dealer & Multi-Branch Sales Assignment',
+			description: 'Membutuhkan platform custom untuk pengelolaan multi-cabang showroom, integrasi tim sales daerah, atau klaim garansi digital?',
+			customFeatures: [
+				'Sistem Penugasan Leads Sales Berdasarkan Cabang Terdekat',
+				'Integrasi API Lembaga Pembiayaan / Leasing Kredit',
+				'Portal Modul Klaim Garansi & Tracking Servis Kendaraan'
+			]
+		},
 		relatedNiches: ['umkm'],
 		features: [
 			{

@@ -2,6 +2,7 @@
 	import Breadcrumbs from '$lib/components/Breadcrumbs.svelte';
 	import CtaBanner from '$lib/components/CtaBanner.svelte';
 	import FaqAccordion from '$lib/components/FaqAccordion.svelte';
+	import NichePricing from '$lib/components/NichePricing.svelte';
 	import { NICHE_PAGES } from '$lib/data/niche_pages';
 	import {
 		GraduationCap,
@@ -110,6 +111,13 @@
 			{/each}
 		</div>
 	</div>
+
+	<!-- Retail vs Custom Pricing Section -->
+	<NichePricing
+		retailPackages={niche.retailPackages}
+		customSolution={niche.customSolution}
+		nicheLabel={niche.label}
+	/>
 
 	<!-- Cross Link Related Niches -->
 	<div class="my-16 rounded-3xl border border-slate-200 bg-slate-100/80 dark:border-slate-800 dark:bg-slate-900/40 p-8 text-center space-y-4">

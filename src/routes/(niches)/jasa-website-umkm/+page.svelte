@@ -2,6 +2,7 @@
 	import Breadcrumbs from '$lib/components/Breadcrumbs.svelte';
 	import CtaBanner from '$lib/components/CtaBanner.svelte';
 	import FaqAccordion from '$lib/components/FaqAccordion.svelte';
+	import NichePricing from '$lib/components/NichePricing.svelte';
 	import { NICHE_PAGES } from '$lib/data/niche_pages';
 	import { Store, CheckCircle2, MessageSquare } from 'lucide-svelte';
 
@@ -84,6 +85,13 @@
 			{/each}
 		</div>
 	</div>
+
+	<!-- Retail vs Custom Pricing Section -->
+	<NichePricing
+		retailPackages={niche.retailPackages}
+		customSolution={niche.customSolution}
+		nicheLabel={niche.label}
+	/>
 
 	<FaqAccordion initialCategory="Desa & UMKM" />
 

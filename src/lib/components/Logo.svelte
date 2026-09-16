@@ -27,7 +27,7 @@
 	/>
 	{#if showText}
 		<span class="{textSizes[size]} font-extrabold tracking-tight text-slate-900 transition-colors group-hover:text-emerald-600 dark:text-white dark:group-hover:text-emerald-400">
-			BARIZALOKA<span class="text-emerald-600 dark:text-emerald-400">.ID</span>
+			Jasa <span class="text-emerald-600 dark:text-emerald-400">Website</span> Profesional
 		</span>
 	{/if}
 </div>
