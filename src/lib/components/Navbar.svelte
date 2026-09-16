@@ -20,6 +20,8 @@
 
 	let isMobileMenuOpen = $state(false);
 	let isLayananDropdownOpen = $state(false);
+	let dropdownRef = $state<HTMLDivElement | null>(null);
+	let buttonRef = $state<HTMLButtonElement | null>(null);
 
 	const nicheList = Object.values(NICHE_PAGES);
 	const topLocations = Object.values(LOCATION_PAGES).slice(0, 6);
@@ -33,11 +35,37 @@
 		isMobileMenuOpen = false;
 	}
 
+	function handleOutsideClick(e: MouseEvent) {
+		if (isLayananDropdownOpen && dropdownRef && !dropdownRef.contains(e.target as Node)) {
+			isLayananDropdownOpen = false;
+		}
+	}
+
+	function handleKeyDown(e: KeyboardEvent) {
+		if (e.key === 'Escape' && isLayananDropdownOpen) {
+			isLayananDropdownOpen = false;
+			buttonRef?.focus();
+		}
+	}
+
+	function handleFocusOut(e: FocusEvent) {
+		if (
+			isLayananDropdownOpen &&
+			dropdownRef &&
+			e.relatedTarget instanceof Node &&
+			!dropdownRef.contains(e.relatedTarget)
+		) {
+			isLayananDropdownOpen = false;
+		}
+	}
+
 	const currentPath = $derived(page.url.pathname);
 	const isLayananActive = $derived(
 		currentPath.startsWith('/jasa-website-') || currentPath.includes('/potensi-digital')
 	);
 </script>
+
+<svelte:window onclick={handleOutsideClick} onkeydown={handleKeyDown} />
 
 <header class="sticky top-0 z-50 w-full border-b border-slate-200/80 bg-white/90 text-slate-900 backdrop-blur-md transition-colors duration-200 dark:border-slate-800/80 dark:bg-slate-950/90 dark:text-slate-100">
 	<div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
@@ -49,11 +77,13 @@
 		<!-- Desktop Navigation -->
 		<nav class="hidden items-center gap-1 md:flex">
 			<!-- Single Layanan Dropdown -->
-			<div class="relative" role="group" onmouseleave={() => (isLayananDropdownOpen = false)}>
+			<div bind:this={dropdownRef} class="relative" onfocusout={handleFocusOut}>
 				<button
+					bind:this={buttonRef}
 					onclick={() => (isLayananDropdownOpen = !isLayananDropdownOpen)}
-					onmouseenter={() => (isLayananDropdownOpen = true)}
 					aria-expanded={isLayananDropdownOpen}
+					aria-haspopup="true"
+					aria-controls="layanan-dropdown-menu"
 					class="flex items-center gap-1 rounded-lg px-3 py-2 text-sm font-medium transition-colors {isLayananActive ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-semibold' : 'text-slate-700 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-slate-800/60 dark:hover:text-white'}"
 				>
 					<span>Layanan</span>
@@ -61,7 +91,7 @@
 				</button>
 
 				{#if isLayananDropdownOpen}
-					<div class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-[460px] rounded-2xl border border-slate-200 bg-white/95 p-4 shadow-2xl backdrop-blur-xl ring-1 ring-black/5 dark:border-slate-800 dark:bg-slate-900/95 dark:ring-white/10 animate-in fade-in slide-in-from-top-2 duration-150 grid grid-cols-2 gap-4">
+					<div id="layanan-dropdown-menu" class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-[460px] rounded-2xl border border-slate-200 bg-white/95 p-4 shadow-2xl backdrop-blur-xl ring-1 ring-black/5 dark:border-slate-800 dark:bg-slate-900/95 dark:ring-white/10 animate-in fade-in slide-in-from-top-2 duration-150 grid grid-cols-2 gap-4">
 						<!-- Niche Services -->
 						<div>
 							<div class="mb-2 px-2 text-[11px] font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
