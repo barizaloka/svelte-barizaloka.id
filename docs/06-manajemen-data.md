@@ -20,36 +20,36 @@ Seluruh data konten pada projek **Barizaloka.id** disimpan secara terstruktur da
 
 ## ✍️ Panduan Mengedit & Menambah Konten
 
-### 1. Menambah Artikel Blog Baru (`blog_data.ts`)
+### 1. Menambah Artikel Blog Baru (`src/content/posts/*.md`)
 
-Buka [`src/lib/data/blog_data.ts`](../src/lib/data/blog_data.ts) dan tambahkan objek artikel baru ke dalam array `blogPosts`:
+Artikel disimpan sebagai berkas **Markdown (`.md`)** dengan **Frontmatter YAML** di dalam folder [`src/content/posts/`](../src/content/posts/). Buat berkas baru, contohnya `src/content/posts/judul-artikel-baru.md`:
 
-```typescript
-export interface BlogPost {
-  slug: string;
-  title: string;
-  excerpt: string;
-  content: string;
-  category: string;
-  author: string;
-  date: string;
-  readTime: string;
-  image: string;
-}
+```markdown
+---
+id: '4'
+slug: 'tips-desain-website-umkm-2026'
+title: '7 Tips Desain Website UMKM Agar Laris Manis di Tahun 2026'
+excerpt: 'Pelajari strategi tata letak dan kecepatan website yang terbukti meningkatkan konversi penjualan UMKM.'
+category: 'Bisnis & UMKM'
+categorySlug: 'umkm'
+author:
+  name: 'Ahmad Bariza'
+  avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop'
+  role: 'Lead Architect Barizaloka'
+publishedAt: '2026-09-15'
+readTime: '5 menit baca'
+image: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?q=80&w=800&auto=format&fit=crop'
+tags:
+  - UMKM
+  - Desain Web
+  - Branding
+metaTitle: '7 Tips Desain Website UMKM 2026 | Barizaloka'
+metaDescription: 'Strategi desain website UMKM untuk tingkatkan penjualan.'
+---
 
-// Tambahkan ke array blogPosts:
-{
-  slug: 'tips-desain-website-umkm-2026',
-  title: '7 Tips Desain Website UMKM Agar Laris Manis di Tahun 2026',
-  excerpt: 'Pelajari strategi tata letak dan kecepatan website yang terbukti meningkatkan konversi penjualan UMKM.',
-  category: 'Tips & Trik',
-  author: 'Tim Barizaloka',
-  date: '2026-09-15',
-  readTime: '5 min',
-  image: 'https://images.unsplash.com/photo-...'
-  content: `...konten HTML / Markdown...`
-}
+Tulis isi konten artikel Anda di sini dalam format Markdown biasa...
 ```
+*`blog_data.ts` akan secara otomatis memuat dan merender berkas Markdown ini tanpa perlu konfigurasi tambahan!*
 
 ---
 
