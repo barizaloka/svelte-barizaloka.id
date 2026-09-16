@@ -7,10 +7,6 @@ excerpt: Pernahkah Bapak/Ibu bertanya-tanya, mengapa iklan bisa muncul di mana-m
   hingga promosi produk di...
 category: Uncategorized
 categorySlug: uncategorized
-author:
-  name: Barizaloka Team
-  avatar: https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop
-  role: Santri Developer
 publishedAt: '2026-08-16'
 readTime: 2 menit baca
 image: https://barizaloka.id/og-image.png

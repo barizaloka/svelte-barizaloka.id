@@ -7,10 +7,6 @@ excerpt: Tuban bukan sekadar kota transit di jalur pantura. Di balik hiruk-pikuk
   terus berger...
 category: Tuban
 categorySlug: tuban
-author:
-  name: Barizaloka Team
-  avatar: https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop
-  role: Santri Developer
 publishedAt: '2026-05-25'
 readTime: 6 menit baca
 image: https://barizaloka.id/og-image.png

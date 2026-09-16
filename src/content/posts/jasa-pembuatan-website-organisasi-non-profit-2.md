@@ -7,10 +7,6 @@ excerpt: Bayangkan seorang calon donatur yang baru saja mendengar nama organisas
   nama organisasi Anda. Jika...
 category: Uncategorized
 categorySlug: uncategorized
-author:
-  name: Barizaloka Team
-  avatar: https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop
-  role: Santri Developer
 publishedAt: '2026-05-24'
 readTime: 6 menit baca
 image: https://barizaloka.id/og-image.png

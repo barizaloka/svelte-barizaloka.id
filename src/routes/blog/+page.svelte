@@ -2,7 +2,7 @@
 	import Breadcrumbs from '$lib/components/Breadcrumbs.svelte';
 	import CtaBanner from '$lib/components/CtaBanner.svelte';
 	import { BLOG_POSTS, type BlogPost } from '$lib/data/blog_data';
-	import { Search, Calendar, Clock, ArrowRight, User } from 'lucide-svelte';
+	import { Search, Clock, ArrowRight } from 'lucide-svelte';
 
 	let searchQuery = $state('');
 	let selectedCategory = $state('Semua');
@@ -90,8 +90,6 @@
 
 						<div class="p-6 space-y-3">
 							<div class="flex items-center gap-3 text-[11px] text-slate-500 dark:text-slate-400">
-								<span class="flex items-center gap-1"><Calendar class="h-3 w-3 text-emerald-600 dark:text-emerald-400" /> {post.publishedAt}</span>
-								<span>•</span>
 								<span class="flex items-center gap-1"><Clock class="h-3 w-3 text-slate-400" /> {post.readTime}</span>
 							</div>
 
@@ -105,11 +103,7 @@
 						</div>
 					</div>
 
-					<div class="p-6 pt-0 flex items-center justify-between border-t border-slate-200 dark:border-slate-800/60 mt-4">
-						<div class="flex items-center gap-2">
-							<img src={post.author.avatar} alt={post.author.name} class="h-6 w-6 rounded-full object-cover" />
-							<span class="text-xs text-slate-700 dark:text-slate-300 font-medium">{post.author.name}</span>
-						</div>
+					<div class="p-6 pt-0 flex items-center justify-end border-t border-slate-200 dark:border-slate-800/60 mt-4">
 						<div class="text-xs font-bold text-emerald-600 dark:text-emerald-400 group-hover:translate-x-1 transition-transform flex items-center gap-1">
 							<span>Baca</span>
 							<ArrowRight class="h-3.5 w-3.5" />

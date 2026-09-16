@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Breadcrumbs from '$lib/components/Breadcrumbs.svelte';
 	import CtaBanner from '$lib/components/CtaBanner.svelte';
-	import { Calendar, Clock, User, ArrowLeft, Tag, Share2 } from 'lucide-svelte';
+	import { Clock, ArrowLeft, Tag, Share2 } from 'lucide-svelte';
 
 	let { data } = $props();
 	const post = $derived(data.post);
@@ -31,19 +31,8 @@
 			{post.title}
 		</h1>
 
-		<div class="flex flex-wrap items-center justify-between gap-4 border-y border-slate-200 dark:border-slate-800 py-4 text-xs text-slate-500 dark:text-slate-400">
-			<div class="flex items-center gap-3">
-				<img src={post.author.avatar} alt={post.author.name} class="h-10 w-10 rounded-full object-cover border border-emerald-500/30" />
-				<div>
-					<div class="font-bold text-slate-900 dark:text-white text-sm">{post.author.name}</div>
-					<div class="text-[11px] text-slate-500 dark:text-slate-400">{post.author.role}</div>
-				</div>
-			</div>
-
-			<div class="flex items-center gap-4">
-				<span class="flex items-center gap-1.5"><Calendar class="h-4 w-4 text-emerald-600 dark:text-emerald-400" /> {post.publishedAt}</span>
-				<span class="flex items-center gap-1.5"><Clock class="h-4 w-4 text-slate-400" /> {post.readTime}</span>
-			</div>
+		<div class="flex items-center gap-4 border-y border-slate-200 dark:border-slate-800 py-4 text-xs text-slate-500 dark:text-slate-400">
+			<span class="flex items-center gap-1.5"><Clock class="h-4 w-4 text-slate-400" /> {post.readTime}</span>
 		</div>
 	</header>
 

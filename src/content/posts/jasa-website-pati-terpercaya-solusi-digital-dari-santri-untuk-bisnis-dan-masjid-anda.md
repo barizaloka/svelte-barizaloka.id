@@ -8,10 +8,6 @@ excerpt: Pernahkah Anda mencari "jasa website Pati" di internet, lalu bingung me
   Anda tidak sendirian....
 category: Pati
 categorySlug: pati
-author:
-  name: Barizaloka Team
-  avatar: https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop
-  role: Santri Developer
 publishedAt: '2026-08-08'
 readTime: 3 menit baca
 image: https://barizaloka.id/storage/blog/images/01KZJA7EEBX29C064H51KAYDT2.png

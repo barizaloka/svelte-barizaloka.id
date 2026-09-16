@@ -9,11 +9,6 @@ export interface BlogPost {
 	content: string;
 	category: string;
 	categorySlug: string;
-	author: {
-		name: string;
-		avatar: string;
-		role: string;
-	};
 	publishedAt: string;
 	readTime: string;
 	image: string;
@@ -47,11 +42,6 @@ export const BLOG_POSTS: BlogPost[] = Object.entries(modules)
 			content: htmlContent,
 			category: data.category || '',
 			categorySlug: data.categorySlug || '',
-			author: data.author || {
-				name: '',
-				avatar: '',
-				role: ''
-			},
 			publishedAt: data.publishedAt || '',
 			readTime: data.readTime || '',
 			image: data.image || '',

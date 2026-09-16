@@ -59,11 +59,6 @@ export const POST: RequestHandler = async ({ request }) => {
 			meta_description: body.meta_description || body.excerpt || '',
 			created_at: now,
 			updated_at: now,
-			author: {
-				id: 1,
-				name: 'Ahmad Bariza',
-				email: 'admin@barizaloka.id'
-			},
 			category: {
 				id: body.category_id,
 				name: 'Umum'

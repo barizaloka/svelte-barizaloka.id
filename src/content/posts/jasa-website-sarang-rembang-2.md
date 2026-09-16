@@ -7,10 +7,6 @@ excerpt: Kecamatan Sarang, sebuah kawasan pesisir di ujung timur Kabupaten Remba
   luhur berkat basis pes...
 category: Sarang
 categorySlug: sarang
-author:
-  name: Barizaloka Team
-  avatar: https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop
-  role: Santri Developer
 publishedAt: '2026-05-21'
 readTime: 5 menit baca
 image: https://barizaloka.id/og-image.png

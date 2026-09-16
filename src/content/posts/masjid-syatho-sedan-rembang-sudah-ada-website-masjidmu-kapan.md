@@ -5,10 +5,6 @@ title: Masjid Syatho Sedan Rembang Sudah Ada Website, Masjidmu Kapan? 🕌💻
 excerpt: wp:heading
 category: Website Masjid
 categorySlug: website-masjid
-author:
-  name: Barizaloka Team
-  avatar: https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop
-  role: Santri Developer
 publishedAt: '2026-07-26'
 readTime: 3 menit baca
 image: https://barizaloka.id/og-image.png

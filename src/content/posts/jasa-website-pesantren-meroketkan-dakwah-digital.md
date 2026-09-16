@@ -7,10 +7,6 @@ excerpt: Pusing mikirin gimana caranya pesantren bisa dikenal lebih luas di teng
   bingung mulai dari mana da...
 category: Uncategorized
 categorySlug: uncategorized
-author:
-  name: Barizaloka Team
-  avatar: https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop
-  role: Santri Developer
 publishedAt: '2026-05-13'
 readTime: 4 menit baca
 image: https://barizaloka.id/og-image.png

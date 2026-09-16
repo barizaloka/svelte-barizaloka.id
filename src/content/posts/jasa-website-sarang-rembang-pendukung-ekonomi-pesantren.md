@@ -7,10 +7,6 @@ excerpt: Kecamatan Sarang, Rembang yang membentang gagah di ujung timur jalur Pa
   yang luhur, melainkan...
 category: Sarang
 categorySlug: sarang
-author:
-  name: Barizaloka Team
-  avatar: https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop
-  role: Santri Developer
 publishedAt: '2026-05-29'
 readTime: 5 menit baca
 image: https://barizaloka.id/og-image.png
