@@ -32,13 +32,13 @@
 
 	<!-- Header Title -->
 	<div class="text-center max-w-3xl mx-auto my-12 space-y-4">
-		<div class="inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-4 py-1.5 text-xs font-bold text-emerald-400">
+		<div class="inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-4 py-1.5 text-xs font-bold text-emerald-700 dark:text-emerald-400">
 			<span>Penawaran Transparan Tanpa Biaya Tersembunyi</span>
 		</div>
-		<h1 class="text-3xl sm:text-5xl font-black text-white">
+		<h1 class="text-3xl sm:text-5xl font-black text-slate-900 dark:text-white">
 			Paket Harga Jasa Pembuatan Website
 		</h1>
-		<p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+		<p class="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
 			Pilih paket yang paling pas untuk pesantren, masjid, desa, atau UMKM Anda. Seluruh paket sudah termasuk Gratis Domain, Hosting, dan Garansi 1 Tahun.
 		</p>
 	</div>
@@ -47,7 +47,7 @@
 	<div class="grid grid-cols-1 gap-8 lg:grid-cols-3 items-stretch my-12">
 		{#each packages as pkg}
 			<div
-				class="relative flex flex-col justify-between rounded-3xl border p-6 sm:p-8 backdrop-blur-xl transition-all duration-300 {pkg.popular ? 'border-emerald-500 bg-slate-900 shadow-2xl shadow-emerald-500/10 scale-[1.02]' : 'border-slate-800 bg-slate-900/60 hover:border-slate-700'}"
+				class="relative flex flex-col justify-between rounded-3xl border p-6 sm:p-8 backdrop-blur-xl transition-all duration-300 {pkg.popular ? 'border-emerald-500 bg-white dark:bg-slate-900 shadow-2xl shadow-emerald-500/10 scale-[1.02]' : 'border-slate-200 bg-white/90 dark:border-slate-800 dark:bg-slate-900/60 hover:border-slate-300 dark:hover:border-slate-700'}"
 			>
 				{#if pkg.badge}
 					<div class="absolute -top-3.5 left-1/2 -translate-x-1/2">
@@ -59,30 +59,30 @@
 
 				<div class="space-y-6">
 					<div>
-						<h3 class="text-xl font-bold text-white">{pkg.name}</h3>
-						<p class="text-xs text-slate-400 mt-1.5 leading-relaxed min-h-[36px]">{pkg.tagline}</p>
+						<h3 class="text-xl font-bold text-slate-900 dark:text-white">{pkg.name}</h3>
+						<p class="text-xs text-slate-500 dark:text-slate-400 mt-1.5 leading-relaxed min-h-[36px]">{pkg.tagline}</p>
 					</div>
 
 					<div class="flex items-baseline gap-2">
-						<span class="text-3xl font-black text-emerald-400">{pkg.price}</span>
+						<span class="text-3xl font-black text-emerald-600 dark:text-emerald-400">{pkg.price}</span>
 						{#if pkg.originalPrice}
-							<span class="text-xs text-slate-500 line-through">{pkg.originalPrice}</span>
+							<span class="text-xs text-slate-400 dark:text-slate-500 line-through">{pkg.originalPrice}</span>
 						{/if}
 					</div>
 
-					<div class="space-y-2 border-t border-slate-800 pt-6">
-						<div class="text-xs font-bold uppercase tracking-wider text-slate-400">Target Pengguna:</div>
-						<div class="text-xs text-emerald-300 font-semibold bg-emerald-950/40 border border-emerald-800/40 rounded-xl p-2.5">
+					<div class="space-y-2 border-t border-slate-200 dark:border-slate-800 pt-6">
+						<div class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">Target Pengguna:</div>
+						<div class="text-xs text-emerald-800 bg-emerald-50 border border-emerald-200 dark:text-emerald-300 dark:bg-emerald-950/40 dark:border-emerald-800/40 rounded-xl p-2.5">
 							{pkg.targetAudience}
 						</div>
 					</div>
 
-					<div class="space-y-2 border-t border-slate-800 pt-4">
-						<div class="text-xs font-bold uppercase tracking-wider text-slate-400">Daftar Fitur:</div>
-						<ul class="space-y-2.5 text-xs text-slate-300">
+					<div class="space-y-2 border-t border-slate-200 dark:border-slate-800 pt-4">
+						<div class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">Daftar Fitur:</div>
+						<ul class="space-y-2.5 text-xs text-slate-700 dark:text-slate-300">
 							{#each pkg.features as feat}
 								<li class="flex items-start gap-2">
-									<CheckCircle2 class="h-4 w-4 text-emerald-400 flex-shrink-0 mt-0.5" />
+									<CheckCircle2 class="h-4 w-4 text-emerald-600 dark:text-emerald-400 flex-shrink-0 mt-0.5" />
 									<span>{feat}</span>
 								</li>
 							{/each}
@@ -90,12 +90,12 @@
 					</div>
 				</div>
 
-				<div class="mt-8 pt-6 border-t border-slate-800">
+				<div class="mt-8 pt-6 border-t border-slate-200 dark:border-slate-800">
 					<a
 						href="https://wa.me/6281234567890?text={encodeURIComponent(pkg.whatsappMessage)}"
 						target="_blank"
 						rel="noopener noreferrer"
-						class="flex w-full items-center justify-center gap-2 rounded-xl py-3.5 text-xs font-bold transition-all {pkg.popular ? 'bg-emerald-500 text-slate-950 hover:bg-emerald-400 shadow-lg shadow-emerald-500/20' : 'bg-slate-800 text-slate-200 hover:bg-slate-700'}"
+						class="flex w-full items-center justify-center gap-2 rounded-xl py-3.5 text-xs font-bold transition-all {pkg.popular ? 'bg-emerald-500 text-slate-950 hover:bg-emerald-400 shadow-lg shadow-emerald-500/20' : 'bg-slate-100 text-slate-800 hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-200 dark:hover:bg-slate-700'}"
 					>
 						<MessageSquare class="h-4 w-4" />
 						<span>{pkg.ctaText}</span>
@@ -106,14 +106,14 @@
 	</div>
 
 	<!-- Feature Comparison Table -->
-	<div class="my-16 rounded-3xl border border-slate-800 bg-slate-900/60 p-6 sm:p-8 backdrop-blur-xl">
-		<h3 class="text-xl font-bold text-white mb-6 text-center">
+	<div class="my-16 rounded-3xl border border-slate-200 bg-white/90 dark:border-slate-800 dark:bg-slate-900/60 p-6 sm:p-8 backdrop-blur-xl shadow-sm">
+		<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-6 text-center">
 			Tabel Perbandingan Fitur Paket
 		</h3>
 
 		<div class="overflow-x-auto">
-			<table class="w-full text-left text-xs text-slate-300">
-				<thead class="border-b border-slate-800 text-slate-400 font-bold uppercase">
+			<table class="w-full text-left text-xs text-slate-700 dark:text-slate-300">
+				<thead class="border-b border-slate-200 dark:border-slate-800 text-slate-500 dark:text-slate-400 font-bold uppercase">
 					<tr>
 						<th class="py-3.5 px-4">Fitur Utama</th>
 						<th class="py-3.5 px-4 text-center">Starter</th>
@@ -121,41 +121,41 @@
 						<th class="py-3.5 px-4 text-center">Custom Complete</th>
 					</tr>
 				</thead>
-				<tbody class="divide-y divide-slate-800/60">
+				<tbody class="divide-y divide-slate-200/80 dark:divide-slate-800/60">
 					{#each featureComparison as row}
-						<tr class="hover:bg-slate-800/30">
-							<td class="py-3.5 px-4 font-semibold text-slate-200">{row.feature}</td>
+						<tr class="hover:bg-slate-50 dark:hover:bg-slate-800/30">
+							<td class="py-3.5 px-4 font-semibold text-slate-900 dark:text-slate-200">{row.feature}</td>
 							<td class="py-3.5 px-4 text-center">
 								{#if typeof row.starter === 'boolean'}
 									{#if row.starter}
-										<CheckCircle2 class="h-4 w-4 text-emerald-400 inline" />
+										<CheckCircle2 class="h-4 w-4 text-emerald-600 dark:text-emerald-400 inline" />
 									{:else}
-										<XCircle class="h-4 w-4 text-slate-600 inline" />
+										<XCircle class="h-4 w-4 text-slate-400 dark:text-slate-600 inline" />
 									{/if}
 								{:else}
-									<span class="text-slate-300">{row.starter}</span>
+									<span class="text-slate-700 dark:text-slate-300">{row.starter}</span>
 								{/if}
 							</td>
 							<td class="py-3.5 px-4 text-center">
 								{#if typeof row.business === 'boolean'}
 									{#if row.business}
-										<CheckCircle2 class="h-4 w-4 text-emerald-400 inline" />
+										<CheckCircle2 class="h-4 w-4 text-emerald-600 dark:text-emerald-400 inline" />
 									{:else}
-										<XCircle class="h-4 w-4 text-slate-600 inline" />
+										<XCircle class="h-4 w-4 text-slate-400 dark:text-slate-600 inline" />
 									{/if}
 								{:else}
-									<span class="text-slate-300">{row.business}</span>
+									<span class="text-slate-700 dark:text-slate-300">{row.business}</span>
 								{/if}
 							</td>
 							<td class="py-3.5 px-4 text-center">
 								{#if typeof row.enterprise === 'boolean'}
 									{#if row.enterprise}
-										<CheckCircle2 class="h-4 w-4 text-emerald-400 inline" />
+										<CheckCircle2 class="h-4 w-4 text-emerald-600 dark:text-emerald-400 inline" />
 									{:else}
-										<XCircle class="h-4 w-4 text-slate-600 inline" />
+										<XCircle class="h-4 w-4 text-slate-400 dark:text-slate-600 inline" />
 									{/if}
 								{:else}
-									<span class="text-emerald-400 font-bold">{row.enterprise}</span>
+									<span class="text-emerald-600 dark:text-emerald-400 font-bold">{row.enterprise}</span>
 								{/if}
 							</td>
 						</tr>
@@ -167,7 +167,7 @@
 
 	<!-- FAQ Section -->
 	<div class="my-16">
-		<h3 class="text-2xl font-bold text-white text-center mb-8">
+		<h3 class="text-2xl font-bold text-slate-900 dark:text-white text-center mb-8">
 			Pertanyaan Seputar Harga & Pembayaran
 		</h3>
 		<FaqAccordion initialCategory="Pembayaran & Garansi" />

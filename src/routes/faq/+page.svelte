@@ -13,10 +13,10 @@
 	<Breadcrumbs items={[{ label: 'FAQ & Tanya Jawab' }]} />
 
 	<div class="text-center max-w-2xl mx-auto my-12 space-y-4">
-		<h1 class="text-3xl sm:text-5xl font-black text-white">
+		<h1 class="text-3xl sm:text-5xl font-black text-slate-900 dark:text-white">
 			Pusat Bantuan & FAQ
 		</h1>
-		<p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+		<p class="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
 			Temukan jawaban lengkap mengenai proses pengerjaan website, harga, garansi, serta tata cara pendaftaran domain .desa.id / .or.id.
 		</p>
 	</div>

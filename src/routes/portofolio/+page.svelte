@@ -24,10 +24,10 @@
 	<Breadcrumbs items={[{ label: 'Portofolio Proyek' }]} />
 
 	<div class="text-center max-w-2xl mx-auto my-12 space-y-4">
-		<h1 class="text-3xl sm:text-5xl font-black text-white">
+		<h1 class="text-3xl sm:text-5xl font-black text-slate-900 dark:text-white">
 			Portofolio Proyek Terpercaya
 		</h1>
-		<p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+		<p class="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
 			Jelajahi berbagai karya pembuatan website dan sistem informasi yang telah kami selesaikan untuk mitra pesantren, masjid, kelurahan desa, dan pengusaha di Jawa Tengah dan sekitarnya.
 		</p>
 	</div>
@@ -37,7 +37,7 @@
 		{#each filters as f}
 			<button
 				onclick={() => (activeFilter = f)}
-				class="rounded-full px-5 py-2 text-xs font-bold transition-all {activeFilter === f ? 'bg-emerald-500 text-slate-950 shadow-md shadow-emerald-500/20' : 'bg-slate-900 border border-slate-800 text-slate-300 hover:bg-slate-800'}"
+				class="rounded-full px-5 py-2 text-xs font-bold transition-all {activeFilter === f ? 'bg-emerald-500 text-slate-950 shadow-md shadow-emerald-500/20' : 'border border-slate-200 bg-white text-slate-700 hover:bg-slate-100 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-300 dark:hover:bg-slate-800'}"
 			>
 				{f}
 			</button>
@@ -47,7 +47,7 @@
 	<!-- Projects Grid -->
 	<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 my-12">
 		{#each filteredProjects as project (project.id)}
-			<div class="group flex flex-col justify-between overflow-hidden rounded-3xl border border-slate-800 bg-slate-900/70 shadow-xl backdrop-blur-md hover:border-emerald-500/40 transition-all duration-300">
+			<div class="group flex flex-col justify-between overflow-hidden rounded-3xl border border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900/70 shadow-xl backdrop-blur-md hover:border-emerald-500/40 transition-all duration-300">
 				<div class="space-y-4">
 					<div class="relative h-52 overflow-hidden">
 						<img
@@ -63,26 +63,26 @@
 					</div>
 
 					<div class="p-6 space-y-3">
-						<div class="flex items-center justify-between text-xs text-slate-400">
+						<div class="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
 							<span class="flex items-center gap-1">
-								<MapPin class="h-3.5 w-3.5 text-emerald-400" /> {project.location}
+								<MapPin class="h-3.5 w-3.5 text-emerald-600 dark:text-emerald-400" /> {project.location}
 							</span>
-							<span class="font-bold text-slate-500">{project.year}</span>
+							<span class="font-bold text-slate-400 dark:text-slate-500">{project.year}</span>
 						</div>
 
-						<h3 class="text-base font-bold text-white group-hover:text-emerald-300 transition-colors">
+						<h3 class="text-base font-bold text-slate-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-300 transition-colors">
 							{project.title}
 						</h3>
 
-						<p class="text-xs text-slate-400 leading-relaxed">
+						<p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
 							{project.description}
 						</p>
 
-						<div class="space-y-1.5 pt-2 border-t border-slate-800/80">
-							<div class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Fitur Utama:</div>
+						<div class="space-y-1.5 pt-2 border-t border-slate-200 dark:border-slate-800/80">
+							<div class="text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">Fitur Utama:</div>
 							<div class="flex flex-wrap gap-1.5">
 								{#each project.features as feat}
-									<span class="rounded-lg bg-slate-800 px-2.5 py-1 text-[10px] text-slate-300">
+									<span class="rounded-lg bg-slate-100 dark:bg-slate-800 px-2.5 py-1 text-[10px] text-slate-700 dark:text-slate-300">
 										{feat}
 									</span>
 								{/each}
@@ -92,7 +92,7 @@
 				</div>
 
 				<div class="p-6 pt-0">
-					<div class="rounded-xl bg-emerald-950/30 border border-emerald-800/30 p-3 text-[11px] text-emerald-300 font-medium">
+					<div class="rounded-xl bg-emerald-50 border border-emerald-200 dark:bg-emerald-950/30 dark:border-emerald-800/30 p-3 text-[11px] text-emerald-800 dark:text-emerald-300 font-medium">
 						✨ {project.results}
 					</div>
 
@@ -101,10 +101,10 @@
 							href={project.url}
 							target="_blank"
 							rel="noopener noreferrer"
-							class="mt-4 flex items-center justify-center gap-2 rounded-xl border border-slate-800 bg-slate-800/80 py-2.5 text-xs font-bold text-slate-200 hover:bg-slate-700 transition-colors"
+							class="mt-4 flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-slate-100 py-2.5 text-xs font-bold text-slate-800 hover:bg-slate-200 dark:border-slate-800 dark:bg-slate-800/80 dark:text-slate-200 dark:hover:bg-slate-700 transition-colors"
 						>
 							<span>Kunjungi Website Live</span>
-							<ExternalLink class="h-3.5 w-3.5 text-emerald-400" />
+							<ExternalLink class="h-3.5 w-3.5 text-emerald-600 dark:text-emerald-400" />
 						</a>
 					{/if}
 				</div>

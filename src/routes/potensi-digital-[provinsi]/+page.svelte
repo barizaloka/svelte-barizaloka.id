@@ -27,20 +27,20 @@
 	<!-- Hero -->
 	<div class="grid grid-cols-1 gap-12 lg:grid-cols-12 items-center my-12">
 		<div class="lg:col-span-7 space-y-6">
-			<div class="inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-4 py-1.5 text-xs font-bold text-emerald-400">
+			<div class="inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-4 py-1.5 text-xs font-bold text-emerald-700 dark:text-emerald-400">
 				<Sparkles class="h-4 w-4" />
 				<span>Transformasi Digital Provinsi {provinsi.name}</span>
 			</div>
 
-			<h1 class="text-3xl sm:text-5xl font-black text-white leading-tight">
-				Potensi Digital & Jasa Website di <span class="text-emerald-400">{provinsi.name}</span>
+			<h1 class="text-3xl sm:text-5xl font-black text-slate-900 dark:text-white leading-tight">
+				Potensi Digital & Jasa Website di <span class="text-emerald-600 dark:text-emerald-400">{provinsi.name}</span>
 			</h1>
 
-			<p class="text-base sm:text-lg text-slate-300 leading-relaxed">
+			<p class="text-base sm:text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
 				{provinsi.description}
 			</p>
 
-			<p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+			<p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
 				{provinsi.digitalPotential} Barizaloka hadir memberikan pendampingan pembuatan website yang cepat, aman, dan berstandar internasional bagi kota & kabupaten di {provinsi.name}.
 			</p>
 
@@ -58,20 +58,20 @@
 		</div>
 
 		<div class="lg:col-span-5">
-			<div class="relative overflow-hidden rounded-3xl border border-slate-800 bg-slate-900/90 p-8 shadow-2xl space-y-6">
-				<h3 class="text-lg font-bold text-white">Ringkasan Wilayah</h3>
-				<div class="space-y-3 text-xs text-slate-300 border-t border-slate-800 pt-4">
-					<div class="flex justify-between border-b border-slate-800/60 pb-2">
-						<span class="text-slate-400">Ibu Kota Provinsi:</span>
-						<span class="font-bold text-emerald-400">{provinsi.capital}</span>
+			<div class="relative overflow-hidden rounded-3xl border border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900/90 p-8 shadow-2xl space-y-6">
+				<h3 class="text-lg font-bold text-slate-900 dark:text-white">Ringkasan Wilayah</h3>
+				<div class="space-y-3 text-xs text-slate-700 dark:text-slate-300 border-t border-slate-200 dark:border-slate-800 pt-4">
+					<div class="flex justify-between border-b border-slate-200 dark:border-slate-800/60 pb-2">
+						<span class="text-slate-500 dark:text-slate-400">Ibu Kota Provinsi:</span>
+						<span class="font-bold text-emerald-600 dark:text-emerald-400">{provinsi.capital}</span>
 					</div>
-					<div class="flex justify-between border-b border-slate-800/60 pb-2">
-						<span class="text-slate-400">Dukungan Garansi:</span>
-						<span class="font-bold text-white">1 Tahun Full Support</span>
+					<div class="flex justify-between border-b border-slate-200 dark:border-slate-800/60 pb-2">
+						<span class="text-slate-500 dark:text-slate-400">Dukungan Garansi:</span>
+						<span class="font-bold text-slate-900 dark:text-white">1 Tahun Full Support</span>
 					</div>
-					<div class="flex justify-between border-b border-slate-800/60 pb-2">
-						<span class="text-slate-400">Domain & Hosting:</span>
-						<span class="font-bold text-white">Gratis Tahun Pertama</span>
+					<div class="flex justify-between border-b border-slate-200 dark:border-slate-800/60 pb-2">
+						<span class="text-slate-500 dark:text-slate-400">Domain & Hosting:</span>
+						<span class="font-bold text-slate-900 dark:text-white">Gratis Tahun Pertama</span>
 					</div>
 				</div>
 			</div>
@@ -82,24 +82,24 @@
 	{#if provinceLocations.length > 0}
 		<div class="my-20 space-y-8">
 			<div class="text-center max-w-2xl mx-auto space-y-2">
-				<h2 class="text-xs font-bold text-emerald-400 uppercase tracking-widest">Cakupan Wilayah</h2>
-				<h3 class="text-2xl sm:text-4xl font-extrabold text-white">Layanan Web di Kota & Kabupaten {provinsi.name}</h3>
+				<h2 class="text-xs font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-widest">Cakupan Wilayah</h2>
+				<h3 class="text-2xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">Layanan Web di Kota & Kabupaten {provinsi.name}</h3>
 			</div>
 
 			<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
 				{#each provinceLocations as loc}
 					<a
 						href="/jasa-website-di-{loc.slug}"
-						class="group rounded-3xl border border-slate-800 bg-slate-900/60 p-6 space-y-3 hover:border-emerald-500/40 transition-colors"
+						class="group rounded-3xl border border-slate-200 bg-white/80 dark:border-slate-800 dark:bg-slate-900/60 p-6 space-y-3 hover:border-emerald-500/40 transition-colors shadow-sm"
 					>
-						<div class="flex items-center gap-2 text-emerald-400 font-bold text-sm">
+						<div class="flex items-center gap-2 text-emerald-600 dark:text-emerald-400 font-bold text-sm">
 							<MapPin class="h-4 w-4" />
 							<span>{loc.type} {loc.name}</span>
 						</div>
-						<p class="text-xs text-slate-400 leading-relaxed line-clamp-2">
+						<p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed line-clamp-2">
 							{loc.highlights}
 						</p>
-						<div class="pt-2 text-xs font-bold text-emerald-400 flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+						<div class="pt-2 text-xs font-bold text-emerald-600 dark:text-emerald-400 flex items-center gap-1 group-hover:translate-x-1 transition-transform">
 							<span>Jelajahi Jasa Website {loc.name}</span>
 							<ArrowRight class="h-3.5 w-3.5" />
 						</div>
