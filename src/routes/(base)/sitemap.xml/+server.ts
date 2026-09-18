@@ -15,7 +15,8 @@ export const GET: RequestHandler = async () => {
 		'/faq',
 		'/kontak',
 		'/portofolio',
-		'/blog'
+		'/blog',
+		'/cara-cek-domain-dengan-mudah'
 	];
 
 	// Niche pages
