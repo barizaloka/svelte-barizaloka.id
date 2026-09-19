@@ -1,6 +1,7 @@
 export interface RetailPackage {
 	name: string;
 	price: string;
+	renewalPrice?: string;
 	description?: string;
 	features: string[];
 	demoUrl?: string;
@@ -35,415 +36,355 @@ export const NICHE_PAGES: Record<string, NicheInfo> = {
 	pesantren: {
 		slug: 'pesantren',
 		label: 'Pesantren',
-		title: 'Jasa Pembuatan Website Pesantren & SIM Santri',
-		tagline: 'Digitalisasi Pesantren Modern — Profil, Penerimaan Santri Baru (PSB), & Transparansi Informasi',
-		description: 'Solusi pembuatan website pesantren profesional yang dirancang khusus untuk mempermudah pendaftaran santri baru (PSB Online), manajemen informasi akademik, infak/donasi, serta memperluas jangkauan dakwah pesantren secara digital.',
+		title: 'Jasa Pembuatan Website Artikel & Informasi Pesantren',
+		tagline: 'Media Publikasi Digital Pesantren — CMS Artikel Berita, Profile Lembaga, & Jadwal Pengajian',
+		description: 'Platform website artikel dan berita pesantren yang dirancang simpel agar pengurus dapat mengunggah artikel kajian, pengumuman kelembagaan, serta dokumentasi kegiatan pesantren dengan mudah.',
 		iconName: 'GraduationCap',
-		priceStarting: 'Rp 2.500.000',
+		priceStarting: 'Rp 1.000.000',
 		retailPackages: [
 			{
-				name: 'Paket Profile Santri',
-				price: 'Rp 2.500.000',
-				description: 'Paket retail siap pakai untuk profil kelembagaan pesantren & fasilitas informasi publik.',
+				name: 'Paket Website Artikel Pesantren',
+				price: 'Rp 1.000.000',
+				renewalPrice: 'Rp 800.000 / tahun',
+				isPopular: true,
+				description: 'Website artikel & berita CMS sederhana terima beres untuk mem publikasikan profil dan dakwah pesantren.',
 				features: [
-					'Website Profil Lembaga (Visi Misi, Sejarah, Fasilitas)',
-					'Formulir Pendaftaran PSB Basic',
-					'Galeri Kegiatan & Publikasi Berita/Kajian',
-					'Gratis Domain (.com/.id) & Hosting 1 Tahun',
-					'Tampilan Responsive & Fast Loading'
+					'CMS Artikel & Berita Kegiatan Pesantren Sederhana',
+					'Publikasi Jadwal Pengajian & Profil Lembaga',
+					'Tampilan Mobile Responsive & Sangat Cepat Diakses',
+					'Gratis Domain (.com / .id / .ponpes.id) & Hosting NVMe 1 Tahun',
+					'Penginputan Konten Perdana Sampai Website Siap Rilis',
+					'Biaya Perpanjangan Tahun Depan Cukup Rp 800.000 / tahun'
 				],
 				demoUrl: 'https://demo.barizaloka.id/pesantren-basic'
-			},
-			{
-				name: 'Paket PSB Online Pro',
-				price: 'Rp 4.500.000',
-				isPopular: true,
-				description: 'Paket retail lengkap dengan portal PSB Online & otomatisasi WA admin.',
-				features: [
-					'Semua Fitur Paket Profile Santri',
-					'Portal PSB Online (Upload Berkas, Cetak Bukti Daftar)',
-					'Notifikasi Otomatis WhatsApp ke Pendaftar & Admin',
-					'Dashboard Kelola Data Pendaftar & Seleksi',
-					'Gratis Domain .ac.id / .ponpes.id & Support 1 Tahun'
-				],
-				demoUrl: 'https://demo.barizaloka.id/pesantren-psb'
 			}
 		],
 		customSolution: {
-			title: 'Butuh SIM Pesantren & Fitur Khusus Custom?',
-			description: 'Kami melayani pengembangan tailor-made untuk sistem keuangan SPP, portal wali santri, pengujian hafalan, hingga integrasi payment gateway.',
+			title: 'Butuh Fitur Tambahan & Sistem Khusus?',
+			description: 'Dibutuhkan fitur kustom seperti pendaftaran santri baru (PSB), sistem SPP, atau portal alumni?',
 			customFeatures: [
-				'Integrasi Payment Gateway & Virtual Account SPP Santri',
-				'Sistem Informasi Akademik (SIAKAD) & Raport Santri',
-				'Aplikasi Monitoring Tahfidz & WhatsApp Gateway Broadcast',
-				'Portal Alumni & Aplikasi Wali Santri Mobile/Web'
+				'Modul Formulir Pendaftaran Santri Baru (PSB Online)',
+				'Sistem Informasi Akademik & Portal Wali Santri',
+				'Integrasi Donasi & Wakaf Digital Payment Gateway'
 			]
 		},
 		relatedNiches: ['masjid', 'desa', 'umkm'],
 		features: [
 			{
-				title: 'Formulir PSB Online',
-				desc: 'Pendaftaran Santri Baru otomatis dengan upload berkas, seleksi, dan notifikasi WhatsApp.',
-				icon: 'UserPlus'
-			},
-			{
-				title: 'Portofolio & Kajian Kitab',
-				desc: 'Publikasi jadwal pengajian, profil Kyai & Asatidz, serta karya/artikel santri.',
+				title: 'CMS Artikel Sederhana',
+				desc: 'Kemudahan mengolah berita kegiatan dan artikel dakwah pesantren secara mandiri.',
 				icon: 'BookOpen'
 			},
 			{
-				title: 'SIM Akademik & SPP',
-				desc: 'Integrasi cek tagihan bulanan santri dan riwayat pembayaran untuk wali santri.',
-				icon: 'CreditCard'
+				title: 'Profil & Visi Misi',
+				desc: 'Menampilkan sejarah, jajaran pengasuh, serta sarana prasarana pesantren secara profesional.',
+				icon: 'GraduationCap'
 			},
 			{
-				title: 'Donasi & Wakaf Digital',
-				desc: 'Fasilitas QRIS dan transfer bank untuk penerimaan infak pembangunan dan beasiswa santri.',
-				icon: 'HeartHandshake'
+				title: 'Desain Fast Loading',
+				desc: 'Halaman terbuka cepat walau diakses menggunakan jaringan seluler hemat data.',
+				icon: 'Zap'
+			},
+			{
+				title: 'Share Artikel WhatsApp',
+				desc: 'Kemudahan membagikan kajian dan pengumuman pesantren ke grup WhatsApp jamaah.',
+				icon: 'MessageSquare'
 			}
 		],
 		benefits: [
-			'Memudahkan wali santri dari luar daerah mendaftarkan putra-putrinya secara online',
-			'Meningkatkan kepercayaan publik melalui transparansi profil dan kegiatan santri',
-			'Tampilan mobile-friendly, cepat diakses walau dengan koneksi seluler hemat data',
-			'Termasuk pelatihan kelola konten gratis untuk admin atau pengurus santri'
+			'Memudahkan wali santri dan masyarakat mengakses kabar terbaru kegiatan pesantren',
+			'Meningkatkan kredibilitas pesantren di mesin pencarian Google',
+			'Dashboard pengelola artikel yang ramah pengguna, bahkan untuk pengurus awam',
+			'Biaya perpanjangan tahunan yang sangat terjangkau tanpa biaya tersembunyi'
 		],
 		faq: [
 			{
-				q: 'Apakah website pesantren mudah dikelola oleh pengurus yang belum mahir komputer?',
-				a: 'Sangat mudah! Kami menyediakah dashboard admin berbahasa Indonesia yang sangat intuitif serta buku petunjuk & video panduan.'
-			},
-			{
-				q: 'Berapa lama proses pembuatan website pesantren?',
-				a: 'Proses pembuatan memakan waktu sekitar 7 - 14 hari kerja tergantung kelengkapan materi seperti foto dan kurikulum.'
+				q: 'Apakah pengurus yang belum paham pemprograman bisa mengisi artikel?',
+				a: 'Sangat bisa! CMS artikel kami dirancang simpel seperti mengetik di aplikasi pesan. Kami juga memberikan panduan penggunaan.'
 			}
 		]
 	},
 	masjid: {
 		slug: 'masjid',
 		label: 'Masjid',
-		title: 'Jasa Pembuatan Website Masjid & Digitalisasi DKM',
-		tagline: 'Sistem Informasi Masjid Modern — Jadwal Sholat Otomatis, Laporan Kas Transparan, & QRIS Infaq',
-		description: 'Website resmi masjid dan musholla untuk sarana transparansi keuangan DKM, publikasi jadwal sholat & khotib, kajian rutin, serta kemudahan berinfaq via digital QRIS.',
+		title: 'Jasa Pembuatan Website Artikel & Informasi Masjid',
+		tagline: 'Website Media Dakwah Masjid — CMS Artikel Kajian, Jadwal Sholat, & Informasi DKM',
+		description: 'Solusi website artikel dan informasi masjid sederhana untuk sarana transparansi DKM, artikel khutbah/kajian, serta jadwal sholat terintegrasi.',
 		iconName: 'Landmark',
-		priceStarting: 'Rp 1.800.000',
+		priceStarting: 'Rp 1.000.000',
 		retailPackages: [
 			{
-				name: 'Paket DKM Standar',
-				price: 'Rp 1.800.000',
-				description: 'Paket retail siap pakai untuk transparansi kas DKM & informasi jadwal kajian.',
+				name: 'Paket Website Artikel Masjid',
+				price: 'Rp 1.000.000',
+				renewalPrice: 'Rp 800.000 / tahun',
+				isPopular: true,
+				description: 'Website artikel & berita masjid terima beres lengkap dengan jadwal sholat & informasi DKM.',
 				features: [
-					'Website Resmi Masjid & Profil Pengurus DKM',
-					'Integrasi Jadwal Sholat Otomatis Sesuai Kota/Kab',
-					'Modul Transparansi Laporan Kas & Pengeluaran',
-					'Integrasi QRIS Infaq & Rekening Donasi',
-					'Gratis Domain & Hosting 1 Tahun'
+					'CMS Artikel Kajian & Informasi DKM Sederhana',
+					'Integrasi Jadwal Sholat Otomatis Sesuai Wilayah',
+					'Halaman Laporan Kas & Informasi Infaq/Sedekah',
+					'Gratis Domain Resmi & High-Speed Cloud Hosting 1 Tahun',
+					'Setup Terima Beres & Pendampingan Admin Gratis',
+					'Biaya Perpanjangan Tahun Depan Cukup Rp 800.000 / tahun'
 				],
 				demoUrl: 'https://demo.barizaloka.id/masjid-basic'
-			},
-			{
-				name: 'Paket Digital Masjid + Display TV',
-				price: 'Rp 3.200.000',
-				isPopular: true,
-				description: 'Paket retail DKM plus tampilan Digital Signage / TV Display Masjid.',
-				features: [
-					'Semua Fitur Paket DKM Standar',
-					'Web Display TV Digital Masjid (Countdown Iqomah & Running Text)',
-					'Manajemen Jadwal Khutbah Jumat & Penceramah Kajian',
-					'Galeri Dokumentasi & Video Kegiatan Masjid',
-					'Gratis Domain .id & Support Maintenance 1 Tahun'
-				],
-				demoUrl: 'https://demo.barizaloka.id/masjid-display'
 			}
 		],
 		customSolution: {
-			title: 'Solusi Digitalisasi Masjid & Hub Keumatan Custom',
-			description: 'Dibutuhkan fitur kustom seperti sistem inventori barang masjid, donasi terpusat multi-program, atau aplikasi kajian live streaming?',
+			title: 'Fitur Khusus Digitalisasi Masjid',
+			description: 'Membutuhkan tampilan display TV masjid digital atau sistem inventori?',
 			customFeatures: [
-				'Sistem Donasi & Wakaf Terintegrasi Payment Gateway Auto-Check',
-				'Aplikasi Manajemen Event, Kajian, & Booking Aula Masjid',
-				'Sistem WhatsApp Broadcast Jamaah & Remind Jadwal Kajian'
+				'Web Display TV Digital Masjid (Countdown Iqomah)',
+				'Sistem Manajemen Event & Booking Aula',
+				'WhatsApp Gateway Broadcast Jamaah'
 			]
 		},
 		relatedNiches: ['pesantren', 'desa'],
 		features: [
 			{
-				title: 'Jadwal Sholat & Imsakiyah Live',
-				desc: 'Sinkronisasi otomatis jadwal sholat daerah dan countdown waktu menuju azan.',
-				icon: 'Clock'
-			},
-			{
-				title: 'Laporan Keuangan & Kas DKM',
-				desc: 'Transparansi pemasukan & pengeluaran kas masjid yang dapat diakses jemaah kapan saja.',
-				icon: 'PieChart'
-			},
-			{
-				title: 'Perpustakaan Digital & Jadwal Kajian',
-				desc: 'Publikasi poster kajian, profil penceramah, dan rekaman audio/video ceramah.',
+				title: 'CMS Ringkasan Kajian',
+				desc: 'Publikasi artikel tausiyah, jadwal khutbah Jumat, dan artikel keislaman.',
 				icon: 'Calendar'
 			},
 			{
-				title: 'Infaq & Sedekah QRIS',
-				desc: 'Integrasi kode QRIS resmi masjid untuk penerimaan sedekah subuh & donasi kurban.',
+				title: 'Jadwal Sholat Live',
+				desc: 'Penyesuaian waktu sholat otomatis sesuai lokasi kota/kabupaten masjid.',
+				icon: 'Clock'
+			},
+			{
+				title: 'Informasi Kas DKM',
+				desc: 'Halaman transparansi pengumuman keuangan kas masjid untuk jemaah.',
+				icon: 'PieChart'
+			},
+			{
+				title: 'QRIS Donasi Infaq',
+				desc: 'Tampilan kode QRIS resmi untuk memudahkan sedekah digital jamaah.',
 				icon: 'QrCode'
 			}
 		],
 		benefits: [
-			'Meningkatkan akuntabilitas dan kepercayaan jemaah terhadap transparansi dana DKM',
-			'Jemaah selalu mendapat update jadwal khutbah Jumat dan kajian rutin',
-			'Memudahkan jemaah luar kota atau perantau berinfaq ke masjid kampung halaman',
-			'Dukungan tampilan display TV digital / Running Text (opsional)'
+			'Memudahkan jemaah membaca ringkasan materi kajian dan khutbah Jumat',
+			'Transparansi informasi kegiatan dan laporan DKM masjid',
+			'Website siap pakai tanpa perlu konfigurasi teknis yang rumit',
+			'Garansi perbaikan bug dan pendampingan kelola konten'
 		],
 		faq: [
 			{
-				q: 'Bisakah pengeluaran kas di-update setiap minggu setelah sholat Jumat?',
-				a: 'Tentu, admin DKM dapat menginput laporan kas mingguan hanya dalam waktu 3 menit dari HP.'
+				q: 'Bagaimana cara memposting jadwal pengajian baru?',
+				a: 'Anda cukup login ke dashboard CMS sederhana, isi judul kajian dan pemateri, lalu klik publikasikan.'
 			}
 		]
 	},
 	desa: {
 		slug: 'desa',
 		label: 'Desa & Kelurahan',
-		title: 'Jasa Pembuatan Website Desa Cyber & Portal Publik',
-		tagline: 'Wujudkan Desa Digital Terdepan — Permohonan Surat Mandiri, Transparansi APBDes, & Potensi Lokal',
-		description: 'Platform portal desa terpadu untuk percepatan layanan publik warga desa, publikasi transparansi anggaran APBDes, pameran produk UMKM warga, dan promosi wisata daerah.',
+		title: 'Jasa Pembuatan Website Artikel & Kabar Desa',
+		tagline: 'Portal Informasi & Berita Desa Digital — CMS Artikel Publikasi, Transparansi, & Potensi Daerah',
+		description: 'Website artikel dan kabar desa digital sederhana untuk menyajikan pengumuman pemerintah desa, berita kegiatan warga, serta dokumentasi pembangunan.',
 		iconName: 'Building2',
-		priceStarting: 'Rp 3.000.000',
+		priceStarting: 'Rp 1.000.000',
 		retailPackages: [
 			{
-				name: 'Paket Portal Desa Standar',
-				price: 'Rp 3.000.000',
-				description: 'Paket retail resmi untuk pemenuhan KIP & transparansi APBDes.',
+				name: 'Paket Website Artikel Desa',
+				price: 'Rp 1.000.000',
+				renewalPrice: 'Rp 800.000 / tahun',
+				isPopular: true,
+				description: 'Website publikasi artikel & portal informasi desa sederhana terima beres.',
 				features: [
-					'Portal Berita & Kabar Desa Terbaru',
-					'Infografis Transparansi APBDes & Pembangunan',
-					'Profil Pemerintahan, Dusun, & Struktur Organisasi',
-					'Etalase Produk UMKM Warga Desa',
-					'Bantuan Pengurusan Domain Resmi .desa.id'
+					'CMS Artikel Berita & Pengumuman Desa Sederhana',
+					'Profil Pemerintahan, Struktur Desa & Peta Wilayah',
+					'Halaman Publikasi Infografis Transparansi Informasi',
+					'Bantuan Pengurusan Domain .desa.id & Hosting 1 Tahun',
+					'Keamanan Terjamin & Garansi Maintenance 1 Tahun',
+					'Biaya Perpanjangan Tahun Depan Cukup Rp 800.000 / tahun'
 				],
 				demoUrl: 'https://demo.barizaloka.id/desa-basic'
-			},
-			{
-				name: 'Paket Desa Cyber + Surat Online',
-				price: 'Rp 5.500.000',
-				isPopular: true,
-				description: 'Paket retail terlengkap dengan fitur pengajuan surat mandiri warga.',
-				features: [
-					'Semua Fitur Paket Portal Desa Standar',
-					'Layanan Surat Mandiri Online Warga (SKTM, Pengantar, dll)',
-					'Notifikasi Pengajuan Surat ke WhatsApp Perangkat Desa',
-					'Peta Wisata & Direktori Potensi Desa',
-					'Garansi Maintenance 1 Tahun Full & Pelatihan Admin'
-				],
-				demoUrl: 'https://demo.barizaloka.id/desa-cyber'
 			}
 		],
 		customSolution: {
-			title: 'Custom Software & Sistem Informasi Desa (SID) Terpadu',
-			description: 'Butuh pengembangan kustom seperti peta pemetaan GIS desa, integrasi server lokal balai desa, atau portal pengaduan warga?',
+			title: 'Pengembangan Aplikasi Desa Mandiri',
+			description: 'Dibutuhkan fitur surat online mandiri warga atau peta GIS kependudukan?',
 			customFeatures: [
-				'Peta GIS Interaktif Potensi, Wilayah, & Batas Desa',
-				'Integrasi Database Kependudukan & Statistik RT/RW',
-				'Sistem Pelaporan Pengaduan Warga & Tracking Status Surat'
+				'Layanan Permohonan Surat Online Mandiri Warga',
+				'Peta GIS Interaktif Potensi & Wilayah Desa',
+				'Sistem Tracking Pengaduan Masyarakat'
 			]
 		},
 		relatedNiches: ['umkm', 'pesantren', 'masjid'],
 		features: [
 			{
-				title: 'Layanan Surat Online Warga',
-				desc: 'Permohonan surat pengantar RT/RW, SKTM, dan ketenagakerjaan dari smartphone warga.',
+				title: 'CMS Kabar Desa',
+				desc: 'Publikasi artikel rilis berita pembangunan dan kegiatan warga desa.',
 				icon: 'FileText'
 			},
 			{
-				title: 'Transparansi APBDes & Infografis',
-				desc: 'Visualisasi anggaran pembangunan desa secara rinci, akuntabel, dan sesuai regulasi Kemendagri.',
+				title: 'Profil Organisasi Desa',
+				desc: 'Menampilkan jajaran perangkat desa, lembaga kemasyarakatan, dan peta lokasi.',
+				icon: 'Building2'
+			},
+			{
+				title: 'Transparansi Informasi',
+				desc: 'Unggah infografis APBDes dan laporan pertanggungjawaban publik.',
 				icon: 'BarChart3'
 			},
 			{
-				title: 'Lapak Lapak Desa (UMKM Warga)',
-				desc: 'Katalog online produk kerajinan dan pertanian warga desa untuk memperluas pasar.',
-				icon: 'ShoppingBag'
-			},
-			{
-				title: 'Peta & Potensi Wisata Desa',
-				desc: 'Informasi destinasi wisata, kebudayaan daerah, serta profil struktur pemerintahan desa.',
-				icon: 'MapPin'
+				title: 'Domain .desa.id',
+				desc: 'Pendampingan verifikasi domain resmi pemerintah desa hingga aktif.',
+				icon: 'ShieldCheck'
 			}
 		],
 		benefits: [
-			'Memenuhi standar Keterbukaan Informasi Publik (KIP) Pemerintah Desa',
-			'Memangkas antrean di balai desa dengan pengajuan administrasi warga secara digital',
-			'Mendorong pertumbuhan ekonomi warga desa melalui etalase UMKM desa',
-			'Keamanan data tinggi serta domain resmi .desa.id / .go.id'
+			'Perangkat desa dapat mengunggah artikel pengumuman dengan mudah dari smartphone',
+			'Meningkatkan transparansi publik sesuai standar keterbukaan informasi',
+			'Gratis konsultasi teknis dan pemeliharaan server tahunan',
+			'Perpanjangan terjangkau hanya 800 ribu per tahun'
 		],
 		faq: [
 			{
-				q: 'Apakah membantu proses pengurusan domain resmi .desa.id?',
-				a: 'Ya, kami membantu persiapan dokumen persyaratan dan pendaftaran domain .desa.id ke Kominfo sampai aktif.'
+				q: 'Apakah bisa dibantu mendaftarkan domain resmi .desa.id?',
+				a: 'Tentu! Kami bantu penyiapan berkas SK dan pendaftaran domain resmi desa ke Kominfo.'
 			}
 		]
 	},
 	umkm: {
 		slug: 'umkm',
 		label: 'UMKM & Bisnis',
-		title: 'Jasa Pembuatan Website UMKM & Katalog Produk',
-		tagline: 'Tingkatkan Penjualan & Kredibilitas Bisnis Anda — Landing Page Konversi Tinggi & Checkout WhatsApp',
-		description: 'Solusi pembuatan website bisnis dan landing page profesional untuk UMKM, toko lokal, dan pengusaha agar tampil meyakinkan di Google, menarik lebih banyak pembeli, dan otomatisasi pesanan ke WhatsApp.',
+		title: 'Jasa Pembuatan Website Artikel & Katalog Bisnis',
+		tagline: 'Tingkatkan Penjualan & SEO Bisnis Anda — CMS Artikel Edukasi Produk & Direct Order WhatsApp',
+		description: 'Website artikel dan blog usaha sederhana untuk memperluas jangkauan pembeli di Google melalui konten edukasi produk serta tombol pemesanan langsung ke WhatsApp.',
 		iconName: 'Store',
-		priceStarting: 'Rp 1.500.000',
+		priceStarting: 'Rp 1.000.000',
 		retailPackages: [
 			{
-				name: 'Paket Landing Page Sales',
-				price: 'Rp 1.500.000',
-				description: 'Paket retail 1 halaman tinggi konversi cocok untuk promosi produk/jasa spesifik.',
+				name: 'Paket Website Artikel UMKM',
+				price: 'Rp 1.000.000',
+				renewalPrice: 'Rp 800.000 / tahun',
+				isPopular: true,
+				description: 'Website artikel & katalog usaha sederhana terima beres untuk mendatangkan pelanggan dari Google.',
 				features: [
-					'Landing Page Professional 1 Halaman High-Conversion',
-					'Form Checkout / Tombol Order Langsung ke WhatsApp',
-					'Desain Modern, Fast Loading & Mobile Optimized',
-					'Integrasi Google Maps & Social Media',
-					'Gratis Domain & Hosting 1 Tahun'
+					'CMS Artikel Edukasi Produk & Blog Bisnis Sederhana',
+					'Galeri Katalog Usaha & Tombol Order WhatsApp',
+					'Optimasi SEO Artikel Agar Mudah Ditemukan di Google',
+					'Gratis Domain (.com / .id) & High-Speed Hosting 1 Tahun',
+					'Setup Terima Beres Lengkap Dengan Garansi Error',
+					'Biaya Perpanjangan Tahun Depan Cukup Rp 800.000 / tahun'
 				],
 				demoUrl: 'https://demo.barizaloka.id/umkm-landing'
-			},
-			{
-				name: 'Paket Katalog Bisnis Pro',
-				price: 'Rp 2.800.000',
-				isPopular: true,
-				description: 'Paket retail katalog produk multi-halaman dengan filter kategori.',
-				features: [
-					'Website Multi-Halaman dengan Katalog Produk Unlimited',
-					'Pencarian & Filter Kategori Produk Interaktif',
-					'Checkout Order WhatsApp Otomatis (Detail Barang & Alamat)',
-					'Optimasi SEO Lokal (Google Business Profile Ready)',
-					'Gratis Domain .com/.id & Support Maintenance 1 Tahun'
-				],
-				demoUrl: 'https://demo.barizaloka.id/umkm-katalog'
 			}
 		],
 		customSolution: {
-			title: 'Custom E-Commerce & Web App Bisnis Tailor-Made',
-			description: 'Membutuhkan toko online full checkout, sistem keanggotaan/reseller, integrasi stok otomatis, atau payment gateway?',
+			title: 'Fitur E-Commerce & Web App Custom',
+			description: 'Membutuhkan toko online dengan shopping cart otomatis dan payment gateway?',
 			customFeatures: [
-				'Toko Online Full Shopping Cart & Multi Payment Gateway',
-				'Sistem Manajemen Stok Automatis & Laporan Penjualan',
-				'Portal Reseller, Dropshipper, & Loyalty Member Point'
+				'Toko Online Payment Gateway & Otomatisasi Ongkir',
+				'Sistem Keanggotaan Member / Reseller Point',
+				'Integrasi Inventori Stok & Laporan Penjualan'
 			]
 		},
 		relatedNiches: ['sepeda-listrik', 'desa'],
 		features: [
 			{
-				title: 'Katalog Produk Interaktif',
-				desc: 'Tampilan galeri produk jernih dengan variasi harga, opsi warna, dan fitur filter kategoris.',
-				icon: 'LayoutGrid'
-			},
-			{
-				title: 'Order Direct to WhatsApp',
-				desc: 'Tombol beli otomatis menyusun pesan format order lengkap beserta nama barang dan alamat.',
-				icon: 'MessageSquare'
-			},
-			{
-				title: 'SEO Lokal & Google Maps',
-				desc: 'Optimasi kata kunci bisnis daerah agar toko Anda berada di peringkat teratas pencarian Google.',
+				title: 'Blog Artikel SEO',
+				desc: 'Menulis artikel edukasi bisnis untuk mendatangkan pengunjung organik dari pencarian Google.',
 				icon: 'Search'
 			},
 			{
-				title: 'Fast Loading & Mobile Responsive',
-				desc: 'Halaman terbuka kurang dari 1 detik di koneksi seluler untuk mencegah calon pembeli kabur.',
+				title: 'Katalog Usaha Simpel',
+				desc: 'Menampilkan foto produk unggulan, daftar harga, dan keunggulan jasa Anda.',
+				icon: 'Store'
+			},
+			{
+				title: 'Order via WhatsApp',
+				desc: 'Tombol beli otomatis yang terhubung ke nomor WhatsApp penjual.',
+				icon: 'MessageSquare'
+			},
+			{
+				title: 'Tampilan Fast Loading',
+				desc: 'Mengoptimalkan kecepatan baca pengunjung di seluruh tipe smartphone.',
 				icon: 'Zap'
 			}
 		],
 		benefits: [
-			'Membangun citra brand profesional yang jauh lebih dipercaya dibanding hanya media sosial',
-			'Katalog berjalan 24 jam nonstop tanpa perlu sering kirim foto satu per satu di Chat',
-			'Dapat dihubungkan dengan Google Ads & Meta Ads (TikTok/FB Ads) untuk promosi cepat',
-			'Gratis konsultasi strategi konten dan branding awal'
+			'Meningkatkan kepercayaan calon konsumen dibanding hanya berjualan di media sosial',
+			'Artikel bisnis bekerja 24 jam nonstop sebagai tim pemasaran digital Anda',
+			'Mudah dioperasikan untuk mengupdate artikel atau produk promo terbaru',
+			'Investasi digital hemat terima beres hanya 1 Juta Rupiah'
 		],
 		faq: [
 			{
-				q: 'Saya belum punya logo dan foto produk bagus, apakah bisa dibantu?',
-				a: 'Bisa! Kami memiliki tim kreatif untuk membantu perapihan foto produk dan desain logo dasar.'
+				q: 'Apakah penulisan artikel pertama dibantu?',
+				a: 'Ya, kami bantu memasukkan materi artikel dan foto produk perdana Anda hingga website siap tayang.'
 			}
 		]
 	},
 	'sepeda-listrik': {
 		slug: 'sepeda-listrik',
 		label: 'Toko Sepeda Listrik',
-		title: 'Jasa Pembuatan Website Toko Sepeda & Motor Listrik',
-		tagline: 'Showroom Digital Kendaraan Listrik — Spesifikasi Unit, Baterai, Simulasi Kredit, & Booking Test Drive',
-		description: 'Website showroom interaktif khusus dealer, agen, dan toko sepeda/motor listrik untuk menyajikan spesifikasi kapasitas baterai, jarak tempuh, garansi resmi, serta fitur booking test drive.',
+		title: 'Jasa Pembuatan Website Artikel & Informasi Showroom',
+		tagline: 'Katalog & Artikel Edukasi Sepeda Listrik — CMS Berita Unit, Review Baterai, & Kontak Sales',
+		description: 'Website artikel dan informasi unit sepeda/motor listrik untuk memberikan panduan perawatan, review spesifikasi baterai, serta kontak pemesanan sales.',
 		iconName: 'Zap',
-		priceStarting: 'Rp 2.000.000',
+		priceStarting: 'Rp 1.000.000',
 		retailPackages: [
 			{
-				name: 'Paket Showroom Basic',
-				price: 'Rp 2.000.000',
-				description: 'Paket retail showroom digital untuk menampilkan katalog tipe sepeda & motor listrik.',
+				name: 'Paket Website Artikel Showroom',
+				price: 'Rp 1.000.000',
+				renewalPrice: 'Rp 800.000 / tahun',
+				isPopular: true,
+				description: 'Website artikel & katalog sepeda listrik terima beres terhubung ke kontak sales WA.',
 				features: [
-					'Katalog Unit Sepeda & Motor Listrik',
-					'Detail Spesifikasi (Baterai, Watt, Jarak Tempuh, Garansi)',
-					'Tombol Order & Tanya Sales via WhatsApp',
-					'Integrasi Alamat Showroom & Google Maps',
-					'Gratis Domain & Hosting 1 Tahun'
+					'CMS Artikel Edukasi Baterai & Review Unit Sederhana',
+					'Katalog Spesifikasi Sepeda Listrik & Kontak Sales WA',
+					'Tampilan Fast Loading di Seluruh Perangkat',
+					'Gratis Domain Resmi & High-Speed Hosting 1 Tahun',
+					'Setup Terima Beres Tinggal Kirimkan Materi Unit',
+					'Biaya Perpanjangan Tahun Depan Cukup Rp 800.000 / tahun'
 				],
 				demoUrl: 'https://demo.barizaloka.id/sepeda-listrik-basic'
-			},
-			{
-				name: 'Paket Dealer Pro & Test Drive',
-				price: 'Rp 3.800.000',
-				isPopular: true,
-				description: 'Paket retail lengkap dengan fitur booking test drive & kalkulator simulasi kredit.',
-				features: [
-					'Semua Fitur Paket Showroom Basic',
-					'Form Pendaftaran Booking Test Drive Online',
-					'Kalkulator Perkiraan Simulasi Cicilan/Kredit',
-					'Direktori Sparepart, Baterai, & Service Center',
-					'Gratis Domain .com & Maintenance 1 Tahun'
-				],
-				demoUrl: 'https://demo.barizaloka.id/sepeda-listrik-dealer'
 			}
 		],
 		customSolution: {
-			title: 'Custom System Dealer & Multi-Branch Sales Assignment',
-			description: 'Membutuhkan platform custom untuk pengelolaan multi-cabang showroom, integrasi tim sales daerah, atau klaim garansi digital?',
+			title: 'Fitur Dealer Custom Multi-Branch',
+			description: 'Dibutuhkan fitur kalkulator simulasi kredit atau booking test drive online?',
 			customFeatures: [
-				'Sistem Penugasan Leads Sales Berdasarkan Cabang Terdekat',
-				'Integrasi API Lembaga Pembiayaan / Leasing Kredit',
-				'Portal Modul Klaim Garansi & Tracking Servis Kendaraan'
+				'Kalkulator Perkiraan Cicilan Kredit Unit',
+				'Form Booking Test Drive Online Warga',
+				'Sistem Routing Leads Sales Multi-Cabang'
 			]
 		},
 		relatedNiches: ['umkm'],
 		features: [
 			{
-				title: 'Spesifikasi Baterai & Motor',
-				desc: 'Visualisasi daya watt, baterai lithium/lead-acid, kecepatan maks, dan jarak tempuh km.',
+				title: 'Artikel Review Unit',
+				desc: 'Menyajikan artikel komparasi tipe sepeda listrik dan keunggulan daya tahan baterai.',
 				icon: 'BatteryCharging'
 			},
 			{
-				title: 'Simulasi Kredit & Angsuran',
-				desc: 'Kalkulator perkiraan cicilan bulanan untuk calon pembeli kendaraan listrik.',
-				icon: 'Calculator'
+				title: 'Spesifikasi Produk',
+				desc: 'Rincian kecepatan maksimal, jarak tempuh km, beban maks, dan pilihan warna.',
+				icon: 'Zap'
 			},
 			{
-				title: 'Booking Test Drive Online',
-				desc: 'Form pendaftaran uji coba sepeda listrik langsung di showroom toko.',
-				icon: 'Navigation'
+				title: 'Kontak Direct Sales',
+				desc: 'Tombol konsultasi yang langsung menghubungkan calon pembeli ke WhatsApp sales.',
+				icon: 'MessageSquare'
 			},
 			{
-				title: 'Katalog Sparepart & Garansi',
-				desc: 'Informasi ketersediaan suku cadang, titik service center, dan klaim garansi.',
-				icon: 'ShieldCheck'
+				title: 'SEO Lokal Dealer',
+				desc: 'Optimasi kata kunci pencarian toko sepeda listrik terdekat di wilayah Anda.',
+				icon: 'Search'
 			}
 		],
 		benefits: [
-			'Menjawab pertanyaan teknis pelanggan (baterai, beban maks, garansi) secara otomatis',
-			'Memudahkan calon pembeli membandingkan beberapa tipe sepeda listrik secara langsung',
-			'Meningkatkan angka kunjungan ke toko fisik melalui fitur janji test drive',
-			'Terhubung langsung dengan tim marketing dealer via WhatsApp'
+			'Calon pembeli dapat membaca artikel panduan memilih sepeda listrik sebelum berkunjung ke toko',
+			'Memudahkan sales menjawab pertanyaan seputar spesifikasi dan garansi baterai',
+			'Tampilan menarik, profesional, dan dapat diperbarui kapan saja',
+			'Perpanjangan tahunan hemat 800 ribu rupiah'
 		],
 		faq: [
 			{
-				q: 'Apakah bisa untuk cabang toko lebih dari satu lokasi?',
-				a: 'Bisa! Website dapat menampilkan daftar cabang showroom beserta nomor WhatsApp masing-masing sales.'
+				q: 'Apakah bisa menambahkan artikel ulasan tipe sepeda listrik baru di kemudian hari?',
+				a: 'Sangat bisa, Anda dapat menambahkan artikel review baru kapan saja melalui CMS yang sangat mudah.'
 			}
 		]
 	}

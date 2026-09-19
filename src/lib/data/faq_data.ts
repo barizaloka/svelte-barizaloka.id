@@ -10,43 +10,43 @@ export const FAQ_DATA: FaqItem[] = [
 		id: '1',
 		category: 'Umum',
 		question: 'Apa itu Barizaloka?',
-		answer: 'Barizaloka adalah ekosistem teknologi dari Rembang, Jawa Tengah yang berfokus pada penyediaan layanan pembuatan website profesional, sistem informasi pesantren/desa, dan edukasi pengembangan perangkat lunak (Baricode Indonesia).'
+		answer: 'Barizaloka adalah ekosistem teknologi dari Rembang, Jawa Tengah yang berfokus pada penyediaan layanan pembuatan website profesional terima beres, sistem informasi pesantren/desa, dan edukasi perangkat lunak.'
 	},
 	{
 		id: '2',
 		category: 'Umum',
-		question: 'Berapa lama proses pengerjaan pembuatan website?',
-		answer: 'Estimasi waktu pengerjaan berkisar antara 5 hingga 14 hari kerja, tergantung pada kompleksitas paket yang dipilih dan kelengkapan materi (foto, teks profil, logo) dari klien.'
+		question: 'Berapa biaya pembuatan website di Barizaloka?',
+		answer: 'Biaya pembuatan website di Barizaloka adalah Rp 1.000.000 (1 Juta Terima Beres) untuk tahun pertama. Sudah termasuk desain custom, gratis domain, high-speed cloud hosting, input konten, dan garansi maintenance 1 tahun.'
 	},
 	{
 		id: '3',
+		category: 'Pembayaran & Garansi',
+		question: 'Berapa biaya perpanjangan tahun berikutnya?',
+		answer: 'Biaya perpanjangan di tahun kedua dan seterusnya adalah Rp 800.000 / tahun. Biaya ini sudah mencakup perpanjangan Domain, Cloud Hosting NVMe high-speed, serta dukungan teknis & maintenance.'
+	},
+	{
+		id: '4',
+		category: 'Umum',
+		question: 'Apa yang dimaksud dengan "Terima Beres"?',
+		answer: 'Terima beres artinya Anda cukup menyiapkan bahan dasar (seperti nama bisnis/lembaga, teks profil, foto/logo, dan nomor kontak). Seluruh proses teknis mulai dari pendaftaran domain, setting hosting, desain layout, hingga input konten dilakukan penuh oleh tim Barizaloka.'
+	},
+	{
+		id: '5',
 		category: 'Pesantren & Masjid',
 		question: 'Apakah pengurus pesantren/masjid yang awam teknologi bisa mengelola websitenya?',
 		answer: 'Sangat bisa! Kami merancang dashboard admin yang sangat simpel dan berbahasa Indonesia. Kami juga menyertakan video panduan dan pendampingan konsultasi jika ada kesulitan.'
 	},
 	{
-		id: '4',
-		category: 'Pesantren & Masjid',
-		question: 'Apakah website pesantren bisa menerima pendaftaran santri baru (PSB) online?',
-		answer: 'Ya, modul PSB Online sudah tersedia pada paket Pesantren, mencakup pengisian data santri, upload dokumen ijazah/KK, hingga notifikasi pendaftaran.'
-	},
-	{
-		id: '5',
+		id: '6',
 		category: 'Desa & UMKM',
 		question: 'Apakah Barizaloka membantu pendaftaran domain resmi .desa.id?',
 		answer: 'Tentu. Tim kami akan membantu penyiapan berkas verifikasi SK Kepala Desa/Perdes dan membantu proses pendaftaran domain ke Kominfo hingga aktif.'
 	},
 	{
-		id: '6',
+		id: '7',
 		category: 'Desa & UMKM',
 		question: 'Apakah order katalog UMKM langsung terhubung ke WhatsApp?',
 		answer: 'Ya! Setiap tombol beli atau konsultasi akan otomatis membuka pesan WhatsApp dengan format order yang rapi memuat nama produk, varian, dan jumlah.'
-	},
-	{
-		id: '7',
-		category: 'Domain & Hosting',
-		question: 'Apakah harga paket sudah termasuk domain dan hosting?',
-		answer: 'Seluruh paket jasa pembuatan website di Barizaloka sudah gratis domain (.com / .id / .desa.id) dan cloud hosting NVMe high speed untuk tahun pertama.'
 	},
 	{
 		id: '8',

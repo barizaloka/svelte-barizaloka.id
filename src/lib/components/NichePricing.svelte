@@ -46,9 +46,16 @@
 							{/if}
 						</div>
 
-						<div class="flex items-baseline gap-1 border-b border-slate-200 dark:border-slate-800 pb-6">
-							<span class="text-3xl sm:text-4xl font-black text-emerald-600 dark:text-emerald-400">{pkg.price}</span>
-							<span class="text-xs text-slate-500 dark:text-slate-400">/ nett</span>
+						<div class="space-y-1 border-b border-slate-200 dark:border-slate-800 pb-6">
+							<div class="flex items-baseline gap-2">
+								<span class="text-3xl sm:text-4xl font-black text-emerald-600 dark:text-emerald-400">{pkg.price}</span>
+								<span class="text-xs font-bold text-slate-500 dark:text-slate-400">(Terima Beres)</span>
+							</div>
+							{#if pkg.renewalPrice}
+								<div class="text-xs text-emerald-700 dark:text-emerald-300 font-semibold">
+									Perpanjang tahun depan: <span class="font-bold">{pkg.renewalPrice}</span>
+								</div>
+							{/if}
 						</div>
 
 						<ul class="space-y-3 text-xs text-slate-700 dark:text-slate-300">

@@ -265,10 +265,10 @@
 			</p>
 		</div>
 
-		<div class="grid grid-cols-1 gap-8 lg:grid-cols-3 items-stretch">
+		<div class="max-w-2xl mx-auto">
 			{#each packages as pkg}
 				<div
-					class="relative flex flex-col justify-between rounded-3xl border p-6 sm:p-8 backdrop-blur-xl transition-all duration-300 {pkg.popular ? 'border-emerald-500 bg-white dark:bg-slate-900 shadow-2xl shadow-emerald-500/10 scale-[1.02]' : 'border-slate-200 bg-white/90 dark:border-slate-800 dark:bg-slate-900/60 hover:border-slate-300 dark:hover:border-slate-700'}"
+					class="relative flex flex-col justify-between rounded-3xl border border-emerald-500 bg-white dark:bg-slate-900 p-6 sm:p-8 backdrop-blur-xl shadow-2xl shadow-emerald-500/10 transition-all duration-300"
 				>
 					{#if pkg.badge}
 						<div class="absolute -top-3.5 left-1/2 -translate-x-1/2">
@@ -279,21 +279,29 @@
 					{/if}
 
 					<div class="space-y-6">
-						<div>
-							<h4 class="text-lg font-bold text-slate-900 dark:text-white">{pkg.name}</h4>
-							<p class="text-xs text-slate-500 dark:text-slate-400 mt-1 min-h-[32px]">{pkg.tagline}</p>
+						<div class="text-center">
+							<h4 class="text-xl font-bold text-slate-900 dark:text-white">{pkg.name}</h4>
+							<p class="text-xs text-slate-500 dark:text-slate-400 mt-1">{pkg.tagline}</p>
 						</div>
 
-						<div class="flex items-baseline gap-2">
-							<span class="text-3xl font-black text-emerald-600 dark:text-emerald-400">{pkg.price}</span>
-							{#if pkg.originalPrice}
-								<span class="text-xs text-slate-400 dark:text-slate-500 line-through">{pkg.originalPrice}</span>
+						<div class="flex flex-col items-center justify-center rounded-2xl border border-emerald-500/20 bg-emerald-500/5 p-4 text-center space-y-1">
+							<div class="flex items-baseline gap-2">
+								<span class="text-3xl sm:text-4xl font-black text-emerald-600 dark:text-emerald-400">{pkg.price}</span>
+								{#if pkg.originalPrice}
+									<span class="text-xs text-slate-400 dark:text-slate-500 line-through">{pkg.originalPrice}</span>
+								{/if}
+							</div>
+							<span class="text-xs font-semibold text-slate-600 dark:text-slate-300">Biaya Pembuatan Terima Beres (Tahun 1)</span>
+							{#if pkg.renewalPrice}
+								<div class="mt-2 text-xs font-bold text-emerald-700 dark:text-emerald-400">
+									Perpanjangan Tahun Depan: {pkg.renewalPrice}
+								</div>
 							{/if}
 						</div>
 
 						<div class="space-y-2 border-t border-slate-200 dark:border-slate-800 pt-6">
 							<div class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">Fitur Termasuk:</div>
-							<ul class="space-y-2 text-xs text-slate-700 dark:text-slate-300">
+							<ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-700 dark:text-slate-300">
 								{#each pkg.features as feat}
 									<li class="flex items-start gap-2">
 										<CheckCircle2 class="h-4 w-4 text-emerald-600 dark:text-emerald-400 flex-shrink-0 mt-0.5" />
@@ -309,7 +317,7 @@
 							href="https://wa.me/6281234567890?text={encodeURIComponent(pkg.whatsappMessage)}"
 							target="_blank"
 							rel="noopener noreferrer"
-							class="flex w-full items-center justify-center gap-2 rounded-xl py-3.5 text-xs font-bold transition-all {pkg.popular ? 'bg-emerald-500 text-slate-950 hover:bg-emerald-400 shadow-lg shadow-emerald-500/20' : 'bg-slate-100 text-slate-800 hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-200 dark:hover:bg-slate-700'}"
+							class="flex w-full items-center justify-center gap-2 rounded-2xl py-3.5 text-xs font-extrabold transition-all bg-gradient-to-r from-emerald-500 to-teal-400 text-slate-950 hover:from-emerald-400 hover:to-teal-300 shadow-lg shadow-emerald-500/20"
 						>
 							<MessageSquare class="h-4 w-4" />
 							<span>{pkg.ctaText}</span>
