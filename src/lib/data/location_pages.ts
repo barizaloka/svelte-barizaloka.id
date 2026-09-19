@@ -15,7 +15,8 @@ export const LOCATION_PAGES: Record<string, LocationInfo> = {
 		provinceSlug: 'jawa-tengah',
 		provinceName: 'Jawa Tengah',
 		type: 'Kabupaten',
-		highlights: 'Kota santri & pusat industri kreatif pesisir utara dengan ribuan UMKM dan pesantren berprestasi.',
+		highlights:
+			'Kota santri & pusat industri kreatif pesisir utara dengan ribuan UMKM dan pesantren berprestasi.',
 		nearbyLocations: ['pati', 'blora', 'kudus', 'jepara']
 	},
 	pati: {
@@ -24,7 +25,8 @@ export const LOCATION_PAGES: Record<string, LocationInfo> = {
 		provinceSlug: 'jawa-tengah',
 		provinceName: 'Jawa Tengah',
 		type: 'Kabupaten',
-		highlights: 'Pusat perikanan, pertanian, dan bisnis manufaktur yang berkembang pesat di Jawa Tengah.',
+		highlights:
+			'Pusat perikanan, pertanian, dan bisnis manufaktur yang berkembang pesat di Jawa Tengah.',
 		nearbyLocations: ['rembang', 'kudus', 'jepara', 'blora']
 	},
 	kudus: {
@@ -60,7 +62,8 @@ export const LOCATION_PAGES: Record<string, LocationInfo> = {
 		provinceSlug: 'jawa-tengah',
 		provinceName: 'Jawa Tengah',
 		type: 'Kota',
-		highlights: 'Ibu kota Provinsi Jawa Tengah, pusat bisnis perbankan, perdagangan, dan pendidikan tinggi.',
+		highlights:
+			'Ibu kota Provinsi Jawa Tengah, pusat bisnis perbankan, perdagangan, dan pendidikan tinggi.',
 		nearbyLocations: ['kudus', 'demak', 'kenal', 'salatiga']
 	},
 	solo: {
@@ -78,7 +81,8 @@ export const LOCATION_PAGES: Record<string, LocationInfo> = {
 		provinceSlug: 'di-yogyakarta',
 		provinceName: 'DI Yogyakarta',
 		type: 'Kota',
-		highlights: 'Kota pelajar dan wisata internasional dengan iklim ekonomi kreatif dan teknologi yang sangat maju.',
+		highlights:
+			'Kota pelajar dan wisata internasional dengan iklim ekonomi kreatif dan teknologi yang sangat maju.',
 		nearbyLocations: ['sleman', 'bantul', 'kulon-progo', 'solo']
 	},
 	surabaya: {
@@ -87,7 +91,8 @@ export const LOCATION_PAGES: Record<string, LocationInfo> = {
 		provinceSlug: 'jawa-timur',
 		provinceName: 'Jawa Timur',
 		type: 'Kota',
-		highlights: 'Metropolitan perdagangan & industri terbesar kedua di Indonesia dengan jutaan pelaku usaha.',
+		highlights:
+			'Metropolitan perdagangan & industri terbesar kedua di Indonesia dengan jutaan pelaku usaha.',
 		nearbyLocations: ['sidoarjo', 'gresik', 'mojokerto']
 	},
 	jakarta: {

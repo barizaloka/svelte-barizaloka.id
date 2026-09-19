@@ -216,7 +216,19 @@ export class DomainService {
 			return 'taken';
 		} catch (err: any) {
 			// Fallback simulation for known taken domains if network/CORS is interrupted
-			const takenKeywords = ['google', 'facebook', 'tokopedia', 'barizaloka', 'detik', 'kompas', 'shopee', 'gojek', 'grab', 'bca', 'mandiri'];
+			const takenKeywords = [
+				'google',
+				'facebook',
+				'tokopedia',
+				'barizaloka',
+				'detik',
+				'kompas',
+				'shopee',
+				'gojek',
+				'grab',
+				'bca',
+				'mandiri'
+			];
 			const isKnownTaken = takenKeywords.some((k) => fullName.toLowerCase().includes(k));
 			if (isKnownTaken) return 'taken';
 

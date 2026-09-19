@@ -11,11 +11,11 @@ publishedAt: '2026-05-20'
 readTime: 5 menit baca
 image: https://barizaloka.id/og-image.png
 tags:
-- Sarang
-- Rembang
-- Pesantren
-- UMKM
-- Website
+  - Sarang
+  - Rembang
+  - Pesantren
+  - UMKM
+  - Website
 metaTitle: 'Jasa Website Sarang Rembang: Solusi Digital untuk Pesantren dan UMKM |
   Barizaloka'
 metaDescription: Di era digital saat ini, memiliki website bukan lagi sekadar pilihan,
@@ -59,11 +59,11 @@ Barizaloka hadir untuk mengatasi kendala ini. Kami menawarkan solusi yang disesu
 
 Barizaloka bukan sekadar vendor pembuatan website. Kami adalah mitra digital yang paham kebutuhan lokal. Beberapa keunggulan yang membedakan kami dari agensi lain:
 
-- **Pemahaman Ekosistem Pesantren**  – Tim kami memiliki latar belakang dan pengalaman bekerja dengan pesantren, sehingga kami tahu bagaimana membangun website yang sesuai dengan nilai dan budaya pesantren. Kami juga memahami kebutuhan administratif dan akademik pesantren.
-- **Harga Terjangkau**  – Kami menawarkan paket layanan mulai dari Rp500.000 hingga Rp2.000.000, tergantung fitur dan kompleksitas. Kami yakin bahwa digitalisasi tidak harus mahal.
-- **SEO-Friendly**  – Setiap website yang kami buat dioptimasi untuk mesin pencari, dengan fokus pada kata kunci seperti "jasa website Sarang Rembang", "website pesantren Sarang", dan "UMKM Rembang". Ini membantu Anda muncul di halaman pertama Google.
-- **Dukungan Penuh**  – Kami memberikan dukungan teknis dan konsultasi gratis setelah website diluncurkan. Kami juga menyediakan pelatihan penggunaan dashboard website.
-- **Desain Responsif**  – Website kami tampil sempurna di desktop, tablet, dan ponsel. Mengingat banyak pengguna internet di Indonesia mengakses via ponsel, desain responsif sangat penting.
+- **Pemahaman Ekosistem Pesantren** – Tim kami memiliki latar belakang dan pengalaman bekerja dengan pesantren, sehingga kami tahu bagaimana membangun website yang sesuai dengan nilai dan budaya pesantren. Kami juga memahami kebutuhan administratif dan akademik pesantren.
+- **Harga Terjangkau** – Kami menawarkan paket layanan mulai dari Rp500.000 hingga Rp2.000.000, tergantung fitur dan kompleksitas. Kami yakin bahwa digitalisasi tidak harus mahal.
+- **SEO-Friendly** – Setiap website yang kami buat dioptimasi untuk mesin pencari, dengan fokus pada kata kunci seperti "jasa website Sarang Rembang", "website pesantren Sarang", dan "UMKM Rembang". Ini membantu Anda muncul di halaman pertama Google.
+- **Dukungan Penuh** – Kami memberikan dukungan teknis dan konsultasi gratis setelah website diluncurkan. Kami juga menyediakan pelatihan penggunaan dashboard website.
+- **Desain Responsif** – Website kami tampil sempurna di desktop, tablet, dan ponsel. Mengingat banyak pengguna internet di Indonesia mengakses via ponsel, desain responsif sangat penting.
 
 ## Proses Pembuatan Website oleh Barizaloka
 
@@ -81,9 +81,9 @@ Kami mengikuti alur kerja yang sistematis dan transparan. Pertama, konsultasi aw
 
 Kami memiliki beberapa paket yang bisa disesuaikan:
 
-- **Paket Basic**  – Cocok untuk profil sederhana. Harga mulai Rp500.000. Termasuk 5 halaman, hosting 1 tahun, domain gratis .com, dan SSL.
-- **Paket Bisnis**  – Cocok untuk UMKM. Harga mulai Rp1.200.000. Termasuk 10 halaman, toko online sederhana, integrasi WhatsApp, dan optimasi SEO dasar.
-- **Paket Premium**  – Cocok untuk pesantren atau institusi. Harga mulai Rp2.000.000. Termasuk halaman tak terbatas, fitur pendaftaran online, galeri, blog, dan pelatihan admin.
+- **Paket Basic** – Cocok untuk profil sederhana. Harga mulai Rp500.000. Termasuk 5 halaman, hosting 1 tahun, domain gratis .com, dan SSL.
+- **Paket Bisnis** – Cocok untuk UMKM. Harga mulai Rp1.200.000. Termasuk 10 halaman, toko online sederhana, integrasi WhatsApp, dan optimasi SEO dasar.
+- **Paket Premium** – Cocok untuk pesantren atau institusi. Harga mulai Rp2.000.000. Termasuk halaman tak terbatas, fitur pendaftaran online, galeri, blog, dan pelatihan admin.
 
 Semua paket didukung dengan desain modern, responsive, dan kecepatan loading yang baik.
 

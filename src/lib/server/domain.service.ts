@@ -43,7 +43,17 @@ export class DomainServerService {
 				}
 			}
 
-			const takenKeywords = ['google', 'facebook', 'tokopedia', 'barizaloka', 'detik', 'kompas', 'shopee', 'gojek', 'grab'];
+			const takenKeywords = [
+				'google',
+				'facebook',
+				'tokopedia',
+				'barizaloka',
+				'detik',
+				'kompas',
+				'shopee',
+				'gojek',
+				'grab'
+			];
 			const isKnownTaken = takenKeywords.some((k) => fullName.toLowerCase().includes(k));
 			if (isKnownTaken) return 'taken';
 
@@ -65,20 +75,22 @@ export class DomainServerService {
 			};
 		}
 
-		const resultsPromises: Promise<DomainCheckItemResult>[] = EXTENSIONS_CONFIG.map(async (item) => {
-			const fullName = `${cleanName}${item.ext}`;
-			const status = await this.queryRdap(fullName);
+		const resultsPromises: Promise<DomainCheckItemResult>[] = EXTENSIONS_CONFIG.map(
+			async (item) => {
+				const fullName = `${cleanName}${item.ext}`;
+				const status = await this.queryRdap(fullName);
 
-			return {
-				ext: item.ext,
-				fullName,
-				status,
-				badge: item.badge,
-				category: item.category,
-				note: item.note,
-				recommendedPackage: item.recommendedPackage
-			};
-		});
+				return {
+					ext: item.ext,
+					fullName,
+					status,
+					badge: item.badge,
+					category: item.category,
+					note: item.note,
+					recommendedPackage: item.recommendedPackage
+				};
+			}
+		);
 
 		const results = await Promise.all(resultsPromises);
 

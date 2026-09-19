@@ -6,18 +6,22 @@
 
 <svelte:head>
 	<title>FAQ & Tanya Jawab | Barizaloka</title>
-	<meta name="description" content="Pertanyaan umum yang sering ditanyakan seputar jasa pembuatan website pesantren, masjid, desa, UMKM, harga, domain, hosting, dan garansi di Barizaloka." />
+	<meta
+		name="description"
+		content="Pertanyaan umum yang sering ditanyakan seputar jasa pembuatan website pesantren, masjid, desa, UMKM, harga, domain, hosting, dan garansi di Barizaloka."
+	/>
 </svelte:head>
 
-<div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-8">
+<div class="mx-auto max-w-5xl px-4 py-8 sm:px-6 lg:px-8">
 	<Breadcrumbs items={[{ label: 'FAQ & Tanya Jawab' }]} />
 
-	<div class="text-center max-w-2xl mx-auto my-12 space-y-4">
-		<h1 class="text-3xl sm:text-5xl font-black text-slate-900 dark:text-white">
+	<div class="mx-auto my-12 max-w-2xl space-y-4 text-center">
+		<h1 class="text-3xl font-black text-slate-900 sm:text-5xl dark:text-white">
 			Pusat Bantuan & FAQ
 		</h1>
-		<p class="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
-			Temukan jawaban lengkap mengenai proses pengerjaan website, harga, garansi, serta tata cara pendaftaran domain .desa.id / .or.id.
+		<p class="text-sm leading-relaxed text-slate-600 sm:text-base dark:text-slate-300">
+			Temukan jawaban lengkap mengenai proses pengerjaan website, harga, garansi, serta tata cara
+			pendaftaran domain .desa.id / .or.id.
 		</p>
 	</div>
 

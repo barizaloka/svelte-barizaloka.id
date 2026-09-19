@@ -37,8 +37,10 @@ export const NICHE_PAGES: Record<string, NicheInfo> = {
 		slug: 'pesantren',
 		label: 'Pesantren',
 		title: 'Jasa Pembuatan Website Artikel & Informasi Pesantren',
-		tagline: 'Media Publikasi Digital Pesantren — CMS Artikel Berita, Profile Lembaga, & Jadwal Pengajian',
-		description: 'Platform website artikel dan berita pesantren yang dirancang simpel agar pengurus dapat mengunggah artikel kajian, pengumuman kelembagaan, serta dokumentasi kegiatan pesantren dengan mudah.',
+		tagline:
+			'Media Publikasi Digital Pesantren — CMS Artikel Berita, Profile Lembaga, & Jadwal Pengajian',
+		description:
+			'Platform website artikel dan berita pesantren yang dirancang simpel agar pengurus dapat mengunggah artikel kajian, pengumuman kelembagaan, serta dokumentasi kegiatan pesantren dengan mudah.',
 		iconName: 'GraduationCap',
 		priceStarting: 'Rp 1.000.000',
 		retailPackages: [
@@ -47,7 +49,8 @@ export const NICHE_PAGES: Record<string, NicheInfo> = {
 				price: 'Rp 1.000.000',
 				renewalPrice: 'Rp 800.000 / tahun',
 				isPopular: true,
-				description: 'Website artikel & berita CMS sederhana terima beres untuk mem publikasikan profil dan dakwah pesantren.',
+				description:
+					'Website artikel & berita CMS sederhana terima beres untuk mem publikasikan profil dan dakwah pesantren.',
 				features: [
 					'CMS Artikel & Berita Kegiatan Pesantren Sederhana',
 					'Publikasi Jadwal Pengajian & Profil Lembaga',
@@ -61,7 +64,8 @@ export const NICHE_PAGES: Record<string, NicheInfo> = {
 		],
 		customSolution: {
 			title: 'Butuh Fitur Tambahan & Sistem Khusus?',
-			description: 'Dibutuhkan fitur kustom seperti pendaftaran santri baru (PSB), sistem SPP, atau portal alumni?',
+			description:
+				'Dibutuhkan fitur kustom seperti pendaftaran santri baru (PSB), sistem SPP, atau portal alumni?',
 			customFeatures: [
 				'Modul Formulir Pendaftaran Santri Baru (PSB Online)',
 				'Sistem Informasi Akademik & Portal Wali Santri',
@@ -109,7 +113,8 @@ export const NICHE_PAGES: Record<string, NicheInfo> = {
 		label: 'Masjid',
 		title: 'Jasa Pembuatan Website Artikel & Informasi Masjid',
 		tagline: 'Website Media Dakwah Masjid — CMS Artikel Kajian, Jadwal Sholat, & Informasi DKM',
-		description: 'Solusi website artikel dan informasi masjid sederhana untuk sarana transparansi DKM, artikel khutbah/kajian, serta jadwal sholat terintegrasi.',
+		description:
+			'Solusi website artikel dan informasi masjid sederhana untuk sarana transparansi DKM, artikel khutbah/kajian, serta jadwal sholat terintegrasi.',
 		iconName: 'Landmark',
 		priceStarting: 'Rp 1.000.000',
 		retailPackages: [
@@ -118,7 +123,8 @@ export const NICHE_PAGES: Record<string, NicheInfo> = {
 				price: 'Rp 1.000.000',
 				renewalPrice: 'Rp 800.000 / tahun',
 				isPopular: true,
-				description: 'Website artikel & berita masjid terima beres lengkap dengan jadwal sholat & informasi DKM.',
+				description:
+					'Website artikel & berita masjid terima beres lengkap dengan jadwal sholat & informasi DKM.',
 				features: [
 					'CMS Artikel Kajian & Informasi DKM Sederhana',
 					'Integrasi Jadwal Sholat Otomatis Sesuai Wilayah',
@@ -179,8 +185,10 @@ export const NICHE_PAGES: Record<string, NicheInfo> = {
 		slug: 'desa',
 		label: 'Desa & Kelurahan',
 		title: 'Jasa Pembuatan Website Artikel & Kabar Desa',
-		tagline: 'Portal Informasi & Berita Desa Digital — CMS Artikel Publikasi, Transparansi, & Potensi Daerah',
-		description: 'Website artikel dan kabar desa digital sederhana untuk menyajikan pengumuman pemerintah desa, berita kegiatan warga, serta dokumentasi pembangunan.',
+		tagline:
+			'Portal Informasi & Berita Desa Digital — CMS Artikel Publikasi, Transparansi, & Potensi Daerah',
+		description:
+			'Website artikel dan kabar desa digital sederhana untuk menyajikan pengumuman pemerintah desa, berita kegiatan warga, serta dokumentasi pembangunan.',
 		iconName: 'Building2',
 		priceStarting: 'Rp 1.000.000',
 		retailPackages: [
@@ -250,8 +258,10 @@ export const NICHE_PAGES: Record<string, NicheInfo> = {
 		slug: 'umkm',
 		label: 'UMKM & Bisnis',
 		title: 'Jasa Pembuatan Website Artikel & Katalog Bisnis',
-		tagline: 'Tingkatkan Penjualan & SEO Bisnis Anda — CMS Artikel Edukasi Produk & Direct Order WhatsApp',
-		description: 'Website artikel dan blog usaha sederhana untuk memperluas jangkauan pembeli di Google melalui konten edukasi produk serta tombol pemesanan langsung ke WhatsApp.',
+		tagline:
+			'Tingkatkan Penjualan & SEO Bisnis Anda — CMS Artikel Edukasi Produk & Direct Order WhatsApp',
+		description:
+			'Website artikel dan blog usaha sederhana untuk memperluas jangkauan pembeli di Google melalui konten edukasi produk serta tombol pemesanan langsung ke WhatsApp.',
 		iconName: 'Store',
 		priceStarting: 'Rp 1.000.000',
 		retailPackages: [
@@ -260,7 +270,8 @@ export const NICHE_PAGES: Record<string, NicheInfo> = {
 				price: 'Rp 1.000.000',
 				renewalPrice: 'Rp 800.000 / tahun',
 				isPopular: true,
-				description: 'Website artikel & katalog usaha sederhana terima beres untuk mendatangkan pelanggan dari Google.',
+				description:
+					'Website artikel & katalog usaha sederhana terima beres untuk mendatangkan pelanggan dari Google.',
 				features: [
 					'CMS Artikel Edukasi Produk & Blog Bisnis Sederhana',
 					'Galeri Katalog Usaha & Tombol Order WhatsApp',
@@ -321,8 +332,10 @@ export const NICHE_PAGES: Record<string, NicheInfo> = {
 		slug: 'sepeda-listrik',
 		label: 'Toko Sepeda Listrik',
 		title: 'Jasa Pembuatan Website Artikel & Informasi Showroom',
-		tagline: 'Katalog & Artikel Edukasi Sepeda Listrik — CMS Berita Unit, Review Baterai, & Kontak Sales',
-		description: 'Website artikel dan informasi unit sepeda/motor listrik untuk memberikan panduan perawatan, review spesifikasi baterai, serta kontak pemesanan sales.',
+		tagline:
+			'Katalog & Artikel Edukasi Sepeda Listrik — CMS Berita Unit, Review Baterai, & Kontak Sales',
+		description:
+			'Website artikel dan informasi unit sepeda/motor listrik untuk memberikan panduan perawatan, review spesifikasi baterai, serta kontak pemesanan sales.',
 		iconName: 'Zap',
 		priceStarting: 'Rp 1.000.000',
 		retailPackages: [
@@ -331,7 +344,8 @@ export const NICHE_PAGES: Record<string, NicheInfo> = {
 				price: 'Rp 1.000.000',
 				renewalPrice: 'Rp 800.000 / tahun',
 				isPopular: true,
-				description: 'Website artikel & katalog sepeda listrik terima beres terhubung ke kontak sales WA.',
+				description:
+					'Website artikel & katalog sepeda listrik terima beres terhubung ke kontak sales WA.',
 				features: [
 					'CMS Artikel Edukasi Baterai & Review Unit Sederhana',
 					'Katalog Spesifikasi Sepeda Listrik & Kontak Sales WA',

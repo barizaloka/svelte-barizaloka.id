@@ -30,7 +30,8 @@ const modules = import.meta.glob('/src/content/posts/*.md', { query: '?raw', eag
 
 export const BLOG_POSTS: BlogPost[] = Object.entries(modules)
 	.map(([filepath, fileContent]) => {
-		const rawContent = typeof fileContent === 'string' ? fileContent : (fileContent as { default: string }).default;
+		const rawContent =
+			typeof fileContent === 'string' ? fileContent : (fileContent as { default: string }).default;
 		const { data, content } = parseFrontMatter(rawContent);
 		const htmlContent = marked.parse(content) as string;
 

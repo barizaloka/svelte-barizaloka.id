@@ -11,9 +11,9 @@ publishedAt: '2026-06-09'
 readTime: 3 menit baca
 image: https://barizaloka.id/og-image.png
 tags:
-- Belajar SEO
-- Website
-- SEO
+  - Belajar SEO
+  - Website
+  - SEO
 metaTitle: 'Panduan Lengkap SEO untuk Pemula: Optimasi Website 2025 | Barizaloka'
 metaDescription: SEO (Search Engine Optimization) adalah serangkaian teknik untuk
   meningkatkan visibilitas website di hasil pencarian organik mesin pencari seperti
@@ -46,7 +46,7 @@ Judul halaman (title tag) harus mengandung keyword utama dan memiliki panjang 50
 
 ### Struktur Konten yang Baik
 
-Gunakan heading (h2, h3) untuk membagi konten menjadi bagian-bagian yang mudah dibaca. Setiap paragraf harus fokus pada satu ide utama. Gunakan  **bold**  untuk menekankan kata kunci penting. Sertakan juga daftar bullet (ul, li) untuk informasi yang terstruktur.
+Gunakan heading (h2, h3) untuk membagi konten menjadi bagian-bagian yang mudah dibaca. Setiap paragraf harus fokus pada satu ide utama. Gunakan **bold** untuk menekankan kata kunci penting. Sertakan juga daftar bullet (ul, li) untuk informasi yang terstruktur.
 
 Pastikan konten Anda memiliki minimal 800 kata. Konten yang panjang dan informatif cenderung lebih disukai oleh Google karena memberikan nilai lebih bagi pembaca.
 

@@ -9,10 +9,10 @@ publishedAt: '2026-07-26'
 readTime: 3 menit baca
 image: https://barizaloka.id/og-image.png
 tags:
-- Website Masjid
-- Rembang
-- Website
-- Sedan
+  - Website Masjid
+  - Rembang
+  - Website
+  - Sedan
 metaTitle: Masjid Syatho Sedan Rembang Sudah Ada Website, Masjidmu Kapan? 🕌💻 | Barizaloka
 metaDescription: wp:heading
 ---
@@ -24,7 +24,7 @@ wp:heading
 /wp:heading
 wp:paragraph
 
-Di tengah pesatnya perkembangan teknologi, kehadiran digital bukan lagi monopoli bisnis atau UMKM. Rumah ibadah seperti masjid pun kini dituntut untuk hadir di ranah digital agar bisa menjangkau jamaah dan masyarakat lebih luas. Salah satu contoh nyata datang dari  **Masjid Besar Syatho Sedan, Rembang** , yang telah lebih dulu melangkah dengan memiliki website resmi sebagai wadah informasi dan pelayanan umat. 🌐
+Di tengah pesatnya perkembangan teknologi, kehadiran digital bukan lagi monopoli bisnis atau UMKM. Rumah ibadah seperti masjid pun kini dituntut untuk hadir di ranah digital agar bisa menjangkau jamaah dan masyarakat lebih luas. Salah satu contoh nyata datang dari **Masjid Besar Syatho Sedan, Rembang** , yang telah lebih dulu melangkah dengan memiliki website resmi sebagai wadah informasi dan pelayanan umat. 🌐
 
 /wp:paragraph
 wp:heading
@@ -34,15 +34,15 @@ wp:heading
 /wp:heading
 wp:paragraph
 
-Banyak yang bertanya-tanya, memangnya masjid perlu website? Jawabannya:  **sangat perlu** , dan berikut beberapa alasannya:
+Banyak yang bertanya-tanya, memangnya masjid perlu website? Jawabannya: **sangat perlu** , dan berikut beberapa alasannya:
 
 /wp:paragraph
 wp:list {"ordered":true}
 
-1. **Informasi Jadwal Kajian & Kegiatan**  📅 Jamaah tidak perlu lagi bingung mencari info jadwal kajian, sholat Jumat, atau kegiatan Ramadhan — semua tersedia rapi dalam satu halaman.
-2. **Transparansi Keuangan & Donasi**  💰 Website memungkinkan pengurus masjid menampilkan laporan keuangan, penggunaan dana infaq, hingga program pembangunan secara terbuka kepada jamaah.
-3. **Media Dakwah yang Lebih Luas**  📢 Konten-konten islami, artikel, hingga rekaman kajian bisa diunggah dan diakses kapan saja oleh siapa saja, tidak terbatas ruang dan waktu.
-4. **Citra Masjid yang Modern & Terpercaya**  ✨ Masjid dengan website resmi terlihat lebih profesional dan meyakinkan, terutama di mata generasi muda dan calon donatur.
+1. **Informasi Jadwal Kajian & Kegiatan** 📅 Jamaah tidak perlu lagi bingung mencari info jadwal kajian, sholat Jumat, atau kegiatan Ramadhan — semua tersedia rapi dalam satu halaman.
+2. **Transparansi Keuangan & Donasi** 💰 Website memungkinkan pengurus masjid menampilkan laporan keuangan, penggunaan dana infaq, hingga program pembangunan secara terbuka kepada jamaah.
+3. **Media Dakwah yang Lebih Luas** 📢 Konten-konten islami, artikel, hingga rekaman kajian bisa diunggah dan diakses kapan saja oleh siapa saja, tidak terbatas ruang dan waktu.
+4. **Citra Masjid yang Modern & Terpercaya** ✨ Masjid dengan website resmi terlihat lebih profesional dan meyakinkan, terutama di mata generasi muda dan calon donatur.
 
 /wp:list
 wp:heading
@@ -52,12 +52,12 @@ wp:heading
 /wp:heading
 wp:paragraph
 
-Masjid Syatho Sedan Rembang telah membuktikan bahwa  **melayani umat dengan sepenuh hati**  kini bisa dilakukan tidak hanya secara fisik, tetapi juga digital. Melalui website resminya, masjid ini menghadirkan informasi kegiatan, profil, hingga fasilitas modern yang dimiliki — semua bisa diakses hanya dengan beberapa klik. 📱
+Masjid Syatho Sedan Rembang telah membuktikan bahwa **melayani umat dengan sepenuh hati** kini bisa dilakukan tidak hanya secara fisik, tetapi juga digital. Melalui website resminya, masjid ini menghadirkan informasi kegiatan, profil, hingga fasilitas modern yang dimiliki — semua bisa diakses hanya dengan beberapa klik. 📱
 
 /wp:paragraph
 wp:paragraph
 
-Ini menjadi bukti bahwa  **teknologi dan nilai-nilai spiritual bisa berjalan beriringan** , sejalan dengan visi ekosistem digital yang mendukung dampak lingkungan, teknologi, dan spiritual yang positif.
+Ini menjadi bukti bahwa **teknologi dan nilai-nilai spiritual bisa berjalan beriringan** , sejalan dengan visi ekosistem digital yang mendukung dampak lingkungan, teknologi, dan spiritual yang positif.
 
 /wp:paragraph
 wp:heading
@@ -72,7 +72,7 @@ Pertanyaannya sekarang, bagaimana dengan masjid di lingkungan Anda? Apakah jamaa
 /wp:paragraph
 wp:paragraph
 
-Kini saatnya masjid Anda juga  **naik kelas secara digital** . 🚀
+Kini saatnya masjid Anda juga **naik kelas secara digital** . 🚀
 
 /wp:paragraph
 wp:heading {"level":3}
@@ -82,18 +82,18 @@ wp:heading {"level":3}
 /wp:heading
 wp:paragraph
 
-Barizaloka hadir dengan solusi pembuatan website yang  **cocok untuk masjid** , mulai dari:
+Barizaloka hadir dengan solusi pembuatan website yang **cocok untuk masjid** , mulai dari:
 
 /wp:paragraph
 wp:list
 
-- **Paket Landing**  — Rp350rb/tahun Cocok untuk info kajian, jadwal sholat, dan profil masjid dalam satu halaman sederhana. Pengurus tinggal chat kalau ada update konten.
-- **Paket CMS**  — Rp600rb/tahun Cocok untuk masjid yang aktif publikasi berita, kegiatan, dan laporan donasi. Pengurus bisa login dan mengedit sendiri kapan saja.
+- **Paket Landing** — Rp350rb/tahun Cocok untuk info kajian, jadwal sholat, dan profil masjid dalam satu halaman sederhana. Pengurus tinggal chat kalau ada update konten.
+- **Paket CMS** — Rp600rb/tahun Cocok untuk masjid yang aktif publikasi berita, kegiatan, dan laporan donasi. Pengurus bisa login dan mengedit sendiri kapan saja.
 
 /wp:list
 wp:paragraph
 
-Kedua paket sudah termasuk domain  **.my.id gratis** , hosting, SSL, dan maintenance —  **tanpa biaya tersembunyi** . 🔒
+Kedua paket sudah termasuk domain **.my.id gratis** , hosting, SSL, dan maintenance — **tanpa biaya tersembunyi** . 🔒
 
 /wp:paragraph
 wp:paragraph
@@ -108,7 +108,7 @@ wp:heading
 /wp:heading
 wp:paragraph
 
-Seperti tagline kami,  *"Roketkan Idemu dengan Website"*  — sekarang giliran masjid di lingkungan Anda untuk melangkah maju. Jangan biarkan jamaah kesulitan mendapat informasi, dan jangan biarkan potensi dakwah digital terlewat begitu saja.
+Seperti tagline kami, _"Roketkan Idemu dengan Website"_ — sekarang giliran masjid di lingkungan Anda untuk melangkah maju. Jangan biarkan jamaah kesulitan mendapat informasi, dan jangan biarkan potensi dakwah digital terlewat begitu saja.
 
 /wp:paragraph
 wp:paragraph

@@ -9,7 +9,7 @@ publishedAt: '2026-05-03'
 readTime: 1 menit baca
 image: https://barizaloka.id/og-image.png
 tags:
-- Uncategorized
+  - Uncategorized
 metaTitle: Hello world! | Barizaloka
 metaDescription: wp:paragraph
 ---

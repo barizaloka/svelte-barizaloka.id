@@ -9,17 +9,17 @@ publishedAt: '2026-09-18'
 readTime: 4 menit baca
 image: https://barizaloka.id/og-image.png
 tags:
-- Domain
-- Website
-- SEO
-- Tutorial
+  - Domain
+  - Website
+  - SEO
+  - Tutorial
 metaTitle: Cara Cek Domain dengan Mudah dan Cepat (Panduan Lengkap 2026) | Barizaloka
 metaDescription: Panduan praktis cara mengecek ketersediaan domain website (.com, .id, .co.id), status WHOIS, serta tips memilih nama domain terbaik secara mudah & gratis.
 ---
 
 Memiliki nama domain yang tepat adalah langkah pertama dan paling krusial ketika Anda berencana membuat website untuk bisnis, pondok pesantren, sekolah, organisasi, maupun personal branding. Namun sebelum meluncurkan website, pertanyaan utamanya adalah: **Apakah nama domain yang Anda inginkan masih tersedia?**
 
-Domain bekerja dengan prinsip *First Come, First Served* (siapa cepat, dia yang mendapat hak guna). Oleh karena itu, mengetahui **cara cek domain dengan mudah** akan menghindarkan Anda dari kekecewaan karena nama brand Anda sudah didahului orang lain.
+Domain bekerja dengan prinsip _First Come, First Served_ (siapa cepat, dia yang mendapat hak guna). Oleh karena itu, mengetahui **cara cek domain dengan mudah** akan menghindarkan Anda dari kekecewaan karena nama brand Anda sudah didahului orang lain.
 
 ---
 
@@ -28,8 +28,9 @@ Domain bekerja dengan prinsip *First Come, First Served* (siapa cepat, dia yang 
 Domain adalah alamat unik di internet yang mengetikkan pengoperasian website Anda di browser (seperti `barizaloka.id` atau `google.com`). Tanpa nama domain, pengunjung harus menghafalkan deretan angka alamat IP server (`192.168.x.x`) yang sangat tidak ramah pengguna.
 
 Nama domain terdiri dari dua bagian utama:
-1. **SLD (Second-Level Domain):** Nama unik merek/usaha Anda (contoh: *barizaloka*).
-2. **TLD (Top-Level Domain) / Ekstensi:** Akhiran domain (contoh: *.com*, *.id*, *.co.id*, *.sch.id*).
+
+1. **SLD (Second-Level Domain):** Nama unik merek/usaha Anda (contoh: _barizaloka_).
+2. **TLD (Top-Level Domain) / Ekstensi:** Akhiran domain (contoh: _.com_, _.id_, _.co.id_, _.sch.id_).
 
 ---
 
@@ -38,19 +39,24 @@ Nama domain terdiri dari dua bagian utama:
 Berikut adalah panduan praktis dan terstruktur untuk mengecek ketersediaan domain impian Anda:
 
 ### **1. Tentukan Nama Brand & Kata Kunci Utama**
+
 Buat daftar 2–3 alternatif nama domain. Usahakan nama tersebut singkat, mudah diucapkan per lisan (Radio Test), dan relevan dengan usaha Anda.
 
 ### **2. Gunakan Tool Cek Domain / WHOIS Lookup**
+
 Buka layanan cek domain terpercaya atau gunakan tool penyedia domain. Ketikkan nama domain yang Anda inginkan di kolom pencarian tanpa perlu mengetik `http://` atau `www`.
 
 ### **3. Analisis Hasil Ketersediaan Domain**
+
 - **Status Available (Tersedia):** Selamat! Nama domain belum dimiliki siapapun dan siap Anda daftarkan.
 - **Status Taken (Sudah Terdaftar):** Nama domain sudah dimiliki orang lain. Anda bisa memilih ekstensi lain (misal dari `.com` beralih ke `.id`) atau mengubah sedikit variasi nama.
 
 ### **4. Periksa Riwayat & Reputasi Domain Bekas (Jika Ada)**
+
 Jika Anda membeli domain bekas atau beralih kepemilikan, pastikan domain tersebut tidak memiliki riwayat penalti dari Google, pemblokiran malware, atau aktivitas spam masa lalu.
 
 ### **5. Segera Amankan & Daftarkan Domain**
+
 Jangan menunda pendaftaran begitu menemukan nama yang cocok. Pendaftaran domain dapat dilakukan dengan cepat melalui registrar terpercaya atau paket layanan pembuatan website siap pakai.
 
 ---
@@ -84,4 +90,5 @@ Mengecek domain kini sangat mudah dan dapat dilakukan hanya dalam hitungan detik
 Jika Anda membutuhkan bantuan pendaftaran domain, pengurusan legalitas ekstensi .id/.co.id, hingga pembuatan website profesional yang siap pakai dan teroptimasi SEO, tim **Barizaloka** siap membantu Anda.
 
 ---
-*Hubungi Barizaloka melalui [Halaman Kontak](/kontak) atau langsung via WhatsApp untuk konsultasi domain dan website gratis.*
+
+_Hubungi Barizaloka melalui [Halaman Kontak](/kontak) atau langsung via WhatsApp untuk konsultasi domain dan website gratis._

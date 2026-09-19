@@ -11,8 +11,8 @@ publishedAt: '2026-08-21'
 readTime: 1 menit baca
 image: https://barizaloka.id/og-image.png
 tags:
-- Uncategorized
-- Website
+  - Uncategorized
+  - Website
 metaTitle: 7 Faktor yang Membuat Website Terlihat Profesional | Barizaloka
 metaDescription: Website yang rapi dengan spasi yang lega, teks terbaca, dan tidak
   ada elemen yang saling bertumpukan memberi sinyal perhatian terhadap detail. Tampilan

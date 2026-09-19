@@ -11,9 +11,9 @@ publishedAt: '2026-06-17'
 readTime: 3 menit baca
 image: https://barizaloka.id/og-image.png
 tags:
-- Uncategorized
-- Website
-- SEO
+  - Uncategorized
+  - Website
+  - SEO
 metaTitle: 'Panduan Lengkap SEO untuk Pemula: Optimasi Website di Mesin Pencari |
   Barizaloka'
 metaDescription: SEO (Search Engine Optimization) adalah serangkaian teknik untuk
@@ -27,17 +27,17 @@ SEO (Search Engine Optimization) adalah serangkaian teknik untuk meningkatkan vi
 
 ## Memahami Cara Kerja Mesin Pencari
 
-Mesin pencari seperti Google menggunakan  **crawler**  untuk menjelajahi miliaran halaman web. Crawler mengumpulkan informasi dan mengindeksnya dalam database besar. Saat pengguna mencari sesuatu, algoritma Google akan menampilkan halaman yang paling relevan dan berkualitas. Faktor seperti kecepatan website, kualitas konten, dan jumlah backlink sangat mempengaruhi peringkat.
+Mesin pencari seperti Google menggunakan **crawler** untuk menjelajahi miliaran halaman web. Crawler mengumpulkan informasi dan mengindeksnya dalam database besar. Saat pengguna mencari sesuatu, algoritma Google akan menampilkan halaman yang paling relevan dan berkualitas. Faktor seperti kecepatan website, kualitas konten, dan jumlah backlink sangat mempengaruhi peringkat.
 
 ### Tiga Pilar Utama SEO
 
-- **SEO On-Page:**  Optimasi elemen di dalam website seperti judul, meta deskripsi, heading (H1, H2, H3), konten, dan URL.
-- **SEO Off-Page:**  Aktivitas di luar website yang mempengaruhi reputasi, seperti membangun backlink dari website lain dan promosi media sosial.
-- **Technical SEO:**  Aspek teknis website seperti kecepatan loading, struktur URL yang bersih, sitemap XML, dan penggunaan HTTPS.
+- **SEO On-Page:** Optimasi elemen di dalam website seperti judul, meta deskripsi, heading (H1, H2, H3), konten, dan URL.
+- **SEO Off-Page:** Aktivitas di luar website yang mempengaruhi reputasi, seperti membangun backlink dari website lain dan promosi media sosial.
+- **Technical SEO:** Aspek teknis website seperti kecepatan loading, struktur URL yang bersih, sitemap XML, dan penggunaan HTTPS.
 
 ## Riset Keyword: Fondasi SEO yang Kuat
 
-Keyword adalah kata kunci yang diketik pengguna di mesin pencari. Untuk riset keyword, gunakan tools seperti  **Google Keyword Planner** ,  **Ahrefs** , atau  **Ubersuggest** . Cari keyword dengan volume pencarian tinggi dan kompetisi rendah. Jangan lupa manfaatkan LSI keywords (variasi kata kunci terkait) untuk memperkaya konten Anda.
+Keyword adalah kata kunci yang diketik pengguna di mesin pencari. Untuk riset keyword, gunakan tools seperti **Google Keyword Planner** , **Ahrefs** , atau **Ubersuggest** . Cari keyword dengan volume pencarian tinggi dan kompetisi rendah. Jangan lupa manfaatkan LSI keywords (variasi kata kunci terkait) untuk memperkaya konten Anda.
 
 ## Teknik SEO On-Page untuk Pemula
 
@@ -53,7 +53,7 @@ Backlink adalah tautan dari website lain yang mengarah ke website Anda. Google m
 
 ## Mengukur Keberhasilan SEO
 
-Gunakan  **Google Search Console**  dan  **Google Analytics**  untuk memantau kinerja SEO. Perhatikan metrik seperti  *impressions*  (tayangan),  *clicks*  (klik), rata-rata posisi di hasil pencarian, dan bounce rate. Perbaiki halaman yang memiliki CTR rendah dengan mengoptimalkan meta deskripsi dan judul.
+Gunakan **Google Search Console** dan **Google Analytics** untuk memantau kinerja SEO. Perhatikan metrik seperti _impressions_ (tayangan), _clicks_ (klik), rata-rata posisi di hasil pencarian, dan bounce rate. Perbaiki halaman yang memiliki CTR rendah dengan mengoptimalkan meta deskripsi dan judul.
 
 ## Kesalahan SEO Umum yang Harus Dihindari
 

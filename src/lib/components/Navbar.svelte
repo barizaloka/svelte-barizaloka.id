@@ -67,7 +67,9 @@
 
 <svelte:window onclick={handleOutsideClick} onkeydown={handleKeyDown} />
 
-<header class="sticky top-0 z-50 w-full border-b border-slate-200/80 bg-white/90 text-slate-900 backdrop-blur-md transition-colors duration-200 dark:border-slate-800/80 dark:bg-slate-950/90 dark:text-slate-100">
+<header
+	class="sticky top-0 z-50 w-full border-b border-slate-200/80 bg-white/90 text-slate-900 backdrop-blur-md transition-colors duration-200 dark:border-slate-800/80 dark:bg-slate-950/90 dark:text-slate-100"
+>
 	<div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
 		<!-- Brand Logo -->
 		<a href="/" onclick={closeAllDropdowns}>
@@ -84,17 +86,28 @@
 					aria-expanded={isLayananDropdownOpen}
 					aria-haspopup="true"
 					aria-controls="layanan-dropdown-menu"
-					class="flex items-center gap-1 rounded-lg px-3 py-2 text-sm font-medium transition-colors {isLayananActive ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-semibold' : 'text-slate-700 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-slate-800/60 dark:hover:text-white'}"
+					class="flex items-center gap-1 rounded-lg px-3 py-2 text-sm font-medium transition-colors {isLayananActive
+						? 'bg-emerald-500/10 font-semibold text-emerald-600 dark:text-emerald-400'
+						: 'text-slate-700 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-slate-800/60 dark:hover:text-white'}"
 				>
 					<span>Layanan</span>
-					<ChevronDown class="h-4 w-4 transition-transform duration-200 {isLayananDropdownOpen ? 'rotate-180' : ''}" />
+					<ChevronDown
+						class="h-4 w-4 transition-transform duration-200 {isLayananDropdownOpen
+							? 'rotate-180'
+							: ''}"
+					/>
 				</button>
 
 				{#if isLayananDropdownOpen}
-					<div id="layanan-dropdown-menu" class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-[460px] rounded-2xl border border-slate-200 bg-white/95 p-4 shadow-2xl backdrop-blur-xl ring-1 ring-black/5 dark:border-slate-800 dark:bg-slate-900/95 dark:ring-white/10 animate-in fade-in slide-in-from-top-2 duration-150 grid grid-cols-2 gap-4">
+					<div
+						id="layanan-dropdown-menu"
+						class="animate-in fade-in slide-in-from-top-2 absolute top-full left-1/2 mt-2 grid w-[460px] -translate-x-1/2 grid-cols-2 gap-4 rounded-2xl border border-slate-200 bg-white/95 p-4 shadow-2xl ring-1 ring-black/5 backdrop-blur-xl duration-150 dark:border-slate-800 dark:bg-slate-900/95 dark:ring-white/10"
+					>
 						<!-- Niche Services -->
 						<div>
-							<div class="mb-2 px-2 text-[11px] font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+							<div
+								class="mb-2 px-2 text-[11px] font-semibold tracking-wider text-slate-500 uppercase dark:text-slate-400"
+							>
 								Sektor Spesialis
 							</div>
 							<div class="space-y-1">
@@ -102,18 +115,24 @@
 									<a
 										href="/jasa-website-{niche.slug}"
 										onclick={closeAllDropdowns}
-										class="flex items-center gap-2.5 rounded-lg p-2 text-xs font-medium text-slate-700 hover:bg-emerald-50 hover:text-emerald-700 dark:text-slate-300 dark:hover:bg-emerald-950/40 dark:hover:text-emerald-300 transition-colors"
+										class="flex items-center gap-2.5 rounded-lg p-2 text-xs font-medium text-slate-700 transition-colors hover:bg-emerald-50 hover:text-emerald-700 dark:text-slate-300 dark:hover:bg-emerald-950/40 dark:hover:text-emerald-300"
 									>
 										{#if niche.slug === 'pesantren'}
-											<GraduationCap class="h-4 w-4 text-emerald-600 dark:text-emerald-400 flex-shrink-0" />
+											<GraduationCap
+												class="h-4 w-4 flex-shrink-0 text-emerald-600 dark:text-emerald-400"
+											/>
 										{:else if niche.slug === 'masjid'}
-											<Landmark class="h-4 w-4 text-emerald-600 dark:text-emerald-400 flex-shrink-0" />
+											<Landmark
+												class="h-4 w-4 flex-shrink-0 text-emerald-600 dark:text-emerald-400"
+											/>
 										{:else if niche.slug === 'desa'}
-											<Building2 class="h-4 w-4 text-emerald-600 dark:text-emerald-400 flex-shrink-0" />
+											<Building2
+												class="h-4 w-4 flex-shrink-0 text-emerald-600 dark:text-emerald-400"
+											/>
 										{:else if niche.slug === 'umkm'}
-											<Store class="h-4 w-4 text-emerald-600 dark:text-emerald-400 flex-shrink-0" />
+											<Store class="h-4 w-4 flex-shrink-0 text-emerald-600 dark:text-emerald-400" />
 										{:else}
-											<Zap class="h-4 w-4 text-emerald-600 dark:text-emerald-400 flex-shrink-0" />
+											<Zap class="h-4 w-4 flex-shrink-0 text-emerald-600 dark:text-emerald-400" />
 										{/if}
 										<span>{niche.label}</span>
 									</a>
@@ -122,8 +141,10 @@
 						</div>
 
 						<!-- Regional Coverage -->
-						<div class="border-l border-slate-200 dark:border-slate-800/80 pl-4">
-							<div class="mb-2 px-1 text-[11px] font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+						<div class="border-l border-slate-200 pl-4 dark:border-slate-800/80">
+							<div
+								class="mb-2 px-1 text-[11px] font-semibold tracking-wider text-slate-500 uppercase dark:text-slate-400"
+							>
 								Wilayah Layanan
 							</div>
 							<div class="space-y-1">
@@ -131,18 +152,18 @@
 									<a
 										href="/jasa-website-di-{loc.slug}"
 										onclick={closeAllDropdowns}
-										class="flex items-center gap-2 rounded-lg p-2 text-xs font-medium text-slate-700 hover:bg-emerald-50 hover:text-emerald-700 dark:text-slate-300 dark:hover:bg-emerald-950/40 dark:hover:text-emerald-300 transition-colors"
+										class="flex items-center gap-2 rounded-lg p-2 text-xs font-medium text-slate-700 transition-colors hover:bg-emerald-50 hover:text-emerald-700 dark:text-slate-300 dark:hover:bg-emerald-950/40 dark:hover:text-emerald-300"
 									>
-										<MapPin class="h-3.5 w-3.5 text-emerald-500 flex-shrink-0" />
+										<MapPin class="h-3.5 w-3.5 flex-shrink-0 text-emerald-500" />
 										<span>{loc.name}</span>
 									</a>
 								{/each}
 							</div>
-							<div class="mt-3 border-t border-slate-200 dark:border-slate-800 pt-2 text-center">
+							<div class="mt-3 border-t border-slate-200 pt-2 text-center dark:border-slate-800">
 								<a
 									href="/potensi-digital-jawa-tengah"
 									onclick={closeAllDropdowns}
-									class="text-[11px] font-semibold text-emerald-600 dark:text-emerald-400 hover:underline flex items-center justify-center gap-1"
+									class="flex items-center justify-center gap-1 text-[11px] font-semibold text-emerald-600 hover:underline dark:text-emerald-400"
 								>
 									<Sparkles class="h-3 w-3" /> Potensi Digital Jateng
 								</a>
@@ -154,35 +175,50 @@
 
 			<a
 				href="/harga"
-				class="rounded-lg px-3 py-2 text-sm font-medium transition-colors {currentPath === '/harga' ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-semibold' : 'text-slate-700 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-slate-800/60 dark:hover:text-white'}"
+				class="rounded-lg px-3 py-2 text-sm font-medium transition-colors {currentPath === '/harga'
+					? 'bg-emerald-500/10 font-semibold text-emerald-600 dark:text-emerald-400'
+					: 'text-slate-700 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-slate-800/60 dark:hover:text-white'}"
 			>
 				Harga
 			</a>
 
 			<a
 				href="/cek-domain"
-				class="rounded-lg px-3 py-2 text-sm font-medium transition-colors {currentPath === '/cek-domain' ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-semibold' : 'text-slate-700 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-slate-800/60 dark:hover:text-white'}"
+				class="rounded-lg px-3 py-2 text-sm font-medium transition-colors {currentPath ===
+				'/cek-domain'
+					? 'bg-emerald-500/10 font-semibold text-emerald-600 dark:text-emerald-400'
+					: 'text-slate-700 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-slate-800/60 dark:hover:text-white'}"
 			>
 				Cek Domain
 			</a>
 
 			<a
 				href="/portofolio"
-				class="rounded-lg px-3 py-2 text-sm font-medium transition-colors {currentPath === '/portofolio' ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-semibold' : 'text-slate-700 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-slate-800/60 dark:hover:text-white'}"
+				class="rounded-lg px-3 py-2 text-sm font-medium transition-colors {currentPath ===
+				'/portofolio'
+					? 'bg-emerald-500/10 font-semibold text-emerald-600 dark:text-emerald-400'
+					: 'text-slate-700 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-slate-800/60 dark:hover:text-white'}"
 			>
 				Portofolio
 			</a>
 
 			<a
 				href="/blog"
-				class="rounded-lg px-3 py-2 text-sm font-medium transition-colors {currentPath.startsWith('/blog') ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-semibold' : 'text-slate-700 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-slate-800/60 dark:hover:text-white'}"
+				class="rounded-lg px-3 py-2 text-sm font-medium transition-colors {currentPath.startsWith(
+					'/blog'
+				)
+					? 'bg-emerald-500/10 font-semibold text-emerald-600 dark:text-emerald-400'
+					: 'text-slate-700 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-slate-800/60 dark:hover:text-white'}"
 			>
 				Blog
 			</a>
 
 			<a
 				href="/tentang"
-				class="rounded-lg px-3 py-2 text-sm font-medium transition-colors {currentPath === '/tentang' ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-semibold' : 'text-slate-700 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-slate-800/60 dark:hover:text-white'}"
+				class="rounded-lg px-3 py-2 text-sm font-medium transition-colors {currentPath ===
+				'/tentang'
+					? 'bg-emerald-500/10 font-semibold text-emerald-600 dark:text-emerald-400'
+					: 'text-slate-700 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-slate-800/60 dark:hover:text-white'}"
 			>
 				Tentang
 			</a>
@@ -195,7 +231,7 @@
 				href="https://wa.me/6281234567890?text=Halo%20Barizaloka,%20saya%20ingin%20konsultasi%20pembuatan%20website"
 				target="_blank"
 				rel="noopener noreferrer"
-				class="group inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 px-4 py-2 text-xs font-bold text-slate-950 shadow-md shadow-emerald-500/20 hover:from-emerald-400 hover:to-teal-400 transition-all duration-200 active:scale-95"
+				class="group inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 px-4 py-2 text-xs font-bold text-slate-950 shadow-md shadow-emerald-500/20 transition-all duration-200 hover:from-emerald-400 hover:to-teal-400 active:scale-95"
 			>
 				<MessageSquare class="h-4 w-4" />
 				<span>Konsultasi WA</span>
@@ -221,7 +257,9 @@
 
 	<!-- Mobile Navigation Drawer -->
 	{#if isMobileMenuOpen}
-		<div class="border-b border-slate-200 bg-white/98 px-4 pb-6 pt-3 dark:border-slate-800 dark:bg-slate-950/98 md:hidden">
+		<div
+			class="border-b border-slate-200 bg-white/98 px-4 pt-3 pb-6 md:hidden dark:border-slate-800 dark:bg-slate-950/98"
+		>
 			<div class="flex flex-col gap-1">
 				<a
 					href="/"
@@ -232,7 +270,9 @@
 				</a>
 
 				<div class="py-2">
-					<div class="px-3 text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+					<div
+						class="px-3 text-xs font-semibold tracking-wider text-slate-500 uppercase dark:text-slate-400"
+					>
 						Layanan
 					</div>
 					<div class="mt-1 grid grid-cols-2 gap-1 pl-2">
@@ -284,7 +324,7 @@
 					Tentang Barizaloka
 				</a>
 
-				<div class="mt-4 pt-2 border-t border-slate-200 dark:border-slate-800">
+				<div class="mt-4 border-t border-slate-200 pt-2 dark:border-slate-800">
 					<a
 						href="https://wa.me/6281234567890?text=Halo%20Barizaloka,%20saya%20ingin%20konsultasi"
 						target="_blank"

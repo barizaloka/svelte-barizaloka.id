@@ -18,13 +18,15 @@ export const PRICING_PACKAGES: PricingPackage[] = [
 	{
 		id: 'terima-beres',
 		name: 'Paket Website Artikel & CMS Sederhana',
-		tagline: 'Platform publikasi berita & artikel digital yang simpel, profesional, dan mudah dikelola tanpa ribet teknis.',
+		tagline:
+			'Platform publikasi berita & artikel digital yang simpel, profesional, dan mudah dikelola tanpa ribet teknis.',
 		price: 'Rp 1.000.000',
 		renewalPrice: 'Rp 800.000 / tahun',
 		originalPrice: 'Rp 1.500.000',
 		popular: true,
 		badge: 'Terima Beres (All-in-One)',
-		targetAudience: 'Penulis, Blogger, Media Informasi Lokal, Pesantren, Masjid, Desa & Branding Usaha',
+		targetAudience:
+			'Penulis, Blogger, Media Informasi Lokal, Pesantren, Masjid, Desa & Branding Usaha',
 		features: [
 			'Sistem Manajemen Konten (CMS) Sederhana & Intuitif untuk Kelola Artikel',
 			'Gratis Domain Resmi (.com / .id / .or.id / .desa.id / .my.id) 1 Tahun',
@@ -38,6 +40,7 @@ export const PRICING_PACKAGES: PricingPackage[] = [
 			'Biaya Perpanjangan Tahun Depan Hanya Rp 800.000 / tahun'
 		],
 		ctaText: 'Pesan Website Artikel (Rp 1 Juta)',
-		whatsappMessage: 'Halo Barizaloka, saya mau pesan Paket Website Artikel & CMS Sederhana Terima Beres (1 Juta, perpanjang 800rb/tahun).'
+		whatsappMessage:
+			'Halo Barizaloka, saya mau pesan Paket Website Artikel & CMS Sederhana Terima Beres (1 Juta, perpanjang 800rb/tahun).'
 	}
 ];

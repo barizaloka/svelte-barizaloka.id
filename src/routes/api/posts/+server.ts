@@ -12,10 +12,7 @@ export const POST: RequestHandler = async ({ request }) => {
 	const authHeader = request.headers.get('Authorization');
 
 	if (!authHeader || !authHeader.startsWith('Bearer ')) {
-		return json(
-			{ message: 'Unauthenticated.' },
-			{ status: 401 }
-		);
+		return json({ message: 'Unauthenticated.' }, { status: 401 });
 	}
 
 	try {
@@ -42,7 +39,10 @@ export const POST: RequestHandler = async ({ request }) => {
 			);
 		}
 
-		const slug = body.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+		const slug = body.title
+			.toLowerCase()
+			.replace(/[^a-z0-9]+/g, '-')
+			.replace(/(^-|-$)/g, '');
 		const now = new Date().toISOString();
 
 		const newArticle = {

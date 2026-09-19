@@ -11,8 +11,8 @@ publishedAt: '2026-06-19'
 readTime: 4 menit baca
 image: https://barizaloka.id/og-image.png
 tags:
-- Lasem
-- Website
+  - Lasem
+  - Website
 metaTitle: 'Website Batik Lasem: Jaga Tradisi, Raih Pasar Digital Global | Barizaloka'
 metaDescription: Batik Lasem, sebuah nama yang tidak hanya mewakili selembar kain,
   tapi juga sebuah narasi panjang tentang akulturasi budaya, ketekunan perajin, dan
@@ -21,7 +21,7 @@ metaDescription: Batik Lasem, sebuah nama yang tidak hanya mewakili selembar kai
 
 Batik Lasem, sebuah nama yang tidak hanya mewakili selembar kain, tapi juga sebuah narasi panjang tentang akulturasi budaya, ketekunan perajin, dan keindahan tak lekang waktu. Dikenal sebagai Batik Tiga Negeri, warisan budaya yang kaya ini menyimpan potensi ekonomi kreatif luar biasa, meski tantangan digitalisasi masih menghantui sebagian besar pelakunya.
 
-Di Barizaloka.id, kami bangga menjadi bagian dari Rembang dan memahami betul nilai luhur Batik Lasem. Kami hadir untuk membantu para pengrajin dan pengusaha UMKM Batik Lasem melangkah maju, menjembatani keindahan tradisi dengan kekuatan teknologi melalui  **website Batik Lasem**  yang profesional.
+Di Barizaloka.id, kami bangga menjadi bagian dari Rembang dan memahami betul nilai luhur Batik Lasem. Kami hadir untuk membantu para pengrajin dan pengusaha UMKM Batik Lasem melangkah maju, menjembatani keindahan tradisi dengan kekuatan teknologi melalui **website Batik Lasem** yang profesional.
 
 ## Batik Lasem: Permata Budaya yang Siap Bersinar di Ranah Digital
 
@@ -51,16 +51,16 @@ Setiap motif Batik Lasem punya kisahnya sendiri. Website adalah platform terbaik
 
 Kami memahami bahwa beberapa UMKM Batik Lasem mungkin menghadapi tantangan seperti:
 
-- **Belum punya website:**  Masih mengandalkan media sosial atau word-of-mouth.
-- **Keterbatasan teknis:**  Bingung bagaimana memulai dan mengelola website.
-- **Pemasaran yang belum terstruktur:**  Strategi digital marketing yang belum optimal.
+- **Belum punya website:** Masih mengandalkan media sosial atau word-of-mouth.
+- **Keterbatasan teknis:** Bingung bagaimana memulai dan mengelola website.
+- **Pemasaran yang belum terstruktur:** Strategi digital marketing yang belum optimal.
 
-Barizaloka.id hadir sebagai solusi komprehensif. Kami menawarkan  **jasa website Batik Lasem**  yang dirancang khusus untuk memenuhi kebutuhan unik UMKM batik tulis. Kami fokus pada:
+Barizaloka.id hadir sebagai solusi komprehensif. Kami menawarkan **jasa website Batik Lasem** yang dirancang khusus untuk memenuhi kebutuhan unik UMKM batik tulis. Kami fokus pada:
 
-- **Website yang Indah dan Fungsional:**  Desain elegan yang menonjolkan keindahan batik, dilengkapi katalog produk detail, galeri foto, kisah perajin, dan formulir pemesanan.
-- **Integrasi Pemasaran Digital:**  Kami bantu Anda mengintegrasikan website dengan media sosial dan optimasi SEO agar mudah ditemukan di Google.
-- **Mudah Dikelola:**  Kami akan melatih Anda agar bisa mengelola dan mengupdate konten website dengan mudah, tanpa perlu keahlian teknis khusus.
-- **Dukungan Lokal yang Memahami Batik Lasem:**  Sebagai tim dari Rembang, kami punya kedekatan emosional dan pemahaman mendalam tentang potensi serta tantangan Batik Lasem.
+- **Website yang Indah dan Fungsional:** Desain elegan yang menonjolkan keindahan batik, dilengkapi katalog produk detail, galeri foto, kisah perajin, dan formulir pemesanan.
+- **Integrasi Pemasaran Digital:** Kami bantu Anda mengintegrasikan website dengan media sosial dan optimasi SEO agar mudah ditemukan di Google.
+- **Mudah Dikelola:** Kami akan melatih Anda agar bisa mengelola dan mengupdate konten website dengan mudah, tanpa perlu keahlian teknis khusus.
+- **Dukungan Lokal yang Memahami Batik Lasem:** Sebagai tim dari Rembang, kami punya kedekatan emosional dan pemahaman mendalam tentang potensi serta tantangan Batik Lasem.
 
 ## Wujudkan Mimpi Batik Lasem Go Global Bersama Barizaloka!
 
