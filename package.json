@@ -40,6 +40,7 @@
 	"dependencies": {
 		"js-yaml": "^5.4.2",
 		"lucide-svelte": "^1.0.1",
-		"marked": "^18.0.13"
+		"marked": "^18.0.13",
+		"node-rdap": "^1.0.0"
 	}
 }

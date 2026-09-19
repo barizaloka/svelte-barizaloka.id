@@ -10,6 +10,7 @@ export const GET: RequestHandler = async () => {
 	// Static pages
 	const staticPages = [
 		'',
+		'/cek-domain',
 		'/harga',
 		'/tentang',
 		'/faq',

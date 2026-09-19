@@ -68,6 +68,7 @@
 				</h3>
 				<ul class="space-y-2 text-xs">
 					<li><a href="/" class="hover:text-slate-900 dark:hover:text-white transition-colors">Beranda</a></li>
+					<li><a href="/cek-domain" class="hover:text-slate-900 dark:hover:text-white font-semibold text-emerald-600 dark:text-emerald-400 transition-colors">Order & Cek Domain</a></li>
 					<li><a href="/harga" class="hover:text-slate-900 dark:hover:text-white transition-colors">Harga & Paket</a></li>
 					<li><a href="/portofolio" class="hover:text-slate-900 dark:hover:text-white transition-colors">Portofolio</a></li>
 					<li><a href="/blog" class="hover:text-slate-900 dark:hover:text-white transition-colors">Blog & Panduan</a></li>

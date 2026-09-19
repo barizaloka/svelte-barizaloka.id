@@ -160,6 +160,13 @@
 			</a>
 
 			<a
+				href="/cek-domain"
+				class="rounded-lg px-3 py-2 text-sm font-medium transition-colors {currentPath === '/cek-domain' ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-semibold' : 'text-slate-700 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-slate-800/60 dark:hover:text-white'}"
+			>
+				Cek Domain
+			</a>
+
+			<a
 				href="/portofolio"
 				class="rounded-lg px-3 py-2 text-sm font-medium transition-colors {currentPath === '/portofolio' ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-semibold' : 'text-slate-700 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-slate-800/60 dark:hover:text-white'}"
 			>
@@ -247,6 +254,13 @@
 					class="rounded-lg px-3 py-2 text-base font-semibold text-slate-800 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-900"
 				>
 					Harga & Paket
+				</a>
+				<a
+					href="/cek-domain"
+					onclick={closeAllDropdowns}
+					class="rounded-lg px-3 py-2 text-base font-semibold text-slate-800 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-900"
+				>
+					Order & Cek Domain
 				</a>
 				<a
 					href="/portofolio"

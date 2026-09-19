@@ -22,6 +22,7 @@
 	import { PRICING_PACKAGES } from '$lib/data/pricing_data';
 	import CtaBanner from '$lib/components/CtaBanner.svelte';
 	import FaqAccordion from '$lib/components/FaqAccordion.svelte';
+	import DomainSearchForm from '$lib/components/DomainSearchForm.svelte';
 
 	const niches = Object.values(NICHE_PAGES);
 	const featuredProjects = PORTFOLIO_PROJECTS.slice(0, 3);
@@ -61,12 +62,6 @@
 
 	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
 		<div class="text-center max-w-3xl mx-auto space-y-6">
-			<!-- Ecosystem Badge -->
-			<div class="inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-4 py-1.5 text-xs font-bold text-emerald-700 dark:text-emerald-400 backdrop-blur-md shadow-sm">
-				<Sparkles class="h-3.5 w-3.5" />
-				<span>Ekosistem Teknologi dari Rembang, Jawa Tengah</span>
-			</div>
-
 			<!-- Main Heading -->
 			<h1 class="text-3xl font-black tracking-tight text-slate-900 dark:text-white sm:text-5xl lg:text-6xl leading-[1.15]">
 				Website Profesional untuk <span class="bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 dark:from-emerald-400 dark:via-teal-300 dark:to-cyan-400 bg-clip-text text-transparent">Pesantren, Masjid, Desa & UMKM</span>
@@ -77,8 +72,19 @@
 				Hadirkan portal digital yang cepat, transparan, dan modern. Dilengkapi sistem PSB Online, Laporan Kas DKM, Surat Desa Mandiri, serta Katalog Usaha Direct WhatsApp.
 			</p>
 
+			<!-- DOMAIN CHECK & WEBSITE ORDER FORM (Form Sahaja di Landingpage) -->
+			<div class="pt-4 text-left">
+				<DomainSearchForm
+					targetPage="/cek-domain"
+					title="Mulai Order Website: Cek Ketersediaan Domain Anda"
+					subtitle="Ketik nama domain atau brand impian Anda di bawah ini untuk mengecek ketersediaannya di halaman khusus."
+					buttonText="Cek Ketersediaan Domain"
+					variant="hero"
+				/>
+			</div>
+
 			<!-- Action Buttons -->
-			<div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
+			<div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
 				<a
 					href="https://wa.me/6281234567890?text=Halo%20Barizaloka,%20saya%20ingin%20konsultasi%20pembuatan%20website"
 					target="_blank"
@@ -98,7 +104,7 @@
 			</div>
 
 			<!-- Quick Value Proposition Badges -->
-			<div class="pt-8 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center text-xs text-slate-600 dark:text-slate-400 font-medium">
+			<div class="pt-6 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center text-xs text-slate-600 dark:text-slate-400 font-medium">
 				<div class="rounded-xl border border-slate-200 bg-white/80 dark:border-slate-800/80 dark:bg-slate-900/40 p-3 shadow-sm">
 					<div class="font-extrabold text-emerald-600 dark:text-emerald-400 text-lg">100%</div>
 					<div>Custom Code & Mobile Optimized</div>

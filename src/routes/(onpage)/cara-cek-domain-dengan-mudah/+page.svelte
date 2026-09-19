@@ -2,6 +2,7 @@
 	import Breadcrumbs from '$lib/components/Breadcrumbs.svelte';
 	import CtaBanner from '$lib/components/CtaBanner.svelte';
 	import FaqAccordion from '$lib/components/FaqAccordion.svelte';
+	import { DomainService, type DomainCheckItemResult } from '$lib/services/domain.service';
 	import {
 		Globe,
 		Search,
@@ -24,73 +25,25 @@
 	let searchPerformed = $state(false);
 	let copiedDomain = $state('');
 
-	interface DomainResult {
-		ext: string;
-		fullName: string;
-		status: 'available' | 'taken';
-		price: string;
-		renewal: string;
-		badge?: string;
-		note: string;
-	}
+	let results = $state<DomainCheckItemResult[]>([]);
 
-	let results = $state<DomainResult[]>([]);
-
-	const extensions = [
-		{ ext: '.com', basePrice: 'Rp 165.000 /thn', renewal: 'Rp 195.000 /thn', badge: 'Terpopuler Global', note: 'Sangat direkomendasikan untuk bisnis, komersial, & toko online.' },
-		{ ext: '.id', basePrice: 'Rp 225.000 /thn', renewal: 'Rp 250.000 /thn', badge: 'Resmi Indonesia', note: 'Identitas lokal kuat, dipercaya pelanggan di Indonesia.' },
-		{ ext: '.co.id', basePrice: 'Rp 290.000 /thn', renewal: 'Rp 310.000 /thn', badge: 'Legal PT/CV', note: 'Membutuhkan dokumen legalitas usaha (NIB / KTP & SIUP).' },
-		{ ext: '.my.id', basePrice: 'Rp 25.000 /thn', renewal: 'Rp 35.000 /thn', badge: 'Paling Hemat', note: 'Sangat cocok untuk blog pribadi, portofolio, & UMKM rintisan.' },
-		{ ext: '.net', basePrice: 'Rp 185.000 /thn', renewal: 'Rp 210.000 /thn', badge: 'Teknologi & Jaringan', note: 'Pilihan alternatif hebat untuk perusahaan IT, ISP, & SaaS.' },
-		{ ext: '.org', basePrice: 'Rp 190.000 /thn', renewal: 'Rp 220.000 /thn', badge: 'Organisasi & Masjid', note: 'Ideal untuk yayasan, organisasi non-profit, komunitas, & masjid.' },
-		{ ext: '.sch.id', basePrice: 'Rp 65.000 /thn', renewal: 'Rp 75.000 /thn', badge: 'Khusus Sekolah', note: 'Untuk SD/SMP/SMA/SMK. Membutuhkan Surat Permohonan Kepala Sekolah.' },
-		{ ext: '.ponpes.id', basePrice: 'Rp 65.000 /thn', renewal: 'Rp 75.000 /thn', badge: 'Khusus Pesantren', note: 'Untuk Pesantren resmi. Membutuhkan SK Kemenag / Izin Operasional.' }
-	];
-
-	function cleanDomainName(raw: string): string {
-		let cleaned = raw.trim().toLowerCase();
-		cleaned = cleaned.replace(/^https?:\/\//, '');
-		cleaned = cleaned.replace(/^www\./, '');
-		cleaned = cleaned.replace(/\/.*$/, '');
-		// Remove existing TLD extension if typed
-		cleaned = cleaned.replace(/(\.com|\.id|\.co\.id|\.my\.id|\.net|\.org|\.sch\.id|\.ponpes\.id|\.xyz|\.info|\.biz).*$/, '');
-		// Remove invalid characters
-		cleaned = cleaned.replace(/[^a-z0-9-]/g, '');
-		return cleaned;
-	}
-
-	function handleCheckDomain(e?: Event) {
+	async function handleCheckDomain(e?: Event) {
 		if (e) e.preventDefault();
-		const name = cleanDomainName(searchQuery);
+		const name = DomainService.cleanDomainName(searchQuery);
 		if (!name) return;
 
 		isSearching = true;
 		searchPerformed = false;
 
-		setTimeout(() => {
-			// Deterministic availability simulation based on string hash for demo consistency
-			results = extensions.map((item) => {
-				const fullName = `${name}${item.ext}`;
-				// Common taken keywords simulation
-				const takenKeywords = ['google', 'facebook', 'tokopedia', 'barizaloka', 'detik', 'kompas', 'shopee', 'gojek', 'grab'];
-				const isKnownTaken = takenKeywords.some((k) => name.includes(k));
-				const charSum = fullName.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
-				const isAvailable = !isKnownTaken && (charSum % 5 !== 0 || item.ext === '.my.id' || item.ext === '.ponpes.id');
-
-				return {
-					ext: item.ext,
-					fullName,
-					status: isAvailable ? 'available' : 'taken',
-					price: item.basePrice,
-					renewal: item.renewal,
-					badge: item.badge,
-					note: item.note
-				};
-			});
-
+		try {
+			const data = await DomainService.fetchCheck(searchQuery);
+			results = data.results;
+		} catch (err) {
+			console.error('Error checking domain via RDAP service:', err);
+		} finally {
 			isSearching = false;
 			searchPerformed = true;
-		}, 600);
+		}
 	}
 
 	function copyToClipboard(text: string) {
@@ -230,7 +183,7 @@
 				<div>
 					<h2 class="text-xl font-bold text-slate-900 dark:text-white">Hasil Pengecekan Domain</h2>
 					<p class="text-xs text-slate-500 dark:text-slate-400">
-						Menampilkan ketersediaan untuk nama: <span class="font-bold text-emerald-600 dark:text-emerald-400">"{cleanDomainName(searchQuery)}"</span>
+						Menampilkan ketersediaan untuk nama: <span class="font-bold text-emerald-600 dark:text-emerald-400">"{DomainService.cleanDomainName(searchQuery)}"</span>
 					</p>
 				</div>
 				<span class="rounded-full bg-emerald-500/10 px-3 py-1 text-xs font-bold text-emerald-700 dark:text-emerald-400 border border-emerald-500/20">
@@ -273,12 +226,6 @@
 						</div>
 
 						<div class="mt-6 border-t border-slate-200 dark:border-slate-800 pt-4 space-y-3">
-							<div>
-								<div class="text-xs text-slate-500 dark:text-slate-400">Estimasi Biaya:</div>
-								<div class="text-base font-extrabold text-slate-900 dark:text-white">{item.price}</div>
-								<div class="text-[10px] text-slate-400">Perpanjangan: {item.renewal}</div>
-							</div>
-
 							{#if item.status === 'available'}
 								<div class="flex items-center gap-2">
 									<a
