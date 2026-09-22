@@ -35,7 +35,7 @@
 					</div>
 					<div class="flex items-center gap-2">
 						<Phone class="h-4 w-4 flex-shrink-0 text-emerald-600 dark:text-emerald-400" />
-						<span>Hotline / WhatsApp: +62 812-3456-7890</span>
+						<span>Hotline / WhatsApp: +62 851-8815-8542</span>
 					</div>
 				</div>
 			</div>
@@ -98,6 +98,13 @@
 						>
 					</li>
 					<li>
+						<a
+							href="/portofolio"
+							class="transition-colors hover:text-slate-900 dark:hover:text-white"
+							>Portofolio Karya</a
+						>
+					</li>
+					<li>
 						<a href="/blog" class="transition-colors hover:text-slate-900 dark:hover:text-white"
 							>Blog & Panduan</a
 						>
@@ -139,13 +146,20 @@
 						</li>
 					{/each}
 				</ul>
-				<div class="pt-2">
+				<div class="flex flex-col gap-1.5 pt-2">
 					<a
 						href="/potensi-digital-jawa-tengah"
 						class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-700 hover:underline dark:text-emerald-400"
 					>
 						<Sparkles class="h-3.5 w-3.5" />
 						<span>Potensi Digital Jawa Tengah</span>
+					</a>
+					<a
+						href="/potensi-digital-provinsi"
+						class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-600 hover:text-emerald-600 dark:text-slate-400 dark:hover:text-emerald-400"
+					>
+						<ArrowUpRight class="h-3.5 w-3.5" />
+						<span>Direktori 34 Provinsi Indonesia</span>
 					</a>
 				</div>
 			</div>
@@ -162,21 +176,20 @@
 					</div>
 					<div>
 						<h4 class="text-sm font-bold text-slate-900 dark:text-white">
-							Baricode Indonesia Community
+							Baricode Indonesia
 						</h4>
 						<p class="text-xs text-slate-600 dark:text-slate-400">
-							Inisiatif edukasi koding dan pengembangan skill pemrograman bagi pemula di Rembang &
-							Jawa Tengah.
+							Inisiatif edukasi koding dan pengembangan skill pemrograman bagi pemula
 						</p>
 					</div>
 				</div>
 				<a
-					href="https://github.com/barizaloka"
+					href="https://baricode.org"
 					target="_blank"
 					rel="noopener noreferrer"
 					class="inline-flex items-center gap-1.5 rounded-xl border border-slate-300 bg-slate-100 px-4 py-2 text-xs font-semibold text-slate-800 transition-colors hover:bg-slate-200 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200 dark:hover:bg-slate-700"
 				>
-					<span>GitHub Barizaloka</span>
+					<span>Kunjungi Website</span>
 					<ArrowUpRight class="h-3.5 w-3.5" />
 				</a>
 			</div>

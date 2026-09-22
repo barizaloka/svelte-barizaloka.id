@@ -138,7 +138,7 @@
 
 				<div class="mt-10 border-t border-slate-200 pt-6 dark:border-slate-800">
 					<a
-						href="https://wa.me/6281234567890?text={encodeURIComponent(pkg.whatsappMessage)}"
+						href="https://wa.me/6285188158542?text={encodeURIComponent(pkg.whatsappMessage)}"
 						target="_blank"
 						rel="noopener noreferrer"
 						class="flex w-full items-center justify-center gap-2.5 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-400 py-4 text-sm font-extrabold text-slate-950 shadow-xl shadow-emerald-500/25 transition-all hover:from-emerald-400 hover:to-teal-300 active:scale-95"

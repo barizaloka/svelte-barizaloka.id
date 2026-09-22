@@ -1,0 +1,218 @@
+[
+  {
+    "id": "pesantren-tahfidz-sarang",
+    "title": "Portal Resmi & PPDB Pondok Pesantren Tahfidz",
+    "category": "Pesantren",
+    "client": "Pondok Pesantren Al-Hikmah",
+    "location": "Sarang, Rembang",
+    "year": "2024",
+    "badge": "Unggulan",
+    "featured": true,
+    "description": "Portal informasi pesantren terpadu yang memadukan profil lembaga, siaran dakwah santri, serta sistem Pendaftaran Santri Baru (PSB Online) yang terintegrasi langsung dengan WhatsApp panitia.",
+    "features": [
+      "Formulir Pendaftaran Santri Baru (PSB Online)",
+      "Jadwal Kajian Kitab Kuning & Harian",
+      "Galeri Kegiatan Santri & Khotmil Quran",
+      "Kanal Berita & Pengumuman Wali Santri",
+      "Sistem Konfirmasi Berkas via WhatsApp"
+    ],
+    "techStack": ["SvelteKit", "Tailwind CSS", "Cloudflare Pages", "Lucide Icons"],
+    "results": "Memudahkan lebih dari 350 wali santri dari luar daerah mendaftar secara daring tanpa antre manual.",
+    "demoUrl": "https://barizaloka.id/jasa-website-pesantren",
+    "color": "emerald",
+    "testimonial": {
+      "quote": "Alhamdulillah, berkat website dari Barizaloka, pendaftaran santri baru dari luar Jawa Tengah meningkat drastis. Tampilannya rapi, cepat dibuka di HP, dan panitia sangat terbantu.",
+      "name": "Ust. Ahmad Fauzi, S.Pd.I",
+      "role": "Sekretaris Panitia PSB"
+    }
+  },
+  {
+    "id": "masjid-jami-syatho-sedan",
+    "title": "Sistem Informasi & Transparansi Kas Masjid Jami'",
+    "category": "Masjid",
+    "client": "DKM Masjid Jami' Syatho",
+    "location": "Sedan, Rembang",
+    "year": "2024",
+    "badge": "Populer",
+    "featured": true,
+    "description": "Platform transparansi laporan kas infaq mingguan masjid, jadwal sholat presisi, pengumuman kegiatan keagamaan, serta layanan penerimaan ZISWAF berbasis digital.",
+    "features": [
+      "Pembaruan Laporan Kas & Saldo Infaq Terbuka",
+      "Jadwal Sholat Digital Sesuai Koordinat Wilayah",
+      "Kalender Kajian Subuh & Tabligh Akbar",
+      "Program Donasi Pembangunan & Renovasi Fasilitas",
+      "Download Brosur Laporan Pertanggungjawaban"
+    ],
+    "techStack": ["SvelteKit", "Tailwind CSS", "API Jadwal Sholat", "WhatsApp Gateway"],
+    "results": "Meningkatkan kepercayaan jamaah dan memudahkan warga perantauan menyalurkan infaq rutin.",
+    "demoUrl": "https://barizaloka.id/jasa-website-masjid",
+    "color": "teal",
+    "testimonial": {
+      "quote": "Jamaah dan warga perantauan sangat mengapresiasi transparansi kas yang bisa dipantau langsung dari HP. Barizaloka benar-benar mengerti kebutuhan DKM.",
+      "name": "H. Muhammad Ridwan",
+      "role": "Ketua Takmir Masjid"
+    }
+  },
+  {
+    "id": "desa-digital-karangturi",
+    "title": "Portal Desa Wisata & Pelayanan Mandiri",
+    "category": "Desa",
+    "client": "Pemerintah Desa Karangturi",
+    "location": "Lasem, Rembang",
+    "year": "2024",
+    "badge": "Rekomendasi",
+    "featured": true,
+    "description": "Website resmi pemerintah desa berstandar domain .desa.id untuk mempercepat administrasi pengantar surat warga dan mempromosikan destinasi cagar budaya heritage Lasem.",
+    "features": [
+      "Permohonan Surat Keterangan Mandiri Warga",
+      "Publikasi APBDes & Realisasi Pembangunan Desa",
+      "Katalog UMKM & Kerajinan Khas Warga Desa",
+      "Peta Interaktif Destinasi Cagar Budaya",
+      "Layanan Aspirasi & Pengaduan Warga Cepat"
+    ],
+    "techStack": ["SvelteKit", "Tailwind CSS", "Domain .desa.id", "SEO Local"],
+    "results": "Memangkas waktu antre administrasi kantor balai desa hingga 60% dan mengangkat potensi wisata lokal.",
+    "demoUrl": "https://barizaloka.id/jasa-website-desa",
+    "color": "cyan",
+    "testimonial": {
+      "quote": "Bantuan pendaftaran domain desa.id dan penginputan data awal dari tim Barizaloka sangat profesional. Website desa kami kini jadi percontohan di kecamatan.",
+      "name": "Bapak Sutrisno",
+      "role": "Kaur Perencanaan Desa"
+    }
+  },
+  {
+    "id": "batik-tulis-lasem-cendana",
+    "title": "Katalog & Toko Online Batik Tulis Lasem Pusaka",
+    "category": "UMKM",
+    "client": "Batik Tulis Cendana Lasem",
+    "location": "Lasem, Rembang",
+    "year": "2024",
+    "badge": "UMKM Pilihan",
+    "featured": true,
+    "description": "Showcase eksklusif koleksi kain batik tulis klasik Tiga Negeri, Sekar Jagad, dan motif pesisiran Lasem dengan fitur checkout pesanan instan via WhatsApp dan katalog resolusi tinggi.",
+    "features": [
+      "Katalog Produk Filter Berdasarkan Motif & Harga",
+      "Tombol Order Direct ke WhatsApp CS dengan Template Pesan",
+      "Kisah Filosofi dan Sejarah Setiap Motif Batik",
+      "Galeri Proses Membatik Manual Tradisional",
+      "Integrasi Review Pelanggan & Rekening Pembayaran"
+    ],
+    "techStack": ["SvelteKit", "Tailwind CSS", "Image CDN", "WhatsApp Commerce"],
+    "results": "Pesanan dari luar kota seperti Jakarta, Surabaya, hingga mancanegara meningkat signifikan.",
+    "demoUrl": "https://barizaloka.id/jasa-website-umkm",
+    "color": "emerald",
+    "testimonial": {
+      "quote": "Dulu hanya promosi lewat status medsos yang hilang. Sekarang punya katalog resmi yang rapi, calon pembeli luar kota langsung percaya dan order.",
+      "name": "Ibu Hj. Nurlaila",
+      "role": "Owner Batik Cendana"
+    }
+  },
+  {
+    "id": "sepeda-listrik-barizabike",
+    "title": "Showroom Digital Dealer Sepeda & Motor Listrik",
+    "category": "UMKM",
+    "client": "Makmur Jaya EV Store",
+    "location": "Rembang Kota",
+    "year": "2025",
+    "badge": "Terbaru",
+    "featured": false,
+    "description": "Website showroom digital modern untuk dealer sepeda listrik dan motor listrik di jalur Pantura, lengkap dengan komparasi spesifikasi, simulasi garansi, dan booking servis berkala.",
+    "features": [
+      "Daftar Unit Sepeda & Motor Listrik Lengkap",
+      "Komparasi Daya Baterai, Jarak Tempuh & Kecepatan",
+      "Formulir Booking Test Ride & Servis Berkala",
+      "Klaim Garansi & Buku Panduan Perawatan PDF",
+      "Integrasi Peta Lokasi Dealer & Jam Operasional"
+    ],
+    "techStack": ["SvelteKit", "Tailwind CSS", "Google Maps Embed", "Vite"],
+    "results": "Mendapatkan rata-rata 25+ prospek leads pelanggan baru setiap minggu dari pencarian Google lokal.",
+    "demoUrl": "https://barizaloka.id/jasa-website-sepeda-listrik",
+    "color": "teal",
+    "testimonial": {
+      "quote": "Website ini langsung ada di halaman satu Google saat orang mencari sepeda listrik di Rembang dan sekitarnya. Konversi penjualan meningkat pesat.",
+      "name": "Bambang Santoso",
+      "role": "Manager Operasional"
+    }
+  },
+  {
+    "id": "madrasah-aliyah-cendekia",
+    "title": "Portal Akademik & PPDB Madrasah Aliyah Unggulan",
+    "category": "Sekolah",
+    "client": "MA Unggulan Al-Hidayah",
+    "location": "Pati, Jawa Tengah",
+    "year": "2024",
+    "badge": "Edukasi",
+    "featured": false,
+    "description": "Portal sekolah modern yang menyajikan profil madrasah, rekam jejak prestasi siswa, berita kegiatan akademik, serta sistem pendaftaran calon siswa baru yang terverifikasi.",
+    "features": [
+      "Sistem Pendaftaran Siswa Baru (PPDB Online)",
+      "Papan Informasi Prestasi Akademik & Ekstrakurikuler",
+      "Direktori Guru & Tenaga Kependidikan",
+      "Unduh Brosur Kurikulum & Kalender Pendidikan",
+      "Tautan E-Learning & Portal Informasi Wali Murid"
+    ],
+    "techStack": ["SvelteKit", "Tailwind CSS", "Domain .sch.id", "Cloudflare"],
+    "results": "Pendaftaran kuota siswa baru terpenuhi 2 pekan lebih cepat sebelum batas akhir pendaftaran.",
+    "demoUrl": "https://barizaloka.id/harga",
+    "color": "cyan",
+    "testimonial": {
+      "quote": "Prosesnya sangat cepat, tim Barizaloka membantu sampai domain resmi .sch.id terbit. Para orang tua murid memuji tampilan website yang bersih dan informatif.",
+      "name": "Drs. H. Mulyono, M.Pd",
+      "role": "Kepala Madrasah"
+    }
+  },
+  {
+    "id": "lazis-amanah-pantura",
+    "title": "Website Profil & Penyaluran Donasi Lazis Amanah",
+    "category": "Organisasi",
+    "client": "Yayasan Wakaf & Zakat Pantura",
+    "location": "Tuban, Jawa Timur",
+    "year": "2024",
+    "badge": "Sosial",
+    "featured": false,
+    "description": "Platform transparansi program dakwah dan kemanusiaan yayasan sosial, dilengkapi kalkulator zakat online, galeri distribusi bantuan, dan rekening donasi terverifikasi.",
+    "features": [
+      "Kalkulator Penghitungan Zakat Maal & Penghasilan",
+      "Laporan Distribusi Bantuan Bergambar Berkala",
+      "Konfirmasi Otomatis Bukti Transfer Infaq",
+      "Profil Program Beasiswa Santri Yatim & Dhuafa",
+      "Dokumen Legalitas Yayasan & SK Kemenag"
+    ],
+    "techStack": ["SvelteKit", "Tailwind CSS", "Domain .or.id", "WhatsApp Gateway"],
+    "results": "Transparansi publik meningkatkan jumlah donatur tetap yayasan hingga lebih dari 80%.",
+    "demoUrl": "https://barizaloka.id/tentang",
+    "color": "emerald",
+    "testimonial": {
+      "quote": "Kepercayaan donatur adalah segalanya bagi yayasan. Dengan website ini, setiap rupiah penyaluran terdokumentasi dengan transparan dan jelas.",
+      "name": "Ust. Nurul Huda",
+      "role": "Direktur Program Yayasan"
+    }
+  },
+  {
+    "id": "resto-seafood-pantura-maknyus",
+    "title": "Menu Digital & Reservasi Restoran Ikan Bakar Pesisir",
+    "category": "UMKM",
+    "client": "Resto Ikan Bakar Muara Rasa",
+    "location": "Kragan, Rembang",
+    "year": "2025",
+    "badge": "Kuliner",
+    "featured": false,
+    "description": "Website profil restoran dan cafe tepi pantai Pantura dengan fitur e-menu responsif via scan barcode, formulir reservasi rombongan bus wisata, dan ulasan kepuasan pengunjung.",
+    "features": [
+      "Katalog Menu Makanan Laut & Minuman Segar",
+      "Formulir Reservasi Meja & Paket Rombongan",
+      "Petunjuk Rute Google Maps Jalur Utama Pantura",
+      "Daftar Fasilitas: Mushola, Parkir Luas, Gazebo Laut",
+      "Direct Call WhatsApp untuk Konfirmasi Menu Khusus"
+    ],
+    "techStack": ["SvelteKit", "Tailwind CSS", "QR Code Menu", "SEO Pantura"],
+    "results": "Mendapatkan peningkatan reservasi rombongan perjalanan wisata keluarga dan ziarah wali.",
+    "demoUrl": "https://barizaloka.id/jasa-website-umkm",
+    "color": "teal",
+    "testimonial": {
+      "quote": "Banyak pengendara luar kota yang mampir karena menemukan restoran kami di internet. Desain websitenya memanjakan mata dan membuat orang lapar!",
+      "name": "Kurniawan Saputra",
+      "role": "Pemilik Resto Muara Rasa"
+    }
+  }
+]

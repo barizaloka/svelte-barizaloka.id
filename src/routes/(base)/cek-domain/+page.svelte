@@ -230,7 +230,7 @@
 						<div class="mt-6 space-y-2 border-t border-slate-200 pt-4 dark:border-slate-800">
 							{#if item.status === 'available'}
 								<a
-									href={`https://wa.me/6281234567890?text=${encodeURIComponent(
+									href={`https://wa.me/6285188158542?text=${encodeURIComponent(
 										`Halo Barizaloka, saya ingin memesan pembuatan website dengan nama domain ${item.fullName}. Mohon info kelanjutannya.`
 									)}`}
 									target="_blank"
@@ -288,7 +288,7 @@
 					</div>
 
 					<a
-						href="https://wa.me/6281234567890?text=Halo%20Barizaloka,%20saya%20ingin%20konsultasi%20pembuatan%20website"
+						href="https://wa.me/6285188158542?text=Halo%20Barizaloka,%20saya%20ingin%20konsultasi%20pembuatan%20website"
 						target="_blank"
 						rel="noopener noreferrer"
 						class="inline-flex w-full flex-shrink-0 cursor-pointer items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-400 px-6 py-3.5 text-xs font-black text-slate-950 shadow-lg shadow-emerald-500/25 transition-all hover:from-emerald-400 hover:to-teal-300 sm:w-auto"

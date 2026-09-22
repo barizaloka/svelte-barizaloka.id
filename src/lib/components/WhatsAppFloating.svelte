@@ -8,7 +8,7 @@
 <div class="fixed right-6 bottom-6 z-40 flex items-center gap-3">
 	<!-- Pulse Indicator Label on Hover/Desktop -->
 	<a
-		href="https://wa.me/6281234567890?text={encodedMsg}"
+		href="https://wa.me/6285188158542?text={encodedMsg}"
 		target="_blank"
 		rel="noopener noreferrer"
 		class="group flex items-center gap-3 rounded-full bg-emerald-500 p-3.5 text-slate-950 shadow-xl shadow-emerald-500/30 transition-all duration-300 hover:scale-105 hover:bg-emerald-400 active:scale-95"

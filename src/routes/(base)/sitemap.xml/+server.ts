@@ -12,6 +12,7 @@ export const GET: RequestHandler = async () => {
 		'',
 		'/cek-domain',
 		'/harga',
+		'/portofolio',
 		'/tentang',
 		'/faq',
 		'/kontak',
@@ -37,7 +38,10 @@ export const GET: RequestHandler = async () => {
 
 	// Province pages
 	const provinceSlugs = Object.keys(PROVINSI_PAGES);
-	const provincePages = provinceSlugs.map((slug) => `/potensi-digital-${slug}`);
+	const provincePages = [
+		'/potensi-digital-provinsi',
+		...provinceSlugs.map((slug) => `/potensi-digital-${slug}`)
+	];
 
 	// Blog detail pages
 	const blogPages = BLOG_POSTS.map((post) => `/blog/${post.slug}`);
@@ -59,7 +63,7 @@ ${allUrls
     <loc>${domain}${url}</loc>
     <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
     <changefreq>${url === '' ? 'daily' : 'weekly'}</changefreq>
-    <priority>${url === '' ? '1.0' : url.startsWith('/jasa-website-') ? '0.8' : '0.6'}</priority>
+    <priority>${url === '' ? '1.0' : url.startsWith('/jasa-website-') || url.startsWith('/potensi-digital-') ? '0.8' : '0.6'}</priority>
   </url>`;
 	})
 	.join('\n')}

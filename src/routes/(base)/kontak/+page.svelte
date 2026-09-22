@@ -179,7 +179,7 @@
 						<div>
 							<div class="font-bold text-slate-900 dark:text-white">WhatsApp Fast Response</div>
 							<p class="mt-0.5 text-slate-500 dark:text-slate-400">
-								+62 812-3456-7890 (Aktif 24 Jam)
+								+62 851-8815-8542 (Aktif 24 Jam)
 							</p>
 						</div>
 					</div>
@@ -213,7 +213,7 @@
 
 				<div class="border-t border-slate-200 pt-4 dark:border-slate-800">
 					<a
-						href="https://wa.me/6281234567890?text=Halo%20Barizaloka,%20saya%20ingin%20konsultasi%20langsung"
+						href="https://wa.me/6285188158542?text=Halo%20Barizaloka,%20saya%20ingin%20konsultasi%20langsung"
 						target="_blank"
 						rel="noopener noreferrer"
 						class="flex w-full items-center justify-center gap-2 rounded-xl border border-emerald-500/30 bg-emerald-500/10 py-3 text-xs font-bold text-emerald-700 hover:bg-emerald-500/20 dark:text-emerald-400"

@@ -183,6 +183,16 @@
 			</a>
 
 			<a
+				href="/portofolio"
+				class="rounded-lg px-3 py-2 text-sm font-medium transition-colors {currentPath ===
+				'/portofolio'
+					? 'bg-emerald-500/10 font-semibold text-emerald-600 dark:text-emerald-400'
+					: 'text-slate-700 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-slate-800/60 dark:hover:text-white'}"
+			>
+				Portofolio
+			</a>
+
+			<a
 				href="/cek-domain"
 				class="rounded-lg px-3 py-2 text-sm font-medium transition-colors {currentPath ===
 				'/cek-domain'
@@ -218,7 +228,7 @@
 		<div class="hidden items-center gap-3 md:flex">
 			<ThemeToggle />
 			<a
-				href="https://wa.me/6281234567890?text=Halo%20Barizaloka,%20saya%20ingin%20konsultasi%20pembuatan%20website"
+				href="https://wa.me/6285188158542?text=Halo%20Barizaloka,%20saya%20ingin%20konsultasi%20pembuatan%20website"
 				target="_blank"
 				rel="noopener noreferrer"
 				class="group inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 px-4 py-2 text-xs font-bold text-slate-950 shadow-md shadow-emerald-500/20 transition-all duration-200 hover:from-emerald-400 hover:to-teal-400 active:scale-95"
@@ -286,6 +296,13 @@
 					Harga & Paket
 				</a>
 				<a
+					href="/portofolio"
+					onclick={closeAllDropdowns}
+					class="rounded-lg px-3 py-2 text-base font-semibold text-slate-800 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-900"
+				>
+					Portofolio Karya
+				</a>
+				<a
 					href="/cek-domain"
 					onclick={closeAllDropdowns}
 					class="rounded-lg px-3 py-2 text-base font-semibold text-slate-800 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-900"
@@ -309,7 +326,7 @@
 
 				<div class="mt-4 border-t border-slate-200 pt-2 dark:border-slate-800">
 					<a
-						href="https://wa.me/6281234567890?text=Halo%20Barizaloka,%20saya%20ingin%20konsultasi"
+						href="https://wa.me/6285188158542?text=Halo%20Barizaloka,%20saya%20ingin%20konsultasi"
 						target="_blank"
 						rel="noopener noreferrer"
 						class="flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 py-3 font-bold text-slate-950 shadow-lg shadow-emerald-500/20"

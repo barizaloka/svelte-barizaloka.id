@@ -70,7 +70,7 @@
 			<!-- Action Buttons -->
 			<div class="flex flex-col items-center justify-center gap-4 pt-4 sm:flex-row">
 				<a
-					href="https://wa.me/6281234567890?text=Halo%20Barizaloka,%20saya%20ingin%20konsultasi%20pembuatan%20website"
+					href="https://wa.me/6285188158542?text=Halo%20Barizaloka,%20saya%20ingin%20konsultasi%20pembuatan%20website"
 					target="_blank"
 					rel="noopener noreferrer"
 					class="inline-flex w-full items-center justify-center gap-2.5 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-400 px-7 py-4 text-base font-extrabold text-slate-950 shadow-lg shadow-emerald-500/25 transition-all duration-200 hover:scale-[1.02] hover:from-emerald-400 hover:to-teal-300 active:scale-95 sm:w-auto"
@@ -291,7 +291,7 @@
 
 					<div class="mt-8 border-t border-slate-200 pt-6 dark:border-slate-800">
 						<a
-							href="https://wa.me/6281234567890?text={encodeURIComponent(pkg.whatsappMessage)}"
+							href="https://wa.me/6285188158542?text={encodeURIComponent(pkg.whatsappMessage)}"
 							target="_blank"
 							rel="noopener noreferrer"
 							class="flex w-full items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-400 py-3.5 text-xs font-extrabold text-slate-950 shadow-lg shadow-emerald-500/20 transition-all hover:from-emerald-400 hover:to-teal-300"

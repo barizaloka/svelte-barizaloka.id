@@ -9,7 +9,7 @@
 	} = $props();
 
 	const waLink = $derived(
-		`https://wa.me/6281234567890?text=${encodeURIComponent(whatsappMessage)}`
+		`https://wa.me/6285188158542?text=${encodeURIComponent(whatsappMessage)}`
 	);
 </script>
 

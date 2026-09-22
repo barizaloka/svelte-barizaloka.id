@@ -105,7 +105,7 @@
 						{/if}
 
 						<a
-							href={`https://wa.me/6281234567890?text=${encodeURIComponent(`Halo Barizaloka, saya mau pesan ${pkg.name} untuk Website ${nicheLabel}${locationText}`)}`}
+							href={`https://wa.me/6285188158542?text=${encodeURIComponent(`Halo Barizaloka, saya mau pesan ${pkg.name} untuk Website ${nicheLabel}${locationText}`)}`}
 							target="_blank"
 							rel="noopener noreferrer"
 							class="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-400 py-3.5 text-xs font-extrabold text-slate-950 shadow-lg shadow-emerald-500/20 transition-all hover:from-emerald-400 hover:to-teal-300"
@@ -162,7 +162,7 @@
 
 				<div class="flex flex-col items-start justify-center lg:col-span-4 lg:items-end">
 					<a
-						href={`https://wa.me/6281234567890?text=${encodeURIComponent(`Halo Barizaloka, saya ingin diskusi kebutuhan website/sistem CUSTOM untuk ${nicheLabel}${locationText}`)}`}
+						href={`https://wa.me/6285188158542?text=${encodeURIComponent(`Halo Barizaloka, saya ingin diskusi kebutuhan website/sistem CUSTOM untuk ${nicheLabel}${locationText}`)}`}
 						target="_blank"
 						rel="noopener noreferrer"
 						class="inline-flex w-full items-center justify-center gap-2.5 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-400 px-6 py-4 text-xs font-black text-slate-950 shadow-xl shadow-emerald-500/25 transition-all hover:from-emerald-400 hover:to-teal-300 sm:w-auto"
