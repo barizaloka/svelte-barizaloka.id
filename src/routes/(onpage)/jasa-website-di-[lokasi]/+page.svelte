@@ -61,7 +61,7 @@
 
 			<div class="flex flex-col items-center gap-4 pt-4 sm:flex-row">
 				<a
-					href="https://wa.me/6281234567890?text=Halo%20Barizaloka,%20saya%20ingin%20konsultasi%20jasa%20website%20di%20{encodeURIComponent(
+					href="https://wa.me/6285188158542?text=Halo%20Barizaloka,%20saya%20ingin%20konsultasi%20jasa%20website%20di%20{encodeURIComponent(
 						location.name
 					)}"
 					target="_blank"

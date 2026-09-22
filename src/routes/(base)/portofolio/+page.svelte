@@ -380,7 +380,7 @@
 						</a>
 
 						<a
-							href="https://wa.me/6281234567890?text={encodeURIComponent(
+							href="https://wa.me/6285188158542?text={encodeURIComponent(
 								`Halo Barizaloka, saya tertarik membuat website seperti portofolio: ${item.title} (${item.client})`
 							)}"
 							target="_blank"

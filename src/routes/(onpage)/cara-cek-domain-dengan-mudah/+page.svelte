@@ -288,7 +288,7 @@
 							{#if item.status === 'available'}
 								<div class="flex items-center gap-2">
 									<a
-										href={`https://wa.me/6281234567890?text=Halo%20Barizaloka,%20saya%20ingin%20mendaftarkan%20domain%20${encodeURIComponent(item.fullName)}`}
+										href={`https://wa.me/6285188158542?text=Halo%20Barizaloka,%20saya%20ingin%20mendaftarkan%20domain%20${encodeURIComponent(item.fullName)}`}
 										target="_blank"
 										rel="noopener noreferrer"
 										class="inline-flex flex-1 items-center justify-center gap-1.5 rounded-xl bg-emerald-600 px-3 py-2 text-xs font-bold text-white shadow transition-colors hover:bg-emerald-500"
@@ -549,7 +549,7 @@
 
 			<div class="flex flex-wrap items-center gap-4 pt-2">
 				<a
-					href="https://wa.me/6281234567890?text=Halo%20Barizaloka,%20saya%20ingin%20konsultasi%20pendaftaran%20domain%20dan%20pembuatan%20website"
+					href="https://wa.me/6285188158542?text=Halo%20Barizaloka,%20saya%20ingin%20konsultasi%20pendaftaran%20domain%20dan%20pembuatan%20website"
 					target="_blank"
 					rel="noopener noreferrer"
 					class="inline-flex items-center gap-2 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-400 px-6 py-3.5 text-sm font-extrabold text-slate-950 shadow-lg shadow-emerald-500/25 transition-all hover:from-emerald-400 hover:to-teal-300"
