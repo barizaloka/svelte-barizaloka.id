@@ -193,16 +193,6 @@
 			</a>
 
 			<a
-				href="/portofolio"
-				class="rounded-lg px-3 py-2 text-sm font-medium transition-colors {currentPath ===
-				'/portofolio'
-					? 'bg-emerald-500/10 font-semibold text-emerald-600 dark:text-emerald-400'
-					: 'text-slate-700 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-slate-800/60 dark:hover:text-white'}"
-			>
-				Portofolio
-			</a>
-
-			<a
 				href="/blog"
 				class="rounded-lg px-3 py-2 text-sm font-medium transition-colors {currentPath.startsWith(
 					'/blog'
@@ -301,13 +291,6 @@
 					class="rounded-lg px-3 py-2 text-base font-semibold text-slate-800 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-900"
 				>
 					Order & Cek Domain
-				</a>
-				<a
-					href="/portofolio"
-					onclick={closeAllDropdowns}
-					class="rounded-lg px-3 py-2 text-base font-semibold text-slate-800 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-900"
-				>
-					Portofolio
 				</a>
 				<a
 					href="/blog"

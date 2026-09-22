@@ -1,6 +1,5 @@
 <script lang="ts">
 	import {
-		Globe,
 		GraduationCap,
 		Landmark,
 		Building2,
@@ -8,52 +7,16 @@
 		Zap,
 		CheckCircle2,
 		ArrowRight,
-		ShieldCheck,
-		Star,
-		Users,
-		Code2,
-		MapPin,
-		Sparkles,
-		Layers,
 		MessageSquare
 	} from 'lucide-svelte';
 	import { NICHE_PAGES } from '$lib/data/niche_pages';
-	import { PORTFOLIO_PROJECTS } from '$lib/data/portfolio_data';
 	import { PRICING_PACKAGES } from '$lib/data/pricing_data';
 	import CtaBanner from '$lib/components/CtaBanner.svelte';
 	import FaqAccordion from '$lib/components/FaqAccordion.svelte';
 	import DomainSearchForm from '$lib/components/DomainSearchForm.svelte';
 
 	const niches = Object.values(NICHE_PAGES);
-	const featuredProjects = PORTFOLIO_PROJECTS.slice(0, 3);
 	const packages = PRICING_PACKAGES;
-
-	const testimonials = [
-		{
-			name: 'KH. M. Syukron',
-			role: 'Pengasuh PP Al-Hidayah Rembang',
-			content:
-				'Alhamdulillah, website buatan Barizaloka sangat membantu pendaftaran santri baru online. Wali santri dari Sumatra dan Kalimantan bisa daftar tanpa kendala.',
-			avatar:
-				'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=150&auto=format&fit=crop'
-		},
-		{
-			name: 'H. Sudirman, S.Ag',
-			role: 'Ketua DKM Masjid Al-Barokah Pati',
-			content:
-				'Laporan keuangan kas masjid kami jadi jauh lebih transparan. Jemaah bisa cek laporan kas dan jadwal kajian langsung dari smartphone.',
-			avatar:
-				'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&auto=format&fit=crop'
-		},
-		{
-			name: 'Bpk. Hendro Utomo',
-			role: 'Pemilik E-Bike Central Kudus',
-			content:
-				'Website showroom sepeda listrik yang dibuat rapi sekali. Fitur simulasi kredit membuat pengunjung lebih mudah menghitung cicilan sebelum pesan.',
-			avatar:
-				'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=150&auto=format&fit=crop'
-		}
-	];
 </script>
 
 <svelte:head>
@@ -241,77 +204,6 @@
 	</div>
 </section>
 
-<!-- PORTFOLIO SHOWCASE TEASER -->
-<section class="bg-slate-50 py-16 transition-colors duration-200 lg:py-24 dark:bg-slate-950">
-	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-		<div class="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
-			<div>
-				<h2
-					class="text-xs font-bold tracking-widest text-emerald-600 uppercase dark:text-emerald-400"
-				>
-					Hasil Karya Terbaru
-				</h2>
-				<h3 class="mt-1 text-2xl font-extrabold text-slate-900 sm:text-4xl dark:text-white">
-					Portofolio Proyek Terpercaya
-				</h3>
-			</div>
-			<a
-				href="/portofolio"
-				class="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-4 py-2.5 text-xs font-bold text-slate-800 transition-colors hover:bg-slate-100 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-200 dark:hover:bg-slate-800"
-			>
-				<span>Lihat Semua Karya ({PORTFOLIO_PROJECTS.length})</span>
-				<ArrowRight class="h-4 w-4 text-emerald-600 dark:text-emerald-400" />
-			</a>
-		</div>
-
-		<div class="grid grid-cols-1 gap-8 md:grid-cols-3">
-			{#each featuredProjects as item}
-				<div
-					class="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl transition-all hover:border-slate-300 dark:border-slate-800 dark:bg-slate-900/70 dark:hover:border-slate-700"
-				>
-					<div class="relative h-48 overflow-hidden">
-						<img
-							src={item.image}
-							alt={item.title}
-							class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-						/>
-						<div class="absolute top-3 left-3">
-							<span
-								class="rounded-full border border-white/10 bg-slate-900/80 px-3 py-1 text-[11px] font-semibold text-emerald-400 backdrop-blur-md"
-							>
-								{item.category}
-							</span>
-						</div>
-					</div>
-
-					<div class="space-y-3 p-6">
-						<div class="flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400">
-							<MapPin class="h-3.5 w-3.5 text-emerald-600 dark:text-emerald-400" />
-							<span>{item.location}</span>
-						</div>
-
-						<h4
-							class="text-base font-bold text-slate-900 transition-colors group-hover:text-emerald-600 dark:text-white dark:group-hover:text-emerald-300"
-						>
-							{item.title}
-						</h4>
-
-						<p class="line-clamp-2 text-xs leading-relaxed text-slate-600 dark:text-slate-400">
-							{item.summary}
-						</p>
-
-						<div
-							class="border-t border-slate-200 pt-3 text-[11px] font-medium text-emerald-700 dark:border-slate-800/80 dark:text-emerald-400"
-						>
-							✨ {item.results}
-						</div>
-					</div>
-				</div>
-			{/each}
-		</div>
-	</div>
-</section>
-
 <!-- PRICING PACKAGES TEASER -->
 <section
 	class="border-t border-slate-200 bg-slate-100/70 py-16 transition-colors duration-200 lg:py-24 dark:border-slate-800 dark:bg-slate-900/40"
@@ -414,55 +306,9 @@
 	</div>
 </section>
 
-<!-- TESTIMONIALS SECTION -->
-<section class="bg-slate-50 py-16 transition-colors duration-200 lg:py-24 dark:bg-slate-950">
-	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-		<div class="mx-auto mb-12 max-w-2xl space-y-3 text-center">
-			<h2
-				class="text-xs font-bold tracking-widest text-emerald-600 uppercase dark:text-emerald-400"
-			>
-				Testimoni Mitra
-			</h2>
-			<h3 class="text-2xl font-extrabold text-slate-900 sm:text-4xl dark:text-white">
-				Apa Kata Klien Kami?
-			</h3>
-		</div>
-
-		<div class="grid grid-cols-1 gap-6 md:grid-cols-3">
-			{#each testimonials as t}
-				<div
-					class="space-y-4 rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900/60"
-				>
-					<div class="flex items-center gap-1 text-amber-500">
-						{#each Array(5) as _}
-							<Star class="h-4 w-4 fill-amber-400" />
-						{/each}
-					</div>
-					<p class="text-xs leading-relaxed text-slate-700 italic dark:text-slate-300">
-						"{t.content}"
-					</p>
-					<div
-						class="flex items-center gap-3 border-t border-slate-200 pt-2 dark:border-slate-800/80"
-					>
-						<img
-							src={t.avatar}
-							alt={t.name}
-							class="h-10 w-10 rounded-full border border-emerald-500/30 object-cover"
-						/>
-						<div>
-							<div class="text-xs font-bold text-slate-900 dark:text-white">{t.name}</div>
-							<div class="text-[11px] text-slate-500 dark:text-slate-400">{t.role}</div>
-						</div>
-					</div>
-				</div>
-			{/each}
-		</div>
-	</div>
-</section>
-
 <!-- FAQ SECTION PREVIEW -->
 <section
-	class="border-t border-slate-200 bg-slate-100/70 py-16 transition-colors duration-200 lg:py-24 dark:border-slate-800 dark:bg-slate-900/40"
+	class="border-t border-slate-200 bg-slate-50 py-16 transition-colors duration-200 lg:py-24 dark:border-slate-800 dark:bg-slate-950"
 >
 	<div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
 		<div class="mx-auto mb-12 max-w-2xl space-y-3 text-center">

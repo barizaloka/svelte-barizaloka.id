@@ -98,12 +98,6 @@
 						>
 					</li>
 					<li>
-						<a
-							href="/portofolio"
-							class="transition-colors hover:text-slate-900 dark:hover:text-white">Portofolio</a
-						>
-					</li>
-					<li>
 						<a href="/blog" class="transition-colors hover:text-slate-900 dark:hover:text-white"
 							>Blog & Panduan</a
 						>

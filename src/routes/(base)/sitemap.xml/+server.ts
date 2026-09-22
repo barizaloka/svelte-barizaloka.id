@@ -15,7 +15,6 @@ export const GET: RequestHandler = async () => {
 		'/tentang',
 		'/faq',
 		'/kontak',
-		'/portofolio',
 		'/blog',
 		'/cara-cek-domain-dengan-mudah'
 	];
