@@ -124,6 +124,13 @@
 							>Hubungi Kami</a
 						>
 					</li>
+					<li>
+						<a
+							href="/sumu-serikat-usaha-muhammadiyah"
+							class="font-medium text-emerald-600 transition-colors hover:text-slate-900 dark:text-emerald-400 dark:hover:text-white"
+							>💚 Inisiatif SUMU</a
+						>
+					</li>
 				</ul>
 			</div>
 
