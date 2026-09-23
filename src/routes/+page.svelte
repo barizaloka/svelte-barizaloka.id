@@ -42,9 +42,10 @@
 			<h1
 				class="text-3xl leading-[1.15] font-black tracking-tight text-slate-900 sm:text-5xl lg:text-6xl dark:text-white"
 			>
-				Website Profesional untuk <span
+				Sebelum daftar, donasi, atau transfer,<br />
+				<span
 					class="bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 bg-clip-text text-transparent dark:from-emerald-400 dark:via-teal-300 dark:to-cyan-400"
-					>Pesantren, Masjid, Desa & UMKM</span
+					>mereka cek website Anda dulu.</span
 				>
 			</h1>
 
@@ -52,8 +53,8 @@
 			<p
 				class="mx-auto max-w-2xl text-base leading-relaxed text-slate-700 sm:text-lg dark:text-slate-300"
 			>
-				Hadirkan portal digital yang cepat, transparan, dan modern. Dilengkapi sistem PSB Online,
-				Laporan Kas DKM, Surat Desa Mandiri, serta Katalog Usaha Direct WhatsApp.
+				Beri kesan pertama yang terpercaya. Hadirkan portal digital cepat dan transparan—mulai dari
+				PSB Online, laporan kas masjid, layanan desa, hingga katalog jualan UMKM.
 			</p>
 
 			<!-- DOMAIN CHECK & WEBSITE ORDER FORM (Form Sahaja di Landingpage) -->
