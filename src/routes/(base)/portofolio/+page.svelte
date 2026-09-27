@@ -405,10 +405,10 @@
 				<Search class="h-6 w-6" />
 			</div>
 			<h3 class="mt-4 text-base font-bold text-slate-900 dark:text-white">
-				Tidak ada karya yang sesuai kriteria
+				Belum ada karya yang sesuai kriteria
 			</h3>
 			<p class="mt-1 text-xs text-slate-500 dark:text-slate-400">
-				Coba gunakan kata kunci pencarian lain atau klik tombol reset di bawah.
+				Coba gunakan kata kunci pencarian lain atau klik tombol reset di bawah, atau memang belum ada data maka kami sedang mengusahakannya bila memungkinkan.
 			</p>
 			<button
 				onclick={resetFilters}
