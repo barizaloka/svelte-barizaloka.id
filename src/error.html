@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="id">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>%sveltekit.status% — Terjadi Kendala | Barizaloka</title>
+		<style>
+			:root {
+				--bg: #f8fafc;
+				--text: #0f172a;
+				--card-bg: #ffffff;
+				--card-border: #e2e8f0;
+				--subtext: #475569;
+				--accent: #059669;
+				--accent-hover: #047857;
+			}
+			@media (prefers-color-scheme: dark) {
+				:root {
+					--bg: #020617;
+					--text: #f8fafc;
+					--card-bg: #0f172a;
+					--card-border: #1e293b;
+					--subtext: #94a3b8;
+					--accent: #10b981;
+					--accent-hover: #059669;
+				}
+			}
+			* {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+			}
+			body {
+				font-family:
+					system-ui,
+					-apple-system,
+					BlinkMacSystemFont,
+					'Segoe UI',
+					Roboto,
+					Oxygen,
+					Ubuntu,
+					Cantarell,
+					sans-serif;
+				background-color: var(--bg);
+				color: var(--text);
+				min-height: 100vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: 1.5rem;
+				line-height: 1.6;
+			}
+			.container {
+				width: 100%;
+				max-width: 520px;
+				background-color: var(--card-bg);
+				border: 1px solid var(--card-border);
+				border-radius: 1.5rem;
+				padding: 2.5rem 2rem;
+				text-align: center;
+				box-shadow:
+					0 20px 25px -5px rgba(0, 0, 0, 0.05),
+					0 8px 10px -6px rgba(0, 0, 0, 0.05);
+			}
+			.status {
+				font-size: 5rem;
+				font-weight: 900;
+				line-height: 1;
+				background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				margin-bottom: 0.75rem;
+			}
+			.badge {
+				display: inline-block;
+				font-size: 0.75rem;
+				font-weight: 600;
+				text-transform: uppercase;
+				letter-spacing: 0.05em;
+				padding: 0.35rem 0.85rem;
+				border-radius: 9999px;
+				background: rgba(16, 185, 129, 0.1);
+				color: var(--accent);
+				margin-bottom: 1.25rem;
+			}
+			h1 {
+				font-size: 1.5rem;
+				font-weight: 800;
+				margin-bottom: 0.75rem;
+			}
+			p {
+				color: var(--subtext);
+				font-size: 0.95rem;
+				margin-bottom: 1.5rem;
+			}
+			.btn-home {
+				display: inline-block;
+				background-color: var(--accent);
+				color: #020617;
+				font-weight: 700;
+				font-size: 0.9rem;
+				text-decoration: none;
+				padding: 0.75rem 1.75rem;
+				border-radius: 0.75rem;
+				transition: background-color 0.15s ease;
+			}
+			.btn-home:hover {
+				background-color: var(--accent-hover);
+			}
+			.error-box {
+				margin-top: 1.5rem;
+				padding: 0.75rem 1rem;
+				background: rgba(239, 68, 68, 0.08);
+				border: 1px solid rgba(239, 68, 68, 0.2);
+				border-radius: 0.5rem;
+				font-family: monospace;
+				font-size: 0.75rem;
+				color: #ef4444;
+				text-align: left;
+				word-break: break-all;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="badge">Sistem Barizaloka</div>
+			<div class="status">%sveltekit.status%</div>
+			<h1>Terjadi Kendala Teknis</h1>
+			<p>Halaman tidak dapat ditampilkan saat ini. Tim kami segera memperbaikinya.</p>
+			<a href="/" class="btn-home">Kembali ke Beranda</a>
+			<div class="error-box">%sveltekit.error.message%</div>
+		</div>
+	</body>
+</html>
