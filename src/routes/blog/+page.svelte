@@ -78,7 +78,7 @@
 		</div>
 	{:else}
 		<div class="my-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-			{#each filteredPosts as post (post.id)}
+			{#each filteredPosts as post (post.slug)}
 				<a
 					href="/blog/{post.slug}"
 					class="group flex flex-col justify-between overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl backdrop-blur-md transition-all duration-300 hover:border-emerald-500/40 dark:border-slate-800 dark:bg-slate-900/70"

@@ -1,5 +1,5 @@
 ---
-id: '54'
+id: '55'
 slug: cara-cek-domain-dengan-mudah
 title: Cara Cek Domain dengan Mudah dan Cepat (Panduan Lengkap 2026)
 excerpt: Ingin tahu apakah nama domain impian Anda masih tersedia? Pelajari cara cek domain dengan mudah, panduan WHOIS lookup, memilih ekstensi .com atau .id, serta tips mengamankan nama brand secara instan.
