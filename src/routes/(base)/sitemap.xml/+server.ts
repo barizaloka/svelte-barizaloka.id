@@ -1,6 +1,6 @@
 import type { RequestHandler } from './$types';
 import { NICHE_PAGES } from '$lib/data/niche_pages';
-import { LOCATION_PAGES } from '$lib/data/location_pages';
+import { LOCATION_PAGES, KECAMATAN_PAGES } from '$lib/data/location_pages';
 import { PROVINSI_PAGES } from '$lib/data/provinsi_pages';
 import { BLOG_POSTS } from '$lib/data/blog_data';
 
@@ -25,9 +25,13 @@ export const GET: RequestHandler = async () => {
 	const nicheSlugs = Object.keys(NICHE_PAGES);
 	const nichePages = nicheSlugs.map((slug) => `/jasa-website-${slug}`);
 
-	// Location pages
+	// Location pages (Kabupaten / Kota)
 	const locationSlugs = Object.keys(LOCATION_PAGES);
 	const locationPages = locationSlugs.map((slug) => `/jasa-website-di-${slug}`);
+
+	// Kecamatan pages
+	const kecamatanSlugs = Object.keys(KECAMATAN_PAGES);
+	const kecamatanPages = kecamatanSlugs.map((slug) => `/jasa-website-di-${slug}`);
 
 	// Niche x Location combination pages
 	const combinationPages: string[] = [];
@@ -51,6 +55,7 @@ export const GET: RequestHandler = async () => {
 		...staticPages,
 		...nichePages,
 		...locationPages,
+		...kecamatanPages,
 		...combinationPages,
 		...provincePages,
 		...blogPages

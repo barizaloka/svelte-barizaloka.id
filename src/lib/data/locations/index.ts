@@ -30,3 +30,6 @@ export function getLocationsByProvince(provinceSlug: string): LocationInfo[] {
 	const prov = LOCATIONS_BY_PROVINCE[provinceSlug];
 	return prov ? Object.values(prov) : [];
 }
+
+export * from './kecamatan';
+
