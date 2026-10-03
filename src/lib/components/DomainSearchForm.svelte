@@ -24,8 +24,13 @@
 		variant = 'hero'
 	}: Props = $props();
 
+	// svelte-ignore state_referenced_locally
 	let searchQuery = $state(initialQuery);
 	let selectedTld = $state('');
+
+	$effect(() => {
+		searchQuery = initialQuery;
+	});
 
 	const popularTLDs = [
 		'.com',

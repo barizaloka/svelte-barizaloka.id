@@ -14,10 +14,12 @@
 	} from 'lucide-svelte';
 
 	let { data } = $props();
-	const { location } = data;
+	const location = $derived(data.location);
 
 	const niches = Object.values(NICHE_PAGES);
-	const nearbyList = location.nearbyLocations.map((slug) => LOCATION_PAGES[slug]).filter(Boolean);
+	const nearbyList = $derived(
+		location.nearbyLocations.map((slug) => LOCATION_PAGES[slug]).filter(Boolean)
+	);
 </script>
 
 <svelte:head>

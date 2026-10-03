@@ -15,6 +15,8 @@
 		ExternalLink
 	} from 'lucide-svelte';
 
+	import { LOCATION_PAGES } from '$lib/data/location_pages';
+
 	let { data } = $props();
 	const provinsi = $derived(data.provinsi);
 	const relatedProvinces = $derived(data.relatedProvinces);
@@ -24,6 +26,15 @@
 
 	function toggleFaq(index: number) {
 		openFaq = openFaq === index ? null : index;
+	}
+
+	function getKabupatenLocation(name: string) {
+		const clean = name
+			.toLowerCase()
+			.replace(/^(kabupaten|kota)\s+/i, '')
+			.trim()
+			.replace(/\s+/g, '-');
+		return LOCATION_PAGES[clean] || LOCATION_PAGES[name.toLowerCase().replace(/\s+/g, '-')] || null;
 	}
 </script>
 
@@ -190,12 +201,23 @@
 
 			<div class="mx-auto flex max-w-5xl flex-wrap justify-center gap-2.5">
 				{#each provinsi.kabupaten_kota as kabupaten}
-					<span
-						class="inline-flex items-center gap-1.5 rounded-xl border border-slate-200 bg-white px-3.5 py-2 text-xs font-semibold text-slate-800 shadow-2xs transition-colors hover:border-emerald-500 hover:text-emerald-700 sm:text-sm dark:border-slate-800 dark:bg-slate-900 dark:text-slate-200 dark:hover:border-emerald-400 dark:hover:text-emerald-300"
-					>
-						<MapPin class="h-3.5 w-3.5 text-emerald-600 dark:text-emerald-400" />
-						<span>{kabupaten}</span>
-					</span>
+					{@const loc = getKabupatenLocation(kabupaten)}
+					{#if loc}
+						<a
+							href="/jasa-website-di-{loc.slug}"
+							class="inline-flex items-center gap-1.5 rounded-xl border border-emerald-300/80 bg-white px-3.5 py-2 text-xs font-semibold text-emerald-950 shadow-2xs transition-all hover:border-emerald-500 hover:bg-emerald-50 hover:text-emerald-700 sm:text-sm dark:border-emerald-800/80 dark:bg-slate-900 dark:text-emerald-300 dark:hover:border-emerald-400 dark:hover:bg-emerald-950/40"
+						>
+							<MapPin class="h-3.5 w-3.5 text-emerald-600 dark:text-emerald-400" />
+							<span>{kabupaten}</span>
+						</a>
+					{:else}
+						<span
+							class="inline-flex items-center gap-1.5 rounded-xl border border-slate-200 bg-white px-3.5 py-2 text-xs font-semibold text-slate-800 shadow-2xs transition-colors hover:border-emerald-500 hover:text-emerald-700 sm:text-sm dark:border-slate-800 dark:bg-slate-900 dark:text-slate-200 dark:hover:border-emerald-400 dark:hover:text-emerald-300"
+						>
+							<MapPin class="h-3.5 w-3.5 text-emerald-600 dark:text-emerald-400" />
+							<span>{kabupaten}</span>
+						</span>
+					{/if}
 				{/each}
 			</div>
 		</section>

@@ -5,8 +5,13 @@
 	let { initialCategory = 'Semua' } = $props();
 
 	let searchQuery = $state('');
+	// svelte-ignore state_referenced_locally
 	let selectedCategory = $state(initialCategory);
 	let openItem = $state<string | null>(FAQ_DATA[0]?.id || null);
+
+	$effect(() => {
+		selectedCategory = initialCategory;
+	});
 
 	const categories = [
 		'Semua',

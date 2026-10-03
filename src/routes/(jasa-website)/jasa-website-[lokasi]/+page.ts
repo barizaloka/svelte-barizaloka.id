@@ -10,18 +10,12 @@ const ALIASES: Record<string, string> = {
 
 export const load: PageLoad = ({ params }) => {
 	const rawSlug = params.lokasi.toLowerCase();
-	if (ALIASES[rawSlug]) {
-		throw redirect(301, `/jasa-website-di-${ALIASES[rawSlug]}`);
+	const targetSlug = ALIASES[rawSlug] || rawSlug;
+
+	const location = LOCATION_PAGES[targetSlug];
+	if (location) {
+		throw redirect(301, `/jasa-website-di-${targetSlug}`);
 	}
 
-	const location = LOCATION_PAGES[rawSlug];
-
-	if (!location) {
-		throw error(404, `Lokasi ${params.lokasi} tidak ditemukan`);
-	}
-
-	return {
-		location
-	};
+	throw error(404, `Halaman jasa website ${params.lokasi} tidak ditemukan`);
 };
-

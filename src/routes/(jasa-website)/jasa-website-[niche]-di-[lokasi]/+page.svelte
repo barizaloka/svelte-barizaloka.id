@@ -6,7 +6,8 @@
 	import { CheckCircle2, MessageSquare, MapPin, ArrowRight } from 'lucide-svelte';
 
 	let { data } = $props();
-	const { niche, location } = data;
+	const niche = $derived(data.niche);
+	const location = $derived(data.location);
 </script>
 
 <svelte:head>
