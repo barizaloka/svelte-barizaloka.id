@@ -147,6 +147,39 @@
 		</div>
 	</div>
 
+	<!-- Kecamatan Coverage Section -->
+	{#if location.kecamatan && location.kecamatan.length > 0}
+		<div
+			class="my-16 rounded-3xl border border-slate-200 bg-slate-50/70 p-8 sm:p-10 text-center dark:border-slate-800 dark:bg-slate-900/40"
+		>
+			<div class="mx-auto max-w-2xl space-y-2 mb-6">
+				<div
+					class="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1 text-xs font-bold text-emerald-700 dark:text-emerald-400"
+				>
+					<MapPin class="h-3.5 w-3.5" />
+					<span>Jangkauan Layanan Lokal</span>
+				</div>
+				<h3 class="text-xl font-extrabold text-slate-900 sm:text-3xl dark:text-white">
+					Cakupan Seluruh Kecamatan di {location.type} {location.name}
+				</h3>
+				<p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400">
+					Barizaloka siap melayani pembuatan website profesional untuk instansi, desa, sekolah/pesantren, dan UMKM di {location.kecamatan.length} kecamatan se-{location.name}.
+				</p>
+			</div>
+
+			<div class="flex flex-wrap justify-center gap-2 max-w-5xl mx-auto">
+				{#each location.kecamatan as kec}
+					<span
+						class="inline-flex items-center gap-1.5 rounded-xl border border-slate-200 bg-white px-3.5 py-2 text-xs font-semibold text-slate-800 shadow-2xs transition-colors hover:border-emerald-500 hover:text-emerald-700 sm:text-sm dark:border-slate-800 dark:bg-slate-900 dark:text-slate-200 dark:hover:border-emerald-400 dark:hover:text-emerald-300"
+					>
+						<span class="h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
+						<span>Kecamatan {kec}</span>
+					</span>
+				{/each}
+			</div>
+		</div>
+	{/if}
+
 	<!-- Nearby Locations -->
 	{#if nearbyList.length > 0}
 		<div

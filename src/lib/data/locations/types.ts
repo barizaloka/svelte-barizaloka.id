@@ -6,4 +6,6 @@ export interface LocationInfo {
 	type: 'Kabupaten' | 'Kota';
 	highlights: string;
 	nearbyLocations: string[];
+	kecamatan: string[];
 }
+

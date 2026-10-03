@@ -9,7 +9,23 @@ export const jawaTengahLocations: Record<string, LocationInfo> = {
 		type: 'Kabupaten',
 		highlights:
 			'Kota santri & pusat industri kreatif pesisir utara dengan ribuan UMKM dan pesantren berprestasi.',
-		nearbyLocations: ['pati', 'blora', 'kudus', 'jepara']
+		nearbyLocations: ['pati', 'blora', 'kudus', 'jepara'],
+		kecamatan: [
+			'Bulu',
+			'Gunem',
+			'Kaliori',
+			'Kragan',
+			'Lasem',
+			'Pamotan',
+			'Pancur',
+			'Rembang',
+			'Sale',
+			'Sarang',
+			'Sedan',
+			'Sluke',
+			'Sulang',
+			'Sumber'
+		]
 	},
 	pati: {
 		slug: 'pati',
@@ -19,7 +35,30 @@ export const jawaTengahLocations: Record<string, LocationInfo> = {
 		type: 'Kabupaten',
 		highlights:
 			'Pusat perikanan, pertanian, dan bisnis manufaktur yang berkembang pesat di Jawa Tengah.',
-		nearbyLocations: ['rembang', 'kudus', 'jepara', 'blora']
+		nearbyLocations: ['rembang', 'kudus', 'jepara', 'blora'],
+		kecamatan: [
+			'Batangan',
+			'Cluwak',
+			'Dukuhseti',
+			'Gabus',
+			'Gembong',
+			'Gunungwungkal',
+			'Jaken',
+			'Jakenan',
+			'Juwana',
+			'Kayen',
+			'Margorejo',
+			'Margoyoso',
+			'Pati',
+			'Pucakwangi',
+			'Sukolilo',
+			'Tambakromo',
+			'Tayu',
+			'Tlogowungu',
+			'Trangkil',
+			'Wedarijaksa',
+			'Winong'
+		]
 	},
 	kudus: {
 		slug: 'kudus',
@@ -28,7 +67,18 @@ export const jawaTengahLocations: Record<string, LocationInfo> = {
 		provinceName: 'Jawa Tengah',
 		type: 'Kabupaten',
 		highlights: 'Kota kretek dan pusat pendidikan keagamaan serta industri perkeliruan modern.',
-		nearbyLocations: ['pati', 'jepara', 'demak', 'rembang']
+		nearbyLocations: ['pati', 'jepara', 'demak', 'rembang'],
+		kecamatan: [
+			'Bae',
+			'Dawe',
+			'Gebog',
+			'Jati',
+			'Jekulo',
+			'Kaliwungu',
+			'Kudus Kota',
+			'Mejobo',
+			'Undaan'
+		]
 	},
 	jepara: {
 		slug: 'jepara',
@@ -37,7 +87,25 @@ export const jawaTengahLocations: Record<string, LocationInfo> = {
 		provinceName: 'Jawa Tengah',
 		type: 'Kabupaten',
 		highlights: 'Sentra ukir dunia, industri mebel ekspor, dan destinasi wisata bahari unggulan.',
-		nearbyLocations: ['kudus', 'pati', 'demak']
+		nearbyLocations: ['kudus', 'pati', 'demak'],
+		kecamatan: [
+			'Bangsri',
+			'Batealit',
+			'Donorojo',
+			'Jepara',
+			'Kalinyamatan',
+			'Karimunjawa',
+			'Kedung',
+			'Keling',
+			'Kembang',
+			'Mayong',
+			'Mlonggo',
+			'Nalumsari',
+			'Pakis Aji',
+			'Pecangaan',
+			'Tahunan',
+			'Welahan'
+		]
 	},
 	blora: {
 		slug: 'blora',
@@ -46,7 +114,25 @@ export const jawaTengahLocations: Record<string, LocationInfo> = {
 		provinceName: 'Jawa Tengah',
 		type: 'Kabupaten',
 		highlights: 'Daerah penghasil jati dan migas dengan potensi UMKM kuliner dan kerajinan lokal.',
-		nearbyLocations: ['rembang', 'pati', 'groboagan']
+		nearbyLocations: ['rembang', 'pati', 'groboagan'],
+		kecamatan: [
+			'Banjarejo',
+			'Blora',
+			'Bogorejo',
+			'Cepu',
+			'Japah',
+			'Jati',
+			'Jepon',
+			'Jiken',
+			'Kedungtuban',
+			'Kradenan',
+			'Kunduran',
+			'Ngawen',
+			'Randublatung',
+			'Sambong',
+			'Todanan',
+			'Tunjungan'
+		]
 	},
 	semarang: {
 		slug: 'semarang',
@@ -56,7 +142,25 @@ export const jawaTengahLocations: Record<string, LocationInfo> = {
 		type: 'Kota',
 		highlights:
 			'Ibu kota Provinsi Jawa Tengah, pusat bisnis perbankan, perdagangan, dan pendidikan tinggi.',
-		nearbyLocations: ['kudus', 'demak', 'kenal', 'salatiga']
+		nearbyLocations: ['kudus', 'demak', 'kenal', 'salatiga'],
+		kecamatan: [
+			'Banyumanik',
+			'Candisari',
+			'Gajahmungkur',
+			'Gayamsari',
+			'Genuk',
+			'Gunungpati',
+			'Mijen',
+			'Ngaliyan',
+			'Pedurungan',
+			'Semarang Barat',
+			'Semarang Selatan',
+			'Semarang Tengah',
+			'Semarang Timur',
+			'Semarang Utara',
+			'Tembalang',
+			'Tugu'
+		]
 	},
 	solo: {
 		slug: 'solo',
@@ -65,6 +169,7 @@ export const jawaTengahLocations: Record<string, LocationInfo> = {
 		provinceName: 'Jawa Tengah',
 		type: 'Kota',
 		highlights: 'Kota budaya, industri kreatif batik, dan ekosistem digital startup terdepan.',
-		nearbyLocations: ['boyolali', 'karanganyar', 'sragen', 'klaten']
+		nearbyLocations: ['boyolali', 'karanganyar', 'sragen', 'klaten'],
+		kecamatan: ['Banjarsari', 'Jebres', 'Laweyan', 'Pasar Kliwon', 'Serengan']
 	}
 };

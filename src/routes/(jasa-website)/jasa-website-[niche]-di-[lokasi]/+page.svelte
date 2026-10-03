@@ -132,6 +132,26 @@
 		locationName={location.name}
 	/>
 
+	<!-- Kecamatan Coverage for Niche -->
+	{#if location.kecamatan && location.kecamatan.length > 0}
+		<div
+			class="my-16 rounded-3xl border border-slate-200 bg-slate-50/70 p-6 sm:p-8 text-center dark:border-slate-800 dark:bg-slate-900/40"
+		>
+			<h3 class="text-sm sm:text-base font-bold text-slate-800 dark:text-slate-200 mb-3">
+				📍 Melayani Pembuatan Website {niche.label} di Seluruh Kecamatan se-{location.name}
+			</h3>
+			<div class="flex flex-wrap justify-center gap-1.5 max-w-4xl mx-auto">
+				{#each location.kecamatan as kec}
+					<span
+						class="rounded-lg border border-slate-200 bg-white px-2.5 py-1 text-[11px] font-medium text-slate-700 shadow-2xs dark:border-slate-800 dark:bg-slate-900 dark:text-slate-300"
+					>
+						Kec. {kec}
+					</span>
+				{/each}
+			</div>
+		</div>
+	{/if}
+
 	<FaqAccordion initialCategory="Semua" />
 
 	<CtaBanner
