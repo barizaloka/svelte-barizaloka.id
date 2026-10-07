@@ -1,5 +1,6 @@
 <script lang="ts">
 	import './layout.css';
+	import { page } from '$app/state';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import WhatsAppFloating from '$lib/components/WhatsAppFloating.svelte';
@@ -16,6 +17,8 @@
 		name="keywords"
 		content="barizaloka, jasa website rembang, jasa website pesantren, jasa website masjid, jasa website desa, umkm rembang, website sepeda listrik"
 	/>
+	<link rel="canonical" href="https://www.barizaloka.id{page.url.pathname}" />
+	<meta property="og:url" content="https://www.barizaloka.id{page.url.pathname}" />
 </svelte:head>
 
 <div
