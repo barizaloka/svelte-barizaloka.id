@@ -7,16 +7,29 @@
 		Zap,
 		CheckCircle2,
 		ArrowRight,
-		MessageSquare
+		MessageSquare,
+		Globe,
+		Search,
+		Sparkles
 	} from 'lucide-svelte';
+	import { goto } from '$app/navigation';
 	import { NICHE_PAGES } from '$lib/data/niche_pages';
 	import { PRICING_PACKAGES } from '$lib/data/pricing_data';
 	import CtaBanner from '$lib/components/CtaBanner.svelte';
 	import FaqAccordion from '$lib/components/FaqAccordion.svelte';
-	import DomainSearchForm from '$lib/components/DomainSearchForm.svelte';
 
 	const niches = Object.values(NICHE_PAGES);
 	const packages = PRICING_PACKAGES;
+
+	let domainQuery = $state('');
+
+	function handleDomainSearch(e: SubmitEvent) {
+		e.preventDefault();
+		const trimmed = domainQuery.trim();
+		if (trimmed) {
+			goto(`/cek-domain?domain=${encodeURIComponent(trimmed)}`);
+		}
+	}
 </script>
 
 <svelte:head>
@@ -29,92 +42,113 @@
 
 <!-- HERO SECTION -->
 <section
-	class="relative overflow-hidden bg-slate-50 pt-12 pb-20 transition-colors duration-200 lg:pt-20 lg:pb-32 dark:bg-slate-950"
+	class="relative overflow-hidden bg-slate-50/70 pt-14 pb-16 transition-colors duration-200 lg:pt-20 lg:pb-24 dark:bg-slate-950"
 >
-	<!-- Background Glow effects -->
+	<!-- Subtle ambient top gradient -->
 	<div
-		class="pointer-events-none absolute top-0 left-1/2 h-[500px] w-[900px] -translate-x-1/2 rounded-full bg-gradient-to-tr from-emerald-500/15 to-teal-400/10 blur-[120px] dark:from-emerald-600/20 dark:to-teal-500/10"
+		class="pointer-events-none absolute inset-x-0 top-0 h-80 bg-gradient-to-b from-emerald-500/5 via-transparent to-transparent dark:from-emerald-500/10"
 	></div>
 
 	<div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 		<div class="mx-auto max-w-3xl space-y-6 text-center">
+			<!-- Tag / Badge -->
+			<div
+				class="inline-flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3.5 py-1.5 text-xs font-semibold text-emerald-800 dark:border-emerald-500/30 dark:text-emerald-300"
+			>
+				<Sparkles class="h-3.5 w-3.5 text-emerald-600 dark:text-emerald-400" />
+				<span>Jasa Pembuatan Website Siap Pakai & Terima Beres</span>
+			</div>
+
 			<!-- Main Heading -->
 			<h1
-				class="text-3xl leading-[1.15] font-black tracking-tight text-slate-900 sm:text-5xl lg:text-6xl dark:text-white"
+				class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl dark:text-white"
 			>
 				Sebelum daftar, donasi, atau transfer,<br />
-				<span
-					class="bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 bg-clip-text text-transparent dark:from-emerald-400 dark:via-teal-300 dark:to-cyan-400"
-					>mereka cek website Anda dulu.</span
-				>
+				<span class="text-emerald-600 dark:text-emerald-400">mereka cek website Anda dulu.</span>
 			</h1>
 
 			<!-- Subtitle -->
 			<p
-				class="mx-auto max-w-2xl text-base leading-relaxed text-slate-700 sm:text-lg dark:text-slate-300"
+				class="mx-auto max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg dark:text-slate-300"
 			>
-				Beri kesan pertama yang terpercaya. Hadirkan portal digital cepat dan transparan—mulai dari
-				PSB Online, laporan kas masjid, layanan desa, hingga katalog jualan UMKM.
+				Beri kesan pertama yang profesional dan terpercaya. Kami hadirkan website resmi yang cepat,
+				elegan, dan siap pakai untuk pesantren, masjid, layanan desa, hingga UMKM Anda.
 			</p>
 
-			<!-- DOMAIN CHECK & WEBSITE ORDER FORM (Form Sahaja di Landingpage) -->
-			<div class="pt-4 text-left">
-				<DomainSearchForm
-					targetPage="/cek-domain"
-					title="Mulai Order Website: Cek Ketersediaan Domain Anda"
-					subtitle="Ketik nama domain atau brand impian Anda di bawah ini untuk mengecek ketersediaannya di halaman khusus."
-					buttonText="Cek Ketersediaan Domain"
-					variant="hero"
-				/>
-			</div>
-
 			<!-- Action Buttons -->
-			<div class="flex flex-col items-center justify-center gap-4 pt-4 sm:flex-row">
+			<div class="flex flex-col items-center justify-center gap-3 pt-2 sm:flex-row">
 				<a
 					href="https://wa.me/6285188158542?text=Halo%20Barizaloka,%20saya%20ingin%20konsultasi%20pembuatan%20website"
 					target="_blank"
 					rel="noopener noreferrer"
-					class="inline-flex w-full items-center justify-center gap-2.5 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-400 px-7 py-4 text-base font-extrabold text-slate-950 shadow-lg shadow-emerald-500/25 transition-all duration-200 hover:scale-[1.02] hover:from-emerald-400 hover:to-teal-300 active:scale-95 sm:w-auto"
+					class="inline-flex w-full items-center justify-center gap-2.5 rounded-xl bg-emerald-600 px-6 py-3.5 text-sm font-bold text-white shadow-sm shadow-emerald-600/20 transition-all hover:bg-emerald-500 active:scale-95 sm:w-auto"
 				>
-					<MessageSquare class="h-5 w-5" />
+					<MessageSquare class="h-4 w-4" />
 					<span>Konsultasi WA Gratis</span>
 				</a>
 				<a
 					href="/harga"
-					class="inline-flex w-full items-center justify-center gap-2 rounded-2xl border border-slate-300 bg-white px-7 py-4 text-base font-bold text-slate-800 transition-colors hover:bg-slate-100 sm:w-auto dark:border-slate-800 dark:bg-slate-900/80 dark:text-slate-200 dark:hover:bg-slate-800"
+					class="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white px-6 py-3.5 text-sm font-semibold text-slate-700 shadow-sm transition-colors hover:bg-slate-50 sm:w-auto dark:border-slate-800 dark:bg-slate-900 dark:text-slate-200 dark:hover:bg-slate-800"
 				>
 					<span>Lihat Paket Harga</span>
-					<ArrowRight class="h-4 w-4 text-emerald-600 dark:text-emerald-400" />
+					<ArrowRight class="h-4 w-4 text-slate-400 dark:text-slate-500" />
 				</a>
 			</div>
 
-			<!-- Quick Value Proposition Badges -->
-			<div
-				class="grid grid-cols-2 gap-4 pt-6 text-center text-xs font-medium text-slate-600 sm:grid-cols-4 dark:text-slate-400"
-			>
-				<div
-					class="rounded-xl border border-slate-200 bg-white/80 p-3 shadow-sm dark:border-slate-800/80 dark:bg-slate-900/40"
+			<!-- Clean Quick Domain Search -->
+			<div class="mx-auto pt-4 max-w-lg">
+				<form
+					onsubmit={handleDomainSearch}
+					class="relative flex items-center rounded-2xl border border-slate-200 bg-white p-1.5 shadow-sm transition focus-within:border-emerald-500 focus-within:ring-2 focus-within:ring-emerald-500/20 dark:border-slate-800 dark:bg-slate-900"
 				>
-					<div class="text-lg font-extrabold text-emerald-600 dark:text-emerald-400">100%</div>
-					<div>Custom Code & Mobile Optimized</div>
-				</div>
-				<div
-					class="rounded-xl border border-slate-200 bg-white/80 p-3 shadow-sm dark:border-slate-800/80 dark:bg-slate-900/40"
-				>
-					<div class="text-lg font-extrabold text-emerald-600 dark:text-emerald-400">Gratis</div>
-					<div>Domain & Hosting 1 Th</div>
-				</div>
-				<div
-					class="rounded-xl border border-slate-200 bg-white/80 p-3 shadow-sm dark:border-slate-800/80 dark:bg-slate-900/40"
-				>
-					<div class="text-lg font-extrabold text-emerald-600 dark:text-emerald-400">1 Tahun</div>
-					<div>Garansi Error & Maintenance</div>
-				</div>
-				<div
-					class="rounded-xl border border-slate-200 bg-white/80 p-3 shadow-sm dark:border-slate-800/80 dark:bg-slate-900/40"
-				>
-					<div class="text-lg font-extrabold text-emerald-600 dark:text-emerald-400">Bantu</div>
-					<div>Pendaftaran .desa.id / .or.id</div>
+					<Globe class="ml-3 h-4 w-4 text-slate-400 flex-shrink-0" />
+					<input
+						type="text"
+						bind:value={domainQuery}
+						placeholder="Cek domain impian (contoh: bisnisanda.com)..."
+						class="w-full bg-transparent px-3 py-2 text-sm text-slate-900 placeholder-slate-400 focus:outline-none dark:text-slate-100"
+					/>
+					<button
+						type="submit"
+						disabled={!domainQuery.trim()}
+						class="inline-flex flex-shrink-0 cursor-pointer items-center gap-1.5 rounded-xl bg-slate-900 px-4 py-2 text-xs font-bold text-white transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-emerald-500 dark:text-slate-950 dark:hover:bg-emerald-400"
+					>
+						<Search class="h-3.5 w-3.5" />
+						<span>Cek Domain</span>
+					</button>
+				</form>
+				<p class="mt-2 text-xs text-slate-500 dark:text-slate-400">
+					Sudah termasuk gratis domain & hosting 1 tahun di semua paket website Barizaloka.
+				</p>
+			</div>
+
+			<!-- Quick Value Proposition Highlights -->
+			<div class="pt-6 border-t border-slate-200/80 dark:border-slate-800/80">
+				<div class="grid grid-cols-2 gap-3 text-left sm:grid-cols-4 sm:text-center">
+					<div
+						class="flex items-center gap-2 text-xs font-medium text-slate-600 sm:justify-center dark:text-slate-400"
+					>
+						<CheckCircle2 class="h-4 w-4 flex-shrink-0 text-emerald-600 dark:text-emerald-400" />
+						<span>Mobile-Friendly & Cepat</span>
+					</div>
+					<div
+						class="flex items-center gap-2 text-xs font-medium text-slate-600 sm:justify-center dark:text-slate-400"
+					>
+						<CheckCircle2 class="h-4 w-4 flex-shrink-0 text-emerald-600 dark:text-emerald-400" />
+						<span>Gratis Domain & Hosting 1 Th</span>
+					</div>
+					<div
+						class="flex items-center gap-2 text-xs font-medium text-slate-600 sm:justify-center dark:text-slate-400"
+					>
+						<CheckCircle2 class="h-4 w-4 flex-shrink-0 text-emerald-600 dark:text-emerald-400" />
+						<span>Garansi Maintenance 1 Tahun</span>
+					</div>
+					<div
+						class="flex items-center gap-2 text-xs font-medium text-slate-600 sm:justify-center dark:text-slate-400"
+					>
+						<CheckCircle2 class="h-4 w-4 flex-shrink-0 text-emerald-600 dark:text-emerald-400" />
+						<span>Bantu Legalitas .desa / .or.id</span>
+					</div>
 				</div>
 			</div>
 		</div>
