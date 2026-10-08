@@ -42,8 +42,15 @@
 
 <!-- HERO SECTION -->
 <section
-	class="relative overflow-hidden bg-slate-50/70 pt-14 pb-16 transition-colors duration-200 lg:pt-20 lg:pb-24 dark:bg-slate-950"
+	class="relative overflow-hidden bg-slate-50/70 pt-16 pb-16 transition-colors duration-200 lg:pt-24 lg:pb-24 dark:bg-slate-950"
 >
+	<!-- Dot Grid Pattern (webekspor style) -->
+	<div
+		aria-hidden="true"
+		class="pointer-events-none absolute inset-0 opacity-[0.035] dark:opacity-[0.05]"
+		style="background-image:radial-gradient(circle, #059669 1.2px, transparent 1.2px);background-size:24px 24px"
+	></div>
+
 	<!-- Subtle ambient top gradient -->
 	<div
 		class="pointer-events-none absolute inset-x-0 top-0 h-80 bg-gradient-to-b from-emerald-500/5 via-transparent to-transparent dark:from-emerald-500/10"
@@ -51,20 +58,35 @@
 
 	<div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 		<div class="mx-auto max-w-3xl space-y-6 text-center">
-			<!-- Tag / Badge -->
+			<!-- Tag / Badge (webekspor style) -->
 			<div
-				class="inline-flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3.5 py-1.5 text-xs font-semibold text-emerald-800 dark:border-emerald-500/30 dark:text-emerald-300"
+				class="inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 pl-2 pr-4 py-1.5"
 			>
-				<Sparkles class="h-3.5 w-3.5 text-emerald-600 dark:text-emerald-400" />
-				<span>Jasa Pembuatan Website Siap Pakai & Terima Beres</span>
+				<span
+					class="inline-flex size-6 items-center justify-center rounded-full bg-emerald-600 text-white"
+				>
+					<Sparkles class="size-3.5" />
+				</span>
+				<span
+					class="font-semibold text-[11px] tracking-[0.22em] uppercase text-slate-900 dark:text-emerald-300"
+				>
+					Bikin Website · Siap Pakai & Tanpa Ribet
+				</span>
 			</div>
 
-			<!-- Main Heading -->
+			<!-- Main Heading with skewed highlight (webekspor style) -->
 			<h1
-				class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl dark:text-white"
+				class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl dark:text-white leading-[1.1] sm:leading-[1.15]"
 			>
-				Sebelum daftar, donasi, atau transfer,<br />
-				<span class="text-emerald-600 dark:text-emerald-400">mereka cek website Anda dulu.</span>
+				Sebelum daftar, donasi, atau transfer, mereka cek
+				<span class="relative inline-block whitespace-nowrap">
+					<span class="relative z-10 italic font-semibold text-emerald-700 dark:text-emerald-400">website Anda</span>
+					<span
+						aria-hidden="true"
+						class="absolute inset-x-0 bottom-1 sm:bottom-2 h-3 sm:h-4 lg:h-5 -skew-x-6 bg-emerald-400/40 dark:bg-emerald-500/30 -z-0 rounded-xs"
+					></span>
+				</span>
+				dulu.
 			</h1>
 
 			<!-- Subtitle -->
@@ -75,51 +97,73 @@
 				elegan, dan siap pakai untuk pesantren, masjid, layanan desa, hingga UMKM Anda.
 			</p>
 
-			<!-- Action Buttons -->
-			<div class="flex flex-col items-center justify-center gap-3 pt-2 sm:flex-row">
-				<a
-					href="https://wa.me/6285188158542?text=Halo%20Barizaloka,%20saya%20ingin%20konsultasi%20pembuatan%20website"
-					target="_blank"
-					rel="noopener noreferrer"
-					class="inline-flex w-full items-center justify-center gap-2.5 rounded-xl bg-emerald-600 px-6 py-3.5 text-sm font-bold text-white shadow-sm shadow-emerald-600/20 transition-all hover:bg-emerald-500 active:scale-95 sm:w-auto"
+			<!-- Mulai Dari Price Tag (webekspor style) -->
+			<div class="flex flex-wrap items-center justify-center gap-x-3 gap-y-1.5 pt-1">
+				<span
+					class="font-semibold text-[11px] tracking-[0.22em] uppercase text-slate-500 dark:text-slate-400"
 				>
-					<MessageSquare class="h-4 w-4" />
-					<span>Konsultasi WA Gratis</span>
-				</a>
-				<a
-					href="/harga"
-					class="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white px-6 py-3.5 text-sm font-semibold text-slate-700 shadow-sm transition-colors hover:bg-slate-50 sm:w-auto dark:border-slate-800 dark:bg-slate-900 dark:text-slate-200 dark:hover:bg-slate-800"
+					Mulai dari
+				</span>
+				<span class="font-extrabold text-2xl lg:text-3xl tabular-nums text-slate-900 dark:text-white">
+					Rp 1.000.000
+				</span>
+				<span class="font-medium text-sm text-slate-500 dark:text-slate-400">/tahun</span>
+				<span
+					class="font-medium text-sm text-slate-400 dark:text-slate-500 line-through tabular-nums"
 				>
-					<span>Lihat Paket Harga</span>
-					<ArrowRight class="h-4 w-4 text-slate-400 dark:text-slate-500" />
-				</a>
+					Rp 1.500.000
+				</span>
 			</div>
 
-			<!-- Clean Quick Domain Search -->
-			<div class="mx-auto pt-4 max-w-lg">
+			<!-- Domain Search Input & Button (webekspor style) -->
+			<div class="mx-auto w-full max-w-xl pt-2">
 				<form
 					onsubmit={handleDomainSearch}
-					class="relative flex items-center rounded-2xl border border-slate-200 bg-white p-1.5 shadow-sm transition focus-within:border-emerald-500 focus-within:ring-2 focus-within:ring-emerald-500/20 dark:border-slate-800 dark:bg-slate-900"
+					class="flex w-full flex-col items-stretch gap-2.5 sm:flex-row"
 				>
-					<Globe class="ml-3 h-4 w-4 text-slate-400 flex-shrink-0" />
 					<input
 						type="text"
 						bind:value={domainQuery}
-						placeholder="Cek domain impian (contoh: bisnisanda.com)..."
-						class="w-full bg-transparent px-3 py-2 text-sm text-slate-900 placeholder-slate-400 focus:outline-none dark:text-slate-100"
+						placeholder="ketik nama domain kamu..."
+						class="flex-1 rounded-full border border-slate-300 bg-white px-6 py-3.5 text-sm text-slate-900 shadow-2xs outline-none transition-colors placeholder:text-slate-400 focus:border-emerald-600 sm:text-base dark:border-slate-700 dark:bg-slate-900 dark:text-white dark:placeholder:text-slate-500 dark:focus:border-emerald-400"
 					/>
 					<button
 						type="submit"
 						disabled={!domainQuery.trim()}
-						class="inline-flex flex-shrink-0 cursor-pointer items-center gap-1.5 rounded-xl bg-slate-900 px-4 py-2 text-xs font-bold text-white transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-emerald-500 dark:text-slate-950 dark:hover:bg-emerald-400"
+						class="group inline-flex shrink-0 cursor-pointer items-center justify-center gap-2.5 rounded-full bg-slate-900 px-7 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:bg-emerald-600 disabled:cursor-not-allowed disabled:opacity-50 sm:text-base dark:bg-white dark:text-slate-900 dark:hover:bg-emerald-500 dark:hover:text-white"
 					>
-						<Search class="h-3.5 w-3.5" />
-						<span>Cek Domain</span>
+						<span>Cari Domain</span>
+						<span
+							class="flex size-6 items-center justify-center rounded-full bg-emerald-500 text-slate-950 transition-colors duration-300 group-hover:bg-white group-hover:text-emerald-600 dark:bg-emerald-500 dark:text-white"
+						>
+							<ArrowRight class="size-3.5" />
+						</span>
 					</button>
 				</form>
-				<p class="mt-2 text-xs text-slate-500 dark:text-slate-400">
-					Sudah termasuk gratis domain & hosting 1 tahun di semua paket website Barizaloka.
+				<p class="mt-2.5 text-xs text-slate-500 dark:text-slate-400">
+					Sudah termasuk gratis domain (.com / .id / .desa.id) & hosting 1 tahun di semua paket.
 				</p>
+			</div>
+
+			<!-- Action Links (webekspor style) -->
+			<div class="flex flex-wrap items-center justify-center gap-4 pt-1 text-sm">
+				<a
+					href="https://wa.me/6285188158542?text=Halo%20Barizaloka,%20saya%20ingin%20konsultasi%20pembuatan%20website"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="inline-flex items-center gap-2 font-semibold text-emerald-700 hover:text-emerald-800 dark:text-emerald-400 dark:hover:text-emerald-300"
+				>
+					<MessageSquare class="size-4" />
+					<span>Konsultasi WA Gratis</span>
+				</a>
+				<span class="text-slate-300 dark:text-slate-700">•</span>
+				<a
+					href="/harga"
+					class="inline-flex items-center gap-1 font-semibold text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white"
+				>
+					<span>Lihat Paket Harga</span>
+					<ArrowRight class="size-3.5 text-slate-400" />
+				</a>
 			</div>
 
 			<!-- Quick Value Proposition Highlights -->
