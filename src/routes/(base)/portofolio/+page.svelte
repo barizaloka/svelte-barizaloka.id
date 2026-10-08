@@ -106,41 +106,6 @@
 			dikelola. Berikut adalah contoh solusi digital yang telah kami kerjakan untuk berbagai sektor.
 		</p>
 
-		<!-- Highlight Stats -->
-		<div class="grid grid-cols-2 gap-3 pt-6 text-center sm:grid-cols-4">
-			<div
-				class="rounded-2xl border border-slate-200 bg-white/80 p-4 shadow-sm backdrop-blur-sm dark:border-slate-800 dark:bg-slate-900/60"
-			>
-				<div class="text-2xl font-black text-emerald-600 dark:text-emerald-400">50+</div>
-				<div class="mt-0.5 text-xs font-medium text-slate-600 dark:text-slate-400">
-					Website Terbangun
-				</div>
-			</div>
-			<div
-				class="rounded-2xl border border-slate-200 bg-white/80 p-4 shadow-sm backdrop-blur-sm dark:border-slate-800 dark:bg-slate-900/60"
-			>
-				<div class="text-2xl font-black text-emerald-600 dark:text-emerald-400">100%</div>
-				<div class="mt-0.5 text-xs font-medium text-slate-600 dark:text-slate-400">
-					Mobile & SEO Ready
-				</div>
-			</div>
-			<div
-				class="rounded-2xl border border-slate-200 bg-white/80 p-4 shadow-sm backdrop-blur-sm dark:border-slate-800 dark:bg-slate-900/60"
-			>
-				<div class="text-2xl font-black text-emerald-600 dark:text-emerald-400">99%</div>
-				<div class="mt-0.5 text-xs font-medium text-slate-600 dark:text-slate-400">
-					Kepuasan Klien
-				</div>
-			</div>
-			<div
-				class="rounded-2xl border border-slate-200 bg-white/80 p-4 shadow-sm backdrop-blur-sm dark:border-slate-800 dark:bg-slate-900/60"
-			>
-				<div class="text-2xl font-black text-emerald-600 dark:text-emerald-400">1 Th</div>
-				<div class="mt-0.5 text-xs font-medium text-slate-600 dark:text-slate-400">
-					Garansi & Support
-				</div>
-			</div>
-		</div>
 	</div>
 
 	<!-- Filter & Search Toolbar -->
