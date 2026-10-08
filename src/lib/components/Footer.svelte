@@ -2,7 +2,6 @@
 	import { MapPin, Mail, Phone, Heart, Sparkles, Code2, ArrowUpRight } from 'lucide-svelte';
 	import { NICHE_PAGES } from '$lib/data/niche_pages';
 	import { LOCATION_PAGES } from '$lib/data/location_pages';
-	import Logo from '$lib/components/Logo.svelte';
 
 	const niches = Object.values(NICHE_PAGES);
 	const topLocations = Object.values(LOCATION_PAGES).slice(0, 8);
@@ -16,9 +15,6 @@
 		<div class="grid grid-cols-1 gap-8 lg:grid-cols-5">
 			<!-- Brand Info Column -->
 			<div class="space-y-4 lg:col-span-2">
-				<a href="/">
-					<Logo size="md" />
-				</a>
 				<p class="max-w-md text-sm leading-relaxed text-slate-600 dark:text-slate-400">
 					Barizaloka adalah ekosistem teknologi asal Kabupaten Rembang, Jawa Tengah. Kami melayani
 					jasa pembuatan website profesional untuk pondok pesantren, DKM masjid, pemerintah desa,
