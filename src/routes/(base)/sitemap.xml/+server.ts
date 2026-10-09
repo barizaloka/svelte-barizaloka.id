@@ -19,7 +19,8 @@ export const GET: RequestHandler = async () => {
 		'/blog',
 		'/cara-cek-domain-dengan-mudah',
 		'/sumu-serikat-usaha-muhammadiyah',
-		'/hestek-artinya-dengan-bahasa-bayi'
+		'/hestek-artinya-dengan-bahasa-bayi',
+		'/pengertian-domain-serta-contoh-dengan-bahasa-bayi'
 	];
 
 	// Niche pages
