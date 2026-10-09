@@ -118,7 +118,7 @@
 				<div
 					class="rounded-2xl border border-slate-200 bg-slate-50 p-3 dark:border-slate-800 dark:bg-slate-950/60"
 				>
-					<div class="text-xl font-black text-emerald-600 dark:text-emerald-400">50+</div>
+					<div class="text-xl font-black text-emerald-600 dark:text-emerald-400">Banyak</div>
 					<div class="text-[11px] text-slate-500 dark:text-slate-400">Website Aktif</div>
 				</div>
 				<div

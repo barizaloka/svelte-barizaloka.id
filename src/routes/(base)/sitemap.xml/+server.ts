@@ -18,7 +18,8 @@ export const GET: RequestHandler = async () => {
 		'/kontak',
 		'/blog',
 		'/cara-cek-domain-dengan-mudah',
-		'/sumu-serikat-usaha-muhammadiyah'
+		'/sumu-serikat-usaha-muhammadiyah',
+		'/hestek-artinya-dengan-bahasa-bayi'
 	];
 
 	// Niche pages
