@@ -137,16 +137,6 @@
 			<div
 				class="rounded-2xl border border-emerald-100 bg-emerald-50/50 p-5 dark:border-emerald-500/20 dark:bg-emerald-950/20"
 			>
-				<div class="text-2xl font-extrabold text-emerald-700 sm:text-3xl dark:text-emerald-400">
-					SvelteKit &amp; Cepat
-				</div>
-				<div class="mt-1 text-xs font-medium text-slate-600 sm:text-sm dark:text-slate-400">
-					Arsitektur Modern &amp; Ringan
-				</div>
-			</div>
-			<div
-				class="rounded-2xl border border-emerald-100 bg-emerald-50/50 p-5 dark:border-emerald-500/20 dark:bg-emerald-950/20"
-			>
 				<div class="text-3xl font-extrabold text-emerald-700 sm:text-4xl dark:text-emerald-400">
 					100% Online
 				</div>
