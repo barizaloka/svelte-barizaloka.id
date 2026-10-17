@@ -1,26 +1,5 @@
 # 🌐 Barizaloka.id — Web Application & Programmatic SEO Platform
-
-[![SvelteKit](https://img.shields.io/badge/SvelteKit-2.x-orange.svg?style=flat-square&logo=svelte)](https://kit.svelte.dev/)
-[![Svelte 5](<https://img.shields.io/badge/Svelte-5.x_(Runes)-FF3E00.svg?style=flat-square&logo=svelte>)](https://svelte.dev/)
-[![Tailwind CSS v4](https://img.shields.io/badge/Tailwind_CSS-v4.x-38B2AC.svg?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-6.x-3178C6.svg?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
-[![Vercel](https://img.shields.io/badge/Deployed_to-Vercel-000000.svg?style=flat-square&logo=vercel)](https://vercel.com/)
-[![License](https://img.shields.io/badge/License-Private-lightgrey.svg?style=flat-square)](#)
-
 Repository resmi untuk website **[Barizaloka.id](https://barizaloka.id)**. Dibangun menggunakan arsitektur modern **SvelteKit 2**, **Svelte 5 (Runes Mode)**, dan **Tailwind CSS v4**, platform ini berfungsi sebagai portal utama jasa pembuatan website, edukasi digital, direktori layanan lokal, serta etalase ekosistem komunitas Barizaloka.
-
----
-
-## 📖 Tentang Barizaloka
-
-Lahir dari Kecamatan Sedan dan Sarang, Kabupaten Rembang, Jawa Tengah, **Barizaloka** adalah ekosistem teknologi inovatif yang berakar dari desa untuk memberdayakan masyarakat, santri, dan pelaku usaha di seluruh Indonesia.
-
-Selain menyediakan jasa website profesional (UMKM, pesantren, madrasah/sekolah, masjid, desa, dan undangan digital), Barizaloka mengayomi 4 pilar komunitas utama:
-
-- 🌙 **Astro Falak**: Komunitas kajian ilmu Falak dan astronomi Islam.
-- 🌍 **Astraloka**: Gerakan kepedulian lingkungan hidup dan edukasi daur ulang ([astraloka.my.id](https://astraloka.my.id)).
-- 💻 **Baricode**: Ruang belajar IT, pemrograman, dan kolaborasi developer ([baricode.org](https://baricode.org)).
-- 📿 **Self Reminder**: Pengingat spiritual dan ruang muhasabah harian.
 
 ---
 
@@ -48,63 +27,6 @@ Selain menyediakan jasa website profesional (UMKM, pesantren, madrasah/sekolah, 
 - 💬 **Konversi & Call-to-Action Terintegrasi**:
   - WhatsApp Floating Widget responsif dengan pesan konsultasi otomatis.
   - Komponen FAQ Accordion, Portofolio Showcase, dan Daftar Harga transparan.
-
----
-
-## 🛠️ Tech Stack
-
-| Komponen              | Teknologi                                     | Keterangan                                   |
-| :-------------------- | :-------------------------------------------- | :------------------------------------------- |
-| **Framework**         | [SvelteKit 2](https://kit.svelte.dev/)        | Full-stack application framework             |
-| **Core UI**           | [Svelte 5](https://svelte.dev/)               | Mode Runes (`$state`, `$derived`, `$props`)  |
-| **Styling**           | [Tailwind CSS v4](https://tailwindcss.com/)   | Menggunakan plugin `@tailwindcss/vite`       |
-| **Language**          | [TypeScript](https://www.typescriptlang.org/) | Type-safety dan maintainability              |
-| **Bundler**           | [Vite 8](https://vitejs.dev/)                 | Fast HMR & optimized production build        |
-| **Domain Lookup**     | `node-rdap`                                   | RDAP query lookup untuk `/api/domain-check`  |
-| **Markdown Parser**   | `marked` & `js-yaml`                          | Parser frontmatter dan konten blog           |
-| **Icons**             | `lucide-svelte`                               | Icon pack modern & konsisten                 |
-| **Hosting & Adapter** | `@sveltejs/adapter-vercel`                    | Deployment optimal ke Vercel Edge/Serverless |
-
----
-
-## 📁 Struktur Direktori
-
-```text
-svelte-barizaloka.id/
-├── src/
-│   ├── app.d.ts                # Deklarasi tipe global SvelteKit
-│   ├── app.html                # Shell template HTML utama
-│   ├── error.html              # Fallback error page
-│   ├── content/
-│   │   └── posts/              # Koleksi artikel blog (.md dengan YAML frontmatter)
-│   ├── lib/
-│   │   ├── assets/             # Asset gambar/vektor internal (favicon, logo)
-│   │   ├── components/         # Komponen UI reusable (Navbar, Footer, FAQ, WhatsApp, dsb.)
-│   │   ├── data/               # Data master (niche, kabupaten, kecamatan, harga, portofolio)
-│   │   │   ├── blog_data.ts
-│   │   │   ├── faq_data.ts
-│   │   │   ├── location_pages.ts
-│   │   │   ├── niche_pages.ts
-│   │   │   ├── pricing_data.ts
-│   │   │   └── provinsi_pages.ts
-│   │   ├── server/             # Layanan backend (domain RDAP lookup service)
-│   │   └── theme.svelte.ts     # Reusable Svelte 5 Runes state untuk Light/Dark mode
-│   └── routes/
-│       ├── +layout.svelte      # Root layout (Theme provider, Navbar, Footer, WhatsApp CTA)
-│       ├── +page.svelte        # Beranda (Landing page utama)
-│       ├── (base)/             # Halaman umum: /harga, /portofolio, /tentang, /faq, /cek-domain, /sitemap.xml
-│       ├── (niches)/           # Landing page niche spesifik (/jasa-website-umkm, dsb.)
-│       ├── (jasa-website)/     # Route dinamis programmatic SEO lokasi & kombinasi
-│       ├── (onpage)/           # Halaman landing edukasi & pSEO provinsi
-│       ├── api/                # API Endpoints (/api/domain-check, /api/posts)
-│       └── blog/               # Arsip dan detail artikel blog
-├── static/                     # File statis publik (robots.txt, favicon, gambar)
-├── eslint.config.js            # Konfigurasi ESLint
-├── prettier.config.js          # Konfigurasi format kode Prettier
-├── tsconfig.json               # Konfigurasi TypeScript
-├── vite.config.ts              # Konfigurasi Vite & adapter Vercel
-└── package.json
-```
 
 ---
 
@@ -216,8 +138,7 @@ Jika Anda memiliki pertanyaan, ingin berkontribusi, atau membutuhkan layanan web
 
 - 🌐 **Situs Resmi**: [barizaloka.id](https://barizaloka.id)
 - 💬 **WhatsApp**: [0851-8815-8542](https://wa.me/6285188158542)
-- 📧 **Email**: [barizaloka@gmail.com](mailto:barizaloka@gmail.com)
-- 📸 **Instagram**: [@namaku.ahla](https://instagram.com/namaku.ahla)
+- 📸 **Instagram**: [@barizaloka](https://instagram.com/barizaloka)
 - 📍 **Lokasi**: Karangasem, Sedan, Rembang, Jawa Tengah 59264
 
 ---

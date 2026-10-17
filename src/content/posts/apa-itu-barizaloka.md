@@ -212,9 +212,8 @@ Untuk konsultasi website atau informasi lebih lanjut, Anda bisa menghubungi tim 
 /wp:paragraph
 wp:list
 
-- 📧 Email: [barizaloka@gmail.com](mailto:barizaloka@gmail.com)
 - 💬 WhatsApp: [wa.me/6285188158542](https://wa.me/6285188158542)
-- 📲 Instagram: [@namaku.ahla](https://instagram.com/namaku.ahla)
+- 📲 Instagram: [@barizaloka](https://instagram.com/barizaloka)
 - 🌐 Website: [barizaloka.id](https://barizaloka.id/)
 
 /wp:list

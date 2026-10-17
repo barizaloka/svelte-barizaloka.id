@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Breadcrumbs from '$lib/components/Breadcrumbs.svelte';
-	import { MapPin, Phone, Mail, Clock, MessageSquare, Send, CheckCircle2 } from 'lucide-svelte';
+	import { MapPin, Phone, Clock, MessageSquare, Send, CheckCircle2 } from 'lucide-svelte';
 
 	let name = $state('');
 	let category = $state('Pesantren');
@@ -19,7 +19,7 @@
 	<title>Hubungi Kami | Barizaloka Rembang</title>
 	<meta
 		name="description"
-		content="Hubungi tim Barizaloka untuk konsultasi pembuatan website pesantren, masjid, desa, dan UMKM. Alamat kantor Rembang, WhatsApp, & Email."
+		content="Hubungi tim Barizaloka untuk konsultasi pembuatan website pesantren, masjid, desa, dan UMKM. Alamat kantor Rembang dan kontak resmi via WhatsApp."
 	/>
 </svelte:head>
 
@@ -181,18 +181,6 @@
 							<p class="mt-0.5 text-slate-500 dark:text-slate-400">
 								+62 851-8815-8542 (Aktif 24 Jam)
 							</p>
-						</div>
-					</div>
-
-					<div class="flex items-start gap-3">
-						<div
-							class="mt-0.5 rounded-xl bg-emerald-500/10 p-2.5 text-emerald-600 dark:text-emerald-400"
-						>
-							<Mail class="h-5 w-5" />
-						</div>
-						<div>
-							<div class="font-bold text-slate-900 dark:text-white">Email Resmi</div>
-							<p class="mt-0.5 text-slate-500 dark:text-slate-400">halo@barizaloka.id</p>
 						</div>
 					</div>
 
